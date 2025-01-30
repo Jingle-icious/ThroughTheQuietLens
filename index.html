@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Novel Mockup</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; display: flex; align-items: center; justify-content: center; height: 100vh; }
+        #game-container { display: flex; align-items: center; background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); max-width: 800px; }
+        #image-container { margin-right: 20px; }
+        #image-container img { max-width: 200px; }
+        #text-box { flex-grow: 1; }
+        #choices { margin-top: 20px; }
+        .choice { display: block; margin: 10px 0; padding: 10px; background: #ddd; border: none; cursor: pointer; border-radius: 5px; }
+        .choice:hover { background: #bbb; }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="image-container">
+            <img src="Sage_Sillouette.png" alt="Sage Silhouette">
+        </div>
+        <div id="text-box">
+            <p id="story-text">Sage bags her items, feeling slightly anxious about the day ahead.</p>
+            <div id="choices">
+                <button class="choice" onclick="makeChoice('first_day_dilemma')">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const story = {
+            first_day_dilemma: {
+                text: "Sage arrives at the entrance of the academy. Her heart races as she sees students chatting in groups. She takes a deep breath, trying to steady herself.",
+                choices: [
+                    { text: "Be Honest", next: "be_honest" },
+                    { text: "Fake Confidence", next: "fake_confidence" }
+                ]
+            },
+            be_honest: {
+                text: "Sage admits her worries to a fellow student. 'Honestly, I'm kind of nervous,' she says. The student smiles, 'Me too. First days are tough, but we'll get through it.'",
+                choices: [{ text: "Continue", next: "mentor_advice" }]
+            },
+            fake_confidence: {
+                text: "Sage straightens her back and puts on a confident smile. 'I got this,' she whispers to herself, even as her hands tremble slightly.",
+                choices: [{ text: "Continue", next: "mentor_advice" }]
+            },
+            mentor_advice: {
+                text: "Later that day, Sage meets her assigned mentor, a wise and patient instructor. 'First days can be overwhelming,' the mentor says, 'but trust in yourself. You're here for a reason.'",
+                choices: [
+                    { text: "Trust Mentor", next: "trust_mentor" },
+                    { text: "Distance Herself", next: "distance_herself" }
+                ]
+            },
+            trust_mentor: {
+                text: "Sage nods, taking the mentor's words to heart. She feels a bit more reassured, knowing she has someone to rely on.",
+                choices: [{ text: "Continue", next: "end_act1" }]
+            },
+            distance_herself: {
+                text: "Sage politely listens but keeps her guard up. She's not sure she can fully trust anyone yet.",
+                choices: [{ text: "Continue", next: "end_act1" }]
+            },
+            end_act1: {
+                text: "As the day ends, Sage reflects on her choices and prepares for what lies ahead.",
+                choices: [{ text: "To Be Continued...", next: null }]
+            }
+        };
+
+        function makeChoice(choice) {
+            const scene = story[choice];
+            document.getElementById('story-text').innerText = scene.text;
+            
+            const choicesContainer = document.getElementById('choices');
+            choicesContainer.innerHTML = '';
+            
+            scene.choices.forEach(option => {
+                const button = document.createElement('button');
+                button.classList.add('choice');
+                button.innerText = option.text;
+                button.onclick = () => makeChoice(option.next);
+                choicesContainer.appendChild(button);
+            });
+        }
+    </script>
+</body>
+</html>
