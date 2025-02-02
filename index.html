@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="general.css">
 </head>
 <body>
+    <button id="settings-btn">⚙️</button>
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Settings</h2>
+            <label for="text-size">Text Size:</label>
+            <select id="text-size">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <label for="text-color">Text Color:</label>
+            <input type="color" id="text-color" value="#ffffff">
+            <label for="bg-opacity">Background Opacity:</label>
+            <input type="range" id="bg-opacity" min="0.5" max="1" step="0.1" value="0.7">
+            <button id="reset-btn">Reset to Default</button>
+        </div>
+    </div>
     <div id="game-container">
         <p id="story-text">Sage bags her items, feeling slightly anxious about the day ahead.</p>
         <div id="choices">
