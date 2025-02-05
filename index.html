@@ -1,14 +1,31 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Novel Mockup</title>
+    <title>Visual Novel</title>
     <link rel="stylesheet" href="general.css">
 </head>
 <body>
-    <button id="settings-btn">⚙️</button>
+
+    <!-- Foreground character sprite -->
+    <img id="foreground-image" src="Sage_OFFICIAL.png" alt="Sage Character">
+
+    <!-- Game Container (Text and Choices) -->
+    <div id="game-container">
+        <p id="story-text">What will you do?</p>
+        <div id="choices">
+            <button onclick="makeChoice(1)">Choice 1</button>
+            <button onclick="makeChoice(2)">Choice 2</button>
+        </div>
+    </div>
+
+    <!-- Settings Button (Icon) -->
+    <button id="settings-btn">
+        <img src="settings_icon.svg" alt="Settings">
+    </button>
+
+    <!-- Settings Modal -->
     <div id="settings-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -19,19 +36,17 @@
                 <option value="medium" selected>Medium</option>
                 <option value="large">Large</option>
             </select>
+
             <label for="text-color">Text Color:</label>
-            <input type="color" id="text-color" value="#ffffff">
-            <label for="bg-opacity">Background Opacity:</label>
-            <input type="range" id="bg-opacity" min="0.5" max="1" step="0.1" value="0.7">
+            <input type="color" id="text-color">
+
+            <label for="bg-opacity">Text Box Opacity:</label>
+            <input type="range" id="bg-opacity" min="0.1" max="1" step="0.1" value="0.8">
+
             <button id="reset-btn">Reset to Default</button>
         </div>
     </div>
-    <div id="game-container">
-        <p id="story-text">Sage bags her items, feeling slightly anxious about the day ahead.</p>
-        <div id="choices">
-            <button class="choice" onclick="makeChoice('first_day_dilemma')">Continue</button>
-        </div>
-    </div>
+
     <script src="general.js"></script>
 </body>
 </html>

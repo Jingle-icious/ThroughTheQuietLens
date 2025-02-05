@@ -1,123 +1,172 @@
-/* general.css */
-body {
-    font-family: Arial, sans-serif;
+/* Reset default margin/padding */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: url('Title_Option.png') no-repeat center center fixed;
-    background-size: cover;
+    box-sizing: border-box;
 }
 
+/* Full-screen background */
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('Title_Option.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Foreground Image (Sage's Sprite) */
+#foreground-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 45%; /* Increased size of Sage */
+    z-index: 2; /* Above background, below text box */
+    display: none; /* Hidden at the start */
+}
+
+/* Game container (text box & choices) */
+#game-container {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: rgba(50, 50, 50, 0.8); /* Dark semi-transparent box */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 3; /* Ensures it stays above everything */
+}
+
+/* Choice Buttons (Green) */
+#choices button {
+    background-color: #6cbf6c; /* Original green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#choices button:hover {
+    background-color: #5aa95a; /* Slightly darker green on hover */
+}
+
+/* Restart Button (Also Green) */
+#choices button:last-child {
+    background-color: #6cbf6c; /* Same as choices */
+}
+
+#choices button:last-child:hover {
+    background-color: #5aa95a;
+}
+
+/* Settings Button (Top-Right Icon) */
 #settings-btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: none;
+    background: transparent;
     border: none;
-    font-size: 24px;
     cursor: pointer;
-    color: white;
+    z-index: 4;
 }
 
+#settings-btn img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Settings Modal */
 .modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 350px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    z-index: 5; /* Above everything */
+    width: 400px; /* Modal width */
+    max-width: 80%;
+    color: #ddd;
     font-family: 'Arial', sans-serif;
-    color: #333;
 }
 
-.modal-content h2 {
-    margin-bottom: 15px;
+.modal.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-out;
 }
 
-.modal-content label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.modal-content select, .modal-content input {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.modal-content button {
-    margin-top: 15px;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.modal-content button:hover {
-    background: #45a049;
-}
-
+/* Modal Close Button */
 .close-btn {
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
-    font-size: 24px;
-    color: #555;
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s;
 }
 
 .close-btn:hover {
-    color: #000;
+    color: #f44336; /* Red on hover */
 }
 
-#game-container {
-    position: absolute;
-    bottom: 10%;
-    width: 80%;
-    max-width: 800px;
-    background: rgba(100, 100, 100, 0.7);
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-#choices {
-    margin-top: 20px;
-}
-
-.choice {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 80%;
-    background: #a8d5ba;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    color: black;
+/* Text Size & Settings Inputs */
+label {
     font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
 }
 
-.choice:hover {
-    background: #c0e2cb;
+select, input[type="color"], input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+/* Reset Button */
+#reset-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#reset-btn:hover {
+    background-color: #45a049;
+}
+
+/* Modal Animation (fade-in effect) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
