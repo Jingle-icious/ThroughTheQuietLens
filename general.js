@@ -8,15 +8,11 @@ const story = {
     },
     be_honest: {
         text: "Sage decides to be honest with herself. She lets out a sigh and steps forward, prepared to face the day as she truly is.",
-        choices: [
-            { text: "Continue", next: "next_scene" }
-        ]
+        choices: [{ text: "Continue", next: "next_scene" }]
     },
     fake_confidence: {
         text: "Sage puts on a confident smile, hiding her nervousness as she walks toward the entrance, determined to make a strong first impression.",
-        choices: [
-            { text: "Continue", next: "next_scene" }
-        ]
+        choices: [{ text: "Continue", next: "next_scene" }]
     },
     next_scene: {
         text: "She steps into the academy, feeling a mix of emotions as she begins a new chapter of her life.",
@@ -31,10 +27,13 @@ function makeChoice(choice) {
     }
 
     const scene = story[choice];
+
+    // Update the story text
     document.getElementById('story-text').innerText = scene.text;
 
+    // Update choices
     const choicesContainer = document.getElementById('choices');
-    choicesContainer.innerHTML = '';
+    choicesContainer.innerHTML = ''; // Clear previous choices
 
     scene.choices.forEach(option => {
         const button = document.createElement('button');
@@ -43,6 +42,11 @@ function makeChoice(choice) {
         button.onclick = () => makeChoice(option.next);
         choicesContainer.appendChild(button);
     });
+
+    // Ensure the foreground sprite appears when entering the first scene
+    if (choice === "first_day_dilemma") {
+        document.getElementById('foreground-image').style.display = 'block';
+    }
 
     // Change background if the user chooses "Be Honest"
     if (choice === "be_honest") {
@@ -84,7 +88,35 @@ document.getElementById('reset-btn').onclick = function () {
     document.getElementById('game-container').style.background = 'rgba(100, 100, 100, 0.7)';
 };
 
-// Start game with first scene
+// Ensure the game starts with the first scene
 document.addEventListener('DOMContentLoaded', function () {
     makeChoice('first_day_dilemma');
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    makeChoice('first_day_dilemma'); // Ensure game starts at the correct scene
+
+    // Play background music
+    const bgMusic = document.getElementById('background-music');
+    
+    // Ensure audio plays (Some browsers block autoplay, so we need a user interaction)
+    function playMusic() {
+        if (bgMusic.paused) {
+            bgMusic.volume = 0.5; // Adjust volume if needed (0.0 to 1.0)
+            bgMusic.play().catch(error => console.error("Audio play error:", error));
+        }
+    }
+
+    // Play on user interaction (fixes autoplay issues on some browsers)
+    document.body.addEventListener('click', playMusic, { once: true });
+
+    // Also try playing music on load (in case autoplay is allowed)
+    playMusic();
+});
+
+// Handle background music volume change
+document.getElementById('bg-music-volume').oninput = function () {
+    bgMusic.volume = this.value;
+};
+
