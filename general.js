@@ -1,21 +1,15 @@
 const story = {
-    first_day_dilemma: {
-        text: "Sage arrives at the entrance of the academy. Her heart races as she sees students chatting in groups. She takes a deep breath, trying to steady herself.",
-        choices: [
-            { text: "Be Honest", next: "be_honest" },
-            { text: "Fake Confidence", next: "fake_confidence" }
-        ]
+    intro_1: {
+        text: "Sage had made it through her first semester. Barely. Now, she was back—spring semester, her second ever—ready to face another round of assignments, tests, and deadlines. But instead of feeling more confident, more at ease, it all felt heavier. The campus around her seemed just as busy as before, but it felt foreign. The people bustling around her, chatting with friends and laughing, felt miles away. She didn't belong here—not in the way they did.",
+        choices: [{ text: "Continue", next: "intro_2" }],
+        background: "Campus_WIP.png"
     },
-    be_honest: {
-        text: "Sage decides to be honest with herself. She lets out a sigh and steps forward, prepared to face the day as she truly is.",
-        choices: [{ text: "Continue", next: "next_scene" }]
-    },
-    fake_confidence: {
-        text: "Sage puts on a confident smile, hiding her nervousness as she walks toward the entrance, determined to make a strong first impression.",
+    intro_2: {
+        text: "She had thought that after surviving her first semester, things would get easier. But the stress, the pressure, it hadn't let up. If anything, it had only intensified. The constant worry that she wasn't doing enough, that she wasn't meeting expectations—it gnawed at her every waking moment. Sage was already falling behind. Everyone else seemed so sure of themselves, so capable, and there she was, struggling to keep up. And it wasn't just the schoolwork. It was the feeling that no one truly understood. That no one knew how much she was holding inside.",
         choices: [{ text: "Continue", next: "next_scene" }]
     },
     next_scene: {
-        text: "She steps into the academy, feeling a mix of emotions as she begins a new chapter of her life.",
+        text: "Next scene placeholder text.",
         choices: []
     }
 };
@@ -25,7 +19,7 @@ let isMuted = false;
 document.addEventListener('DOMContentLoaded', function() {
     const titleScreen = document.getElementById('title-screen');
     const startButton = document.getElementById('start-button');
-    const gameElements = document.querySelectorAll('body > *:not(#title-screen, #audio-control-btn, #settings-btn)');
+    const gameContainer = document.getElementById('game-container');
     const audioControlBtn = document.getElementById('audio-control-btn');
     const settingsBtn = document.getElementById('settings-btn');
     const bgMusic = document.getElementById('background-music');
@@ -34,9 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
     playMusic();
 
     startButton.addEventListener('click', function() {
-        titleScreen.style.display = 'none';
-        gameElements.forEach(el => el.style.display = '');
-        makeChoice('first_day_dilemma');
+        crossFade(titleScreen, 'Campus_WIP.png', () => {
+            titleScreen.style.display = 'none';
+            gameContainer.style.display = 'block';
+            makeChoice('intro_1');
+        });
     });
 
     audioControlBtn.addEventListener('click', function() {
@@ -53,16 +49,42 @@ document.addEventListener('DOMContentLoaded', function() {
         bgMusic.volume = 0.5;
         bgMusic.play().catch(error => {
             console.error("Audio play error:", error);
-            // Attempt to play on user interaction if autoplay is blocked
             document.addEventListener('click', () => bgMusic.play(), {once: true});
         });
     }
-
-    // Ensure the game starts with the first scene when not on title screen
-    if (titleScreen.style.display === 'none') {
-        makeChoice('first_day_dilemma');
-    }
 });
+
+function crossFade(elementToFadeOut, newBackgroundSrc, callback) {
+    const overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.backgroundColor = 'black';
+    overlay.style.opacity = '0';
+    overlay.style.transition = 'opacity 1s ease-in-out';
+    overlay.style.zIndex = '1000';
+    document.body.appendChild(overlay);
+
+    // Fade to black
+    setTimeout(() => {
+        overlay.style.opacity = '1';
+    }, 50);
+
+    // After fading to black, change the background and fade in
+    setTimeout(() => {
+        elementToFadeOut.style.opacity = '0';
+        document.body.style.backgroundImage = `url('${newBackgroundSrc}')`;
+        overlay.style.opacity = '0';
+    }, 1100);
+
+    // Remove overlay and execute callback
+    setTimeout(() => {
+        document.body.removeChild(overlay);
+        if (callback) callback();
+    }, 2100);
+}
 
 function makeChoice(choice) {
     if (!story[choice]) {
@@ -87,9 +109,12 @@ function makeChoice(choice) {
         choicesContainer.appendChild(button);
     });
 
-    // Ensure the foreground sprite appears when entering the first scene
-    if (choice === "first_day_dilemma") {
-        document.getElementById('foreground-image').style.display = 'block';
+    // Hide the foreground sprite for these narration scenes
+    document.getElementById('foreground-image').style.display = 'none';
+
+    // Change background if specified in the scene
+    if (scene.background && choice !== 'intro_1') {
+        crossFade(document.body, scene.background);
     }
 }
 
