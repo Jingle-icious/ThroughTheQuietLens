@@ -40,9 +40,25 @@ const story = {
     },
     dorm_scene_3: {
         text: "She pulled her phone from her pocket and checked the time. 4:30 PM. She still had hours before anything was due, but that didn't stop the anxiety from creeping in.",
-        choices: [],
+        choices: [
+            { text: "Start Homework", next: "start_homework"},
+            { text: "Take a Break", next: "take_break"}
+        ],
         background: "Dorm_WIP.png",
         sprite: "SageVar1_frown.png"
+    },
+    start_homework: {
+        text: "Sage opened her laptop, a pile of reading material and assignments stacked beside her. The moment she began, though, she couldn’t focus. Her mind kept drifting. It was as if the words on the screen weren’t meant for her. They were for someone who could understand them, someone who could do something with them. But Sage just… couldn’t.",
+        choices: [],
+        background: "Dorm_WIP.png",
+        sprite:"SageVar1_frown.png",
+
+    },
+    take_break: {
+        text: "Sage stood up from her desk, deciding to take a moment to breathe. She stared out the window, watching as the campus slowly settled into evening. The sky was painted in soft purples and oranges, but it didn’t bring her peace. She just couldn’t shake the nagging feeling that everything was falling apart.",
+        choices: [],
+        background: "Dorm_WIP.png",
+        sprite: "SageVar2WIP3.png",
     }
 };
 
