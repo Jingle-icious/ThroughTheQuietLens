@@ -19,7 +19,7 @@ const story = {
     stay_silent: {
         text: "The sounds around her blur into background noise as Sage steps into the elevator. She presses the button for her floor, her reflection in the glass doors staring back at her. The weight of everything—the stress, the self-doubt—seems heavier now. She takes a deep breath, trying to calm her racing thoughts.",
         choices: [{ text: "Continue", next: "dorm_scene" }],
-        sprite: "Sage_OFFICIAL.png"
+        sprite: "SageVar1_frown.png"
     },
     greet_student: {
         text: "Sage offers a weak smile to a passing student, their brief exchange barely enough to make her feel less isolated. The student gives a distracted wave in return, and Sage's gaze quickly shifts back to the floor. The moment passes, and Sage steps into the elevator alone.",
@@ -28,9 +28,21 @@ const story = {
     },
     dorm_scene: {
         text: "The elevator dings as it reaches the floor, and Sage steps out into the hall. Her room is a few doors down, and she makes her way to it, unlocking the door. It creaks open, and she steps inside. The room is small, but familiar—her bed is unmade, textbooks are scattered on her desk, and a few empty coffee cups line the windowsill. The soft glow of the afternoon sun filters through the window, casting long shadows across the room.",
-        choices: [],
+        choices: [{ text: "Continue", next: "dorm_scene_2" }],
         background: "Dorm_WIP.png",
         sprite: "Sage_OFFICIAL.png"
+    },
+    dorm_scene_2: {
+        text: "She dropped her bag on the desk and collapsed onto her bed. Another semester, another round of assignments, deadlines, and the constant feeling that she was running out of time. Maybe that's what bothered her the most—this sense of being behind. Always behind. On everything. At first, she thought it was just first-semester jitters, but now it felt like a permanent part of her.",
+        choices: [{ text: "Continue", next: "dorm_scene_3" }],
+        background: "Dorm_WIP.png",
+        sprite: "SageVar1_frown.png"
+    },
+    dorm_scene_3: {
+        text: "She pulled her phone from her pocket and checked the time. 4:30 PM. She still had hours before anything was due, but that didn't stop the anxiety from creeping in.",
+        choices: [],
+        background: "Dorm_WIP.png",
+        sprite: "SageVar1_frown.png"
     }
 };
 
@@ -112,11 +124,11 @@ function makeChoice(choice) {
     }
 
     const scene = story[choice];
-    const currentBackground = document.body.style.backgroundImage;
-    const newBackground = scene.background ? `url('${scene.background}')` : currentBackground;
+    const currentBackground = document.body.style.backgroundImage.replace(/^url\(['"](.+)['"]\)/, '$1');
+    const newBackground = scene.background;
 
-    if (newBackground !== currentBackground) {
-        crossFade(scene.background, () => {
+    if (newBackground && newBackground !== currentBackground) {
+        crossFade(newBackground, () => {
             updateSceneContent(scene);
         });
     } else {
@@ -188,19 +200,6 @@ document.getElementById('bg-music-volume').oninput = function () {
     document.getElementById('background-music').volume = this.value;
 };
 
-document.getElementById('reset-game-btn').addEventListener('click', function() {
-    // Reset game state
-    // Hide game container
-    document.getElementById('game-container').style.display = 'none';
-    // Show title screen
-    document.getElementById('title-screen').style.display = 'flex';
-    // Reset background to title screen
-    document.body.style.backgroundImage = "url('Title_Official.png')";
-    // Hide Sage's sprite if it's visible
-    document.getElementById('foreground-image').style.display = 'none';
-    // Reset any other game state variables you might have
-});
-
 function updateRange() {
     const sliders = document.querySelectorAll('input[type="range"]');
 
@@ -215,5 +214,3 @@ function updateRange() {
 
 document.addEventListener('DOMContentLoaded', updateRange);
 document.addEventListener('input', updateRange);
-
-
