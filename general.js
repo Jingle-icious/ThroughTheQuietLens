@@ -9,8 +9,28 @@ const story = {
         choices: [{ text: "Continue", next: "next_scene" }]
     },
     next_scene: {
-        text: "Next scene placeholder text.",
-        choices: []
+        text: "The lobby is filled with students rushing in and out, some chatting in groups, others heading up the stairs to their rooms. There's a bulletin board with colorful flyers, announcements about clubs and events, and a desk with a student worker. Sage approaches the elevator, her gaze a little lower as she walks past the people around her.",
+        choices: [
+            { text: "Stay Silent", next: "stay_silent" },
+            { text: "Greet the Student", next: "greet_student" }
+        ],
+        sprite: "Sage_OFFICIAL.png"
+    },
+    stay_silent: {
+        text: "The sounds around her blur into background noise as Sage steps into the elevator. She presses the button for her floor, her reflection in the glass doors staring back at her. The weight of everything—the stress, the self-doubt—seems heavier now. She takes a deep breath, trying to calm her racing thoughts.",
+        choices: [{ text: "Continue", next: "dorm_scene" }],
+        sprite: "Sage_OFFICIAL.png"
+    },
+    greet_student: {
+        text: "Sage offers a weak smile to a passing student, their brief exchange barely enough to make her feel less isolated. The student gives a distracted wave in return, and Sage's gaze quickly shifts back to the floor. The moment passes, and Sage steps into the elevator alone.",
+        choices: [{ text: "Continue", next: "dorm_scene" }],
+        sprite: "Sage_OFFICIAL.png"
+    },
+    dorm_scene: {
+        text: "The elevator dings as it reaches the floor, and Sage steps out into the hall. Her room is a few doors down, and she makes her way to it, unlocking the door. It creaks open, and she steps inside. The room is small, but familiar—her bed is unmade, textbooks are scattered on her desk, and a few empty coffee cups line the windowsill. The soft glow of the afternoon sun filters through the window, casting long shadows across the room.",
+        choices: [],
+        background: "Dorm_WIP.png",
+        sprite: "Sage_OFFICIAL.png"
     }
 };
 
@@ -28,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     playMusic();
 
     startButton.addEventListener('click', function() {
-        crossFade(titleScreen, 'Campus_WIP.png', () => {
+        crossFade('Campus_WIP.png', () => {
             titleScreen.style.display = 'none';
             gameContainer.style.display = 'block';
             makeChoice('intro_1');
@@ -54,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function crossFade(elementToFadeOut, newBackgroundSrc, callback) {
+function crossFade(newBackgroundSrc, callback) {
     const overlay = document.createElement('div');
     overlay.style.position = 'fixed';
     overlay.style.top = '0';
@@ -74,7 +94,6 @@ function crossFade(elementToFadeOut, newBackgroundSrc, callback) {
 
     // After fading to black, change the background and fade in
     setTimeout(() => {
-        elementToFadeOut.style.opacity = '0';
         document.body.style.backgroundImage = `url('${newBackgroundSrc}')`;
         overlay.style.opacity = '0';
     }, 1100);
@@ -93,7 +112,19 @@ function makeChoice(choice) {
     }
 
     const scene = story[choice];
+    const currentBackground = document.body.style.backgroundImage;
+    const newBackground = scene.background ? `url('${scene.background}')` : currentBackground;
 
+    if (newBackground !== currentBackground) {
+        crossFade(scene.background, () => {
+            updateSceneContent(scene);
+        });
+    } else {
+        updateSceneContent(scene);
+    }
+}
+
+function updateSceneContent(scene) {
     // Update the story text
     document.getElementById('story-text').innerText = scene.text;
 
@@ -109,12 +140,13 @@ function makeChoice(choice) {
         choicesContainer.appendChild(button);
     });
 
-    // Hide the foreground sprite for these narration scenes
-    document.getElementById('foreground-image').style.display = 'none';
-
-    // Change background if specified in the scene
-    if (scene.background && choice !== 'intro_1') {
-        crossFade(document.body, scene.background);
+    // Handle sprite
+    const foregroundImage = document.getElementById('foreground-image');
+    if (scene.sprite) {
+        foregroundImage.src = scene.sprite;
+        foregroundImage.style.display = 'block';
+    } else {
+        foregroundImage.style.display = 'none';
     }
 }
 
