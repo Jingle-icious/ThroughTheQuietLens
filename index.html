@@ -16,13 +16,17 @@
 
     <!-- Game Container (Text and Choices) -->
     <div id="game-container">
-        <p id="story-text">What will you do?</p>
+        <p id="story-text"></p>
         <div id="choices">
-            <button onclick="makeChoice(1)">Choice 1</button>
-            <button onclick="makeChoice(2)">Choice 2</button>
+            <button onclick="makeChoice(1)"></button>
+            <button onclick="makeChoice(2)"></button>
         </div>
     </div>
-
+    
+    <button id="reset-game-btn">
+        <img src="Reset_Icon.svg" alt="Reset Game">
+    </button>
+    
     <!-- Audio control button -->
     <button id="audio-control-btn">
         <img src="Audio_On_Icon.svg" alt="Audio Control">

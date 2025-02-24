@@ -14,7 +14,7 @@ const story = {
             { text: "Stay Silent", next: "stay_silent" },
             { text: "Greet the Student", next: "greet_student" }
         ],
-        sprite: "Sage_OFFICIAL.png"
+        sprite: "SageVar1_frown.png"
     },
     stay_silent: {
         text: "The sounds around her blur into background noise as Sage steps into the elevator. She presses the button for her floor, her reflection in the glass doors staring back at her. The weight of everything—the stress, the self-doubt—seems heavier now. She takes a deep breath, trying to calm her racing thoughts.",
@@ -187,3 +187,33 @@ document.getElementById('reset-btn').onclick = function () {
 document.getElementById('bg-music-volume').oninput = function () {
     document.getElementById('background-music').volume = this.value;
 };
+
+document.getElementById('reset-game-btn').addEventListener('click', function() {
+    // Reset game state
+    // Hide game container
+    document.getElementById('game-container').style.display = 'none';
+    // Show title screen
+    document.getElementById('title-screen').style.display = 'flex';
+    // Reset background to title screen
+    document.body.style.backgroundImage = "url('Title_Official.png')";
+    // Hide Sage's sprite if it's visible
+    document.getElementById('foreground-image').style.display = 'none';
+    // Reset any other game state variables you might have
+});
+
+function updateRange() {
+    const sliders = document.querySelectorAll('input[type="range"]');
+
+    sliders.forEach(slider => {
+        const min = slider.min;
+        const max = slider.max;
+        const val = slider.value;
+
+        slider.style.setProperty('--range-progress', (val - min) / (max - min) * 100 + '%');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', updateRange);
+document.addEventListener('input', updateRange);
+
+

@@ -76,10 +76,10 @@ body {
     z-index: 3;
 }
 
-/* Choice Buttons (Green) */
+/* Choice Buttons */
 #choices button {
-    background-color: #6cbf6c;
-    color: white;
+    background-color: #A8D5BA;
+    color: black;
     border: none;
     padding: 10px 20px;
     margin: 10px;
@@ -89,21 +89,22 @@ body {
 }
 
 #choices button:hover {
-    background-color: #5aa95a;
+    background-color: #C0E2CB;
 }
 
-/* Restart Button (Also Green) */
+/* Restart Button */
 #choices button:last-child {
-    background-color: #6cbf6c;
+    background-color: #A8D5BA;
 }
 
 #choices button:last-child:hover {
-    background-color: #5aa95a;
+    background-color: #C0E2CB;
 }
 
-/* Audio control button and Settings Button */
+/* Audio control button, Settings Button, and Reset Game Button */
 #audio-control-btn,
-#settings-btn {
+#settings-btn,
+#reset-game-btn {
     position: fixed;
     top: 10px;
     background: transparent;
@@ -115,6 +116,10 @@ body {
     padding: 0;
 }
 
+#reset-game-btn {
+    right: 94px;
+}
+
 #audio-control-btn {
     right: 52px;
 }
@@ -124,7 +129,8 @@ body {
 }
 
 #audio-control-btn img,
-#settings-btn img {
+#settings-btn img,
+#reset-game-btn img {
     width: 100%;
     height: 100%;
 }
@@ -155,7 +161,7 @@ body {
 /* Modal Close Button */
 .close-btn {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
     cursor: pointer;
     font-size: 20px;
@@ -164,7 +170,7 @@ body {
 }
 
 .close-btn:hover {
-    color: #f44336;
+    color: #DF7E7E;
 }
 
 /* Text Size & Settings Inputs */
@@ -184,13 +190,71 @@ select, input[type="color"], input[type="range"] {
 }
 
 input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
-}
+    height: 8px;
+    border-radius: 5px;
+    background: #fff; /* White background */
+    outline: none;
+    margin: 10px 0;
+    position: relative;
+  }
+  
+  /* Thumb styles */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #A8D5BA; /* Green thumb */
+    cursor: pointer;
+    margin-top: -6px; /* This centers the thumb vertically */
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Progress fill (WebKit) */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #A8D5BA var(--range-progress), #fff var(--range-progress));
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  /* Firefox styles */
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #A8D5BA; /* Green Thumb */
+    cursor: pointer;
+    border: none;
+    position: relative;
+    z-index: 2;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+  }
+  
+  input[type="range"]::-moz-range-progress {
+    background-color: #A8D5BA;
+    border-radius: 5px;
+    height: 8px;
+  }
+  
+
+
+
 
 /* Reset Button */
 #reset-btn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #A8D5BA;
+    color: black;
     border: none;
     padding: 12px 20px;
     border-radius: 10px;
@@ -201,7 +265,7 @@ input[type="range"] {
 }
 
 #reset-btn:hover {
-    background-color: #45a049;
+    background-color: #C0E2CB;
 }
 
 /* Modal Animation (fade-in effect) */
