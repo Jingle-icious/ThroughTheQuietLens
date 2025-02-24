@@ -13,9 +13,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('Title_Option.png') no-repeat center center fixed;
+    background: url('Background_Color_NOSHADE.png') no-repeat center center fixed;
     background-size: cover;
     position: relative;
+}
+
+#title-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Title_Official.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#start-button {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #6cbf6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #5aa95a;
 }
 
 /* Foreground Image (Sage's Sprite) */
@@ -24,9 +53,9 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 45%; /* Increased size of Sage */
-    z-index: 2; /* Above background, below text box */
-    display: none; /* Hidden at the start */
+    max-width: 45%;
+    z-index: 2;
+    display: none;
 }
 
 /* Game container (text box & choices) */
@@ -36,18 +65,18 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    background: rgba(50, 50, 50, 0.8); /* Dark semi-transparent box */
+    background: rgba(50, 50, 50, 0.8);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
-    z-index: 3; /* Ensures it stays above everything */
+    z-index: 3;
 }
 
 /* Choice Buttons (Green) */
 #choices button {
-    background-color: #6cbf6c; /* Original green */
+    background-color: #6cbf6c;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -58,32 +87,44 @@ body {
 }
 
 #choices button:hover {
-    background-color: #5aa95a; /* Slightly darker green on hover */
+    background-color: #5aa95a;
 }
 
 /* Restart Button (Also Green) */
 #choices button:last-child {
-    background-color: #6cbf6c; /* Same as choices */
+    background-color: #6cbf6c;
 }
 
 #choices button:last-child:hover {
     background-color: #5aa95a;
 }
 
-/* Settings Button (Top-Right Icon) */
+/* Audio control button and Settings Button */
+#audio-control-btn,
 #settings-btn {
-    position: absolute;
+    position: fixed;
     top: 10px;
-    right: 10px;
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 4;
-}
-
-#settings-btn img {
+    z-index: 1001;
     width: 32px;
     height: 32px;
+    padding: 0;
+}
+
+#audio-control-btn {
+    right: 52px;
+}
+
+#settings-btn {
+    right: 10px;
+}
+
+#audio-control-btn img,
+#settings-btn img {
+    width: 100%;
+    height: 100%;
 }
 
 /* Settings Modal */
@@ -97,8 +138,8 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    z-index: 5; /* Above everything */
-    width: 400px; /* Modal width */
+    z-index: 1002;
+    width: 400px;
     max-width: 80%;
     color: #ddd;
     font-family: 'Arial', sans-serif;
@@ -121,7 +162,7 @@ body {
 }
 
 .close-btn:hover {
-    color: #f44336; /* Red on hover */
+    color: #f44336;
 }
 
 /* Text Size & Settings Inputs */

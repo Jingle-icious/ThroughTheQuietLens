@@ -20,6 +20,50 @@ const story = {
     }
 };
 
+let isMuted = false;
+
+document.addEventListener('DOMContentLoaded', function() {
+    const titleScreen = document.getElementById('title-screen');
+    const startButton = document.getElementById('start-button');
+    const gameElements = document.querySelectorAll('body > *:not(#title-screen, #audio-control-btn, #settings-btn)');
+    const audioControlBtn = document.getElementById('audio-control-btn');
+    const settingsBtn = document.getElementById('settings-btn');
+    const bgMusic = document.getElementById('background-music');
+
+    // Play music immediately
+    playMusic();
+
+    startButton.addEventListener('click', function() {
+        titleScreen.style.display = 'none';
+        gameElements.forEach(el => el.style.display = '');
+        makeChoice('first_day_dilemma');
+    });
+
+    audioControlBtn.addEventListener('click', function() {
+        isMuted = !isMuted;
+        bgMusic.muted = isMuted;
+        audioControlBtn.querySelector('img').src = isMuted ? 'Audio_Off_Icon.svg' : 'Audio_On_Icon.svg';
+    });
+
+    settingsBtn.addEventListener('click', function() {
+        document.getElementById('settings-modal').style.display = 'flex';
+    });
+
+    function playMusic() {
+        bgMusic.volume = 0.5;
+        bgMusic.play().catch(error => {
+            console.error("Audio play error:", error);
+            // Attempt to play on user interaction if autoplay is blocked
+            document.addEventListener('click', () => bgMusic.play(), {once: true});
+        });
+    }
+
+    // Ensure the game starts with the first scene when not on title screen
+    if (titleScreen.style.display === 'none') {
+        makeChoice('first_day_dilemma');
+    }
+});
+
 function makeChoice(choice) {
     if (!story[choice]) {
         console.error(`Scene "${choice}" not found in story.`);
@@ -46,12 +90,6 @@ function makeChoice(choice) {
     // Ensure the foreground sprite appears when entering the first scene
     if (choice === "first_day_dilemma") {
         document.getElementById('foreground-image').style.display = 'block';
-    }
-
-    // Change background if the user chooses "Be Honest"
-    if (choice === "be_honest") {
-        document.body.style.background = "url('Background_Color_NOSHADE.png') no-repeat center center fixed";
-        document.body.style.backgroundSize = "cover";
     }
 }
 
@@ -88,35 +126,7 @@ document.getElementById('reset-btn').onclick = function () {
     document.getElementById('game-container').style.background = 'rgba(100, 100, 100, 0.7)';
 };
 
-// Ensure the game starts with the first scene
-document.addEventListener('DOMContentLoaded', function () {
-    makeChoice('first_day_dilemma');
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    makeChoice('first_day_dilemma'); // Ensure game starts at the correct scene
-
-    // Play background music
-    const bgMusic = document.getElementById('background-music');
-    
-    // Ensure audio plays (Some browsers block autoplay, so we need a user interaction)
-    function playMusic() {
-        if (bgMusic.paused) {
-            bgMusic.volume = 0.5; // Adjust volume if needed (0.0 to 1.0)
-            bgMusic.play().catch(error => console.error("Audio play error:", error));
-        }
-    }
-
-    // Play on user interaction (fixes autoplay issues on some browsers)
-    document.body.addEventListener('click', playMusic, { once: true });
-
-    // Also try playing music on load (in case autoplay is allowed)
-    playMusic();
-});
-
 // Handle background music volume change
 document.getElementById('bg-music-volume').oninput = function () {
-    bgMusic.volume = this.value;
+    document.getElementById('background-music').volume = this.value;
 };
-

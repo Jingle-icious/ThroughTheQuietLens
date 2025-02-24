@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="general.css">
 </head>
 <body>
+    <div id="title-screen">
+        <button id="start-button">Start</button>
+    </div>
 
     <!-- Foreground character sprite -->
     <img id="foreground-image" src="Sage_OFFICIAL.png" alt="Sage Character">
@@ -19,6 +22,11 @@
             <button onclick="makeChoice(2)">Choice 2</button>
         </div>
     </div>
+
+    <!-- Audio control button -->
+    <button id="audio-control-btn">
+        <img src="Audio_On_Icon.svg" alt="Audio Control">
+    </button>
 
     <!-- Settings Button (Icon) -->
     <button id="settings-btn">
@@ -54,7 +62,6 @@
         <source src="Quiet_Lens_Soundtrack_Option.wav" type="audio/wav">
         Your browser does not support the audio element.
     </audio>
-    
 
     <script src="general.js"></script>
 </body>
