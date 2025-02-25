@@ -13,7 +13,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('Background_Color_NOSHADE.png') no-repeat center center fixed;
     background-size: cover;
     position: relative;
     transition: opacity 1s ease-in-out;
@@ -25,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('Title_Official.png') no-repeat center center fixed;
+    background: url('Background_Images/Title_Official.png') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -56,7 +55,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     max-width: 45%;
-    z-index: 2;
+    z-index: 1; /* This puts Sage behind the game container */
     display: none;
 }
 
@@ -73,7 +72,7 @@ body {
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
-    z-index: 3;
+    z-index: 2; /* This ensures the game container is above Sage */
 }
 
 /* Choice Buttons */
@@ -132,7 +131,6 @@ body {
     height: 100%;
 }
 
-
 /* Settings Button */
 #settings-btn {
     position: fixed;
@@ -164,7 +162,6 @@ body {
     height: 32px; 
 }
 
-
 #audio-control-btn img {
     width: 100%;
     height: 100%;
@@ -177,7 +174,7 @@ body {
 }
 
 /* Settings Modal */
-.modal {
+#settings-modal {
     display: none;
     position: fixed;
     top: 50%;
@@ -192,11 +189,6 @@ body {
     max-width: 80%;
     color: #ddd;
     font-family: 'Arial', sans-serif;
-}
-
-.modal.show {
-    display: flex;
-    animation: fadeIn 0.3s ease-out;
 }
 
 /* Modal Close Button */
@@ -240,10 +232,10 @@ input[type="range"] {
     outline: none;
     margin: 10px 0;
     position: relative;
-  }
-  
-  /* Thumb styles */
-  input[type="range"]::-webkit-slider-thumb {
+}
+
+/* Thumb styles */
+input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
@@ -253,17 +245,17 @@ input[type="range"] {
     margin-top: -6px; /* This centers the thumb vertically */
     position: relative;
     z-index: 2;
-  }
-  
-  /* Progress fill (WebKit) */
-  input[type="range"]::-webkit-slider-runnable-track {
+}
+
+/* Progress fill (WebKit) */
+input[type="range"]::-webkit-slider-runnable-track {
     background: linear-gradient(to right, #A8D5BA var(--range-progress), #fff var(--range-progress));
     height: 8px;
     border-radius: 5px;
-  }
-  
-  /* Firefox styles */
-  input[type="range"]::-moz-range-thumb {
+}
+
+/* Firefox styles */
+input[type="range"]::-moz-range-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -272,23 +264,21 @@ input[type="range"] {
     border: none;
     position: relative;
     z-index: 2;
-  }
-  
-  input[type="range"]::-moz-range-track {
+}
+
+input[type="range"]::-moz-range-track {
     width: 100%;
     height: 8px;
     border-radius: 5px;
     background: #fff;
     border: none;
-  }
-  
-  input[type="range"]::-moz-range-progress {
+}
+
+input[type="range"]::-moz-range-progress {
     background-color: #A8D5BA;
     border-radius: 5px;
     height: 8px;
-  }
-  
-
+}
 
 /* Reset Button */
 #reset-btn {
