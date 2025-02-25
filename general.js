@@ -51,14 +51,13 @@ const story = {
         text: "Sage opened her laptop, a pile of reading material and assignments stacked beside her. The moment she began, though, she couldn’t focus. Her mind kept drifting. It was as if the words on the screen weren’t meant for her. They were for someone who could understand them, someone who could do something with them. But Sage just… couldn’t.",
         choices: [],
         background: "Dorm_WIP.png",
-        sprite:"SageVar1_frown.png",
-
+        sprite:"SageVar1_frown.png"
     },
     take_break: {
         text: "Sage stood up from her desk, deciding to take a moment to breathe. She stared out the window, watching as the campus slowly settled into evening. The sky was painted in soft purples and oranges, but it didn’t bring her peace. She just couldn’t shake the nagging feeling that everything was falling apart.",
         choices: [],
         background: "Dorm_WIP.png",
-        sprite: "SageVar2WIP3.png",
+        sprite: "SageVar2WIP3.png"
     }
 };
 
@@ -71,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const audioControlBtn = document.getElementById('audio-control-btn');
     const settingsBtn = document.getElementById('settings-btn');
     const bgMusic = document.getElementById('background-music');
+    const resetGameBtn = document.getElementById('reset-game-btn');
 
     // Play music immediately
     playMusic();
@@ -92,6 +92,19 @@ document.addEventListener('DOMContentLoaded', function() {
     settingsBtn.addEventListener('click', function() {
         document.getElementById('settings-modal').style.display = 'flex';
     });
+
+    if (resetGameBtn) {
+        resetGameBtn.addEventListener('click', function() {
+            document.getElementById('game-container').style.display = 'none';
+            document.getElementById('title-screen').style.display = 'flex';
+            document.body.style.backgroundImage = "url('Title_Official.png')";
+            const foregroundImage = document.getElementById('foreground-image');
+            if (foregroundImage) foregroundImage.style.display = 'none';
+            makeChoice('intro_1');
+        });
+    } else {
+        console.error('Reset game button not found');
+    }
 
     function playMusic() {
         bgMusic.volume = 0.5;

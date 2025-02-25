@@ -101,38 +101,79 @@ body {
     background-color: #C0E2CB;
 }
 
-/* Audio control button, Settings Button, and Reset Game Button */
-#audio-control-btn,
-#settings-btn,
-#reset-game-btn {
+#reset-game-btn, #audio-control-btn {
     position: fixed;
     top: 10px;
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 1002;
     width: 32px;
     height: 32px;
     padding: 0;
+    display: block;
 }
 
+/* Reset Button */
 #reset-game-btn {
-    right: 94px;
+    position: fixed;
+    top: 10px; 
+    left: 10px; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1002; 
+    width: 32px; 
+    height: 32px; 
 }
 
-#audio-control-btn {
-    right: 52px;
-}
-
-#settings-btn {
-    right: 10px;
-}
-
-#audio-control-btn img,
-#settings-btn img,
 #reset-game-btn img {
     width: 100%;
     height: 100%;
+}
+
+
+/* Settings Button */
+#settings-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px; /* Far-right corner */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    width: 32px; 
+    height: 40px; 
+}
+
+#settings-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Audio Button */
+#audio-control-btn {
+    position: fixed;
+    top: 10px;
+    right: 52px; /* To the left of settings button */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    width: 32px; 
+    height: 32px; 
+}
+
+
+#audio-control-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+#reset-game-btn img, #audio-control-btn img, #settings-btn img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 /* Settings Modal */
