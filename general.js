@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setupGame() {
         console.log("Setting up the game");
-        bgMusic.src = "Audio/Background_Music.mp3";
+        bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav";
         
         startButton.addEventListener('click', function() {
             console.log("Start button clicked");
