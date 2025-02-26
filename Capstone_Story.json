@@ -31,6 +31,7 @@
             "next": "greet_student"
           }
         ],
+        "background": "Background_Images/Lobby_WIP.png",
         "sprite": "Sage_Images/SageVar1_frown.png"
       },
       "stay_silent": {
