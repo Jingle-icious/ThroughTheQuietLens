@@ -174,6 +174,20 @@ function updateSceneContent(scene) {
     } else {
         foregroundImage.style.display = 'none';
     }
+
+     // Handle NPCs
+     const npc1 = document.getElementById('npc1');
+     const npc2 = document.getElementById('npc2');
+ 
+     if (scene.npc1 && scene.npc2) {
+         npc1.src = scene.npc1;
+         npc2.src = scene.npc2;
+         npc1.style.display = 'block';
+         npc2.style.display = 'block';
+     } else {
+         npc1.style.display = 'none';
+         npc2.style.display = 'none';
+     }
 }
 
 // Settings Adjustments

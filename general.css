@@ -75,6 +75,26 @@ body {
     z-index: 2; /* This ensures the game container is above Sage */
 }
 
+#npc-container {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    flex-direction: row-reverse; /* Reverse the order */
+}
+
+#npc1 {
+    max-height: 900px; /* Adjust size as needed */
+    margin-left: 50px;
+}
+
+#npc2 {
+    max-height: 900px;
+    margin-right: -200px;
+}
+
 /* Choice Buttons */
 #choices button {
     background-color: #A8D5BA;
