@@ -97,7 +97,12 @@
       },
       "start_homework": {
         "text": "Sage opened her laptop, a pile of reading material and assignments stacked beside her. The moment she began, though, she couldn’t focus. Her mind kept drifting. It was as if the words on the screen weren’t meant for her. They were for someone who could understand them, someone who could do something with them. But Sage just… couldn’t.",
-        "choices": [],
+        "choices": [
+          {
+            "text": "Continue",
+            "next": "hw_stress"
+          }
+        ],
         "background": "Background_Images/Dorm_WIP.png",
         "sprite": "Sage_Images/SageVar1_frown.png"
       },
@@ -106,6 +111,17 @@
         "choices": [],
         "background": "Background_Images/Dorm_WIP.png",
         "sprite": "Sage_Images/SageVar2WIP3.png"
+      },
+      "hw_stress": {
+        "text": "And that was bad, right? The more she tried to focus, the further her mind went, the less sense the words made, the more anxiety filled her thoughts.",
+        "choices": [
+          {
+          "text": "Continue",
+          "next": ""
+          }         
+        ],
+        "background": "Background_Images/Dorm_WIP.png",
+        "sprite": "Sage_Images/SageVar3_closedmouth.png"
       }
     }
   }
