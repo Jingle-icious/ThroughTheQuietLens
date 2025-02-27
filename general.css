@@ -78,21 +78,45 @@ body {
 #npc-container {
     position: absolute;
     bottom: 0;
-    right: 5%;
+    right: 5vw;
     display: flex;
     align-items: flex-end;
     z-index: 1;
-    flex-direction: row-reverse; /* Reverse the order */
+    flex-direction: row-reverse;
 }
 
-#npc1 {
-    max-height: 900px; /* Adjust size as needed */
-    margin-left: 50px;
+#npc1, #npc2 {
+    max-height: 60vh; /* Increased max-height again */
 }
 
 #npc2 {
-    max-height: 900px;
-    margin-right: -200px;
+    margin-right: -2vw;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #npc1, #npc2 {
+        max-height: 50vh;
+    }
+
+    #npc2 {
+        margin-right: -3vw;
+    }
+
+    #npc-container {
+      right: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #npc1, #npc2 {
+        max-height: 40vh;
+    }
+
+    #npc2 {
+        margin-right: -4vw;
+    }
 }
 
 /* Choice Buttons */
