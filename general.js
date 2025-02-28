@@ -152,11 +152,11 @@ function makeChoice(choice) {
 
 function updateSceneContent(scene) {
     // Update the story text
-    document.getElementById('story-text').innerHTML = scene.text; // Changed to innerHTML
+    document.getElementById('story-text').innerHTML = scene.text;
 
     // Update choices
     const choicesContainer = document.getElementById('choices');
-    choicesContainer.innerHTML = ''; // Clear previous choices
+    choicesContainer.innerHTML = '';
 
     scene.choices.forEach(option => {
         const button = document.createElement('button');
@@ -188,7 +188,43 @@ function updateSceneContent(scene) {
         npc1.style.display = 'none';
         npc2.style.display = 'none';
     }
+
+// Handle character name box
+const nameBox = document.getElementById('character-name-box');
+const text = scene.text;
+
+if (text.startsWith("\"")) { // Check for dialogue first
+    if (text.includes("\"Hey, still playing catch-up from last semester?\"")) {
+        nameBox.innerText = "Blake";
+        nameBox.style.display = "block";
+    } else {
+        nameBox.innerText = "Sage";
+        nameBox.style.display = "block";
+    }
+} else if (text.startsWith("<em>Sage (internal):")) { // Check for Sage's internal thoughts
+    nameBox.innerText = "Sage";
+    nameBox.style.display = "block";
+} else {
+    nameBox.style.display = "none";
 }
+
+// Calculate and set the position of the character name box
+positionNameBox();
+}
+
+function positionNameBox() {
+const nameBox = document.getElementById('character-name-box');
+const gameContainer = document.getElementById('game-container');
+
+const gameContainerRect = gameContainer.getBoundingClientRect();
+const nameBoxHeight = nameBox.offsetHeight;
+
+nameBox.style.top = (gameContainerRect.top - nameBoxHeight - 10) + 'px';
+nameBox.style.left = gameContainerRect.left + 'px'; // Directly set left property
+}
+
+// Call positionNameBox on window resize
+window.addEventListener('resize', positionNameBox);
 
 // Settings Adjustments
 document.getElementById('text-size').onchange = function () {
