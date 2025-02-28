@@ -1,128 +1,214 @@
 {
-    "story": {
-      "intro_1": {
-        "text": "Sage had made it through her first semester. Barely. Now, she was back—spring semester, her second ever—ready to face another round of assignments, tests, and deadlines. But instead of feeling more confident, more at ease, it all felt heavier. The campus around her seemed just as busy as before, but it felt foreign. The people bustling around her, chatting with friends and laughing, felt miles away. She didn't belong here—not in the way they did.",
-        "choices": [
-          {
-            "text": "Continue",
-            "next": "intro_2"
-          }
-        ],
-        "background": "Background_Images/Campus_WIP.png"
-      },
-      "intro_2": {
-        "text": "She had thought that after surviving her first semester, things would get easier. But the stress, the pressure, it hadn't let up. If anything, it had only intensified. The constant worry that she wasn't doing enough, that she wasn't meeting expectations—it gnawed at her every waking moment. Sage was already falling behind. Everyone else seemed so sure of themselves, so capable, and there she was, struggling to keep up. And it wasn't just the schoolwork. It was the feeling that no one truly understood. That no one knew how much she was holding inside.",
-        "choices": [
-          {
-            "text": "Continue",
-            "next": "next_scene"
-          }
-        ]
-      },
-      "next_scene": {
-        "text": "The lobby is filled with students rushing in and out, some chatting in groups, others heading up the stairs to their rooms. There's a bulletin board with colorful flyers, announcements about clubs and events, and a desk with a student worker. Sage approaches the elevator, her gaze a little lower as she walks past the people around her.",
-        "choices": [
-          {
-            "text": "Stay Silent",
-            "next": "stay_silent"
-          },
-          {
-            "text": "Greet the Student",
-            "next": "greet_student"
-          }
-        ],
-        "background": "Background_Images/Lobby_WIP.png",
-        "sprite": "Sage_Images/SageVar1_frown.png",
-        "npc1": "NPC_Images/NPC1.png",
-        "npc2": "NPC_Images/NPC2.png"
-      },
-      "stay_silent": {
-        "text": "The sounds around her blur into background noise as Sage steps into the elevator. She presses the button for her floor, her reflection in the glass doors staring back at her. The weight of everything—the stress, the self-doubt—seems heavier now. She takes a deep breath, trying to calm her racing thoughts.",
-        "choices": [
-          {
-            "text": "Continue",
-            "next": "dorm_scene"
-          }
-        ],
-        "sprite": "Sage_Images/SageVar1_frown.png"
-      },
-      "greet_student": {
-        "text": "Sage offers a weak smile to a passing student, their brief exchange barely enough to make her feel less isolated. The student gives a distracted wave in return, and Sage's gaze quickly shifts back to the floor. The moment passes, and Sage steps into the elevator alone.",
-        "choices": [
-          {
-            "text": "Continue",
-            "next": "dorm_scene"
-          }
-        ],
-        "sprite": "Sage_Images/Sage_OFFICIAL.png",
-        "npc1": "NPC_Images/NPC1.png",
-        "npc2": "NPC_Images/NPC2.png"
-      },
-      "dorm_scene": {
-        "text": "The elevator dings as it reaches the floor, and Sage steps out into the hall. Her room is a few doors down, and she makes her way to it, unlocking the door. It creaks open, and she steps inside. The room is small, but familiar—her bed is unmade, textbooks are scattered on her desk, and a few empty coffee cups line the windowsill. The soft glow of the afternoon sun filters through the window, casting long shadows across the room.",
-        "choices": [
-          {
-            "text": "Continue",
-            "next": "dorm_scene_2"
-          }
-        ],
-        "background": "Background_Images/Dorm_WIP.png",
-        "sprite": "Sage_Images/Sage_OFFICIAL.png"
-      },
-      "dorm_scene_2": {
-        "text": "She dropped her bag on the desk and collapsed onto her bed. Another semester, another round of assignments, deadlines, and the constant feeling that she was running out of time. Maybe that's what bothered her the most—this sense of being behind. Always behind. On everything. At first, she thought it was just first-semester jitters, but now it felt like a permanent part of her.",
-        "choices": [
-          {
-            "text": "Continue",
-            "next": "dorm_scene_3"
-          }
-        ],
-        "background": "Background_Images/Dorm_WIP.png",
-        "sprite": "Sage_Images/SageVar1_frown.png"
-      },
-      "dorm_scene_3": {
-        "text": "She pulled her phone from her pocket and checked the time. 4:30 PM. She still had hours before anything was due, but that didn't stop the anxiety from creeping in.",
-        "choices": [
-          {
-            "text": "Start Homework",
-            "next": "start_homework"
-          },
-          {
-            "text": "Take a Break",
-            "next": "take_break"
-          }
-        ],
-        "background": "Background_Images/Dorm_WIP.png",
-        "sprite": "Sage_Images/SageVar1_frown.png"
-      },
-      "start_homework": {
-        "text": "Sage opened her laptop, a pile of reading material and assignments stacked beside her. The moment she began, though, she couldn’t focus. Her mind kept drifting. It was as if the words on the screen weren’t meant for her. They were for someone who could understand them, someone who could do something with them. But Sage just… couldn’t.",
-        "choices": [
-          {
-            "text": "Continue",
-            "next": "hw_stress"
-          }
-        ],
-        "background": "Background_Images/Dorm_WIP.png",
-        "sprite": "Sage_Images/SageVar1_frown.png"
-      },
-      "take_break": {
-        "text": "Sage stood up from her desk, deciding to take a moment to breathe. She stared out the window, watching as the campus slowly settled into evening. The sky was painted in soft purples and oranges, but it didn’t bring her peace. She just couldn’t shake the nagging feeling that everything was falling apart.",
-        "choices": [],
-        "background": "Background_Images/Dorm_WIP.png",
-        "sprite": "Sage_Images/SageVar2WIP3.png"
-      },
-      "hw_stress": {
-        "text": "And that was bad, right? The more she tried to focus, the further her mind went, the less sense the words made, the more anxiety filled her thoughts.",
-        "choices": [
-          {
+  "story": {
+    "campus_walk_1": {
+      "text": "Sage walks through campus, clutching her backpack strap tightly.",
+      "choices": [
+        {
           "text": "Continue",
-          "next": ""
-          }         
-        ],
-        "background": "Background_Images/Dorm_WIP.png",
-        "sprite": "Sage_Images/SageVar3_closedmouth.png"
-      }
+          "next": "campus_walk_2"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "campus_walk_2": {
+      "text": "The crisp spring air bites at her skin, but her mind is warmer—buzzing with a mix of nerves and exhaustion.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "campus_walk_3"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "campus_walk_3": {
+      "text": "Sage (internal): Second semester. I made it through one. I can make it through another… right?",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "campus_walk_4"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "campus_walk_4": {
+      "text": "A phone notification buzzes in her pocket. She glances at the screen—an email from her professor about a 'Creative Prompt Assignment.'",
+      "choices": [
+        {
+          "text": "Guess there's no easing back into things.",
+          "next": "assignment_sigh"
+        },
+        {
+          "text": "Might as well get started.",
+          "next": "assignment_start"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "assignment_sigh": {
+      "text": "Sage sighs, a sense of inevitability washing over her.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "assignment_sigh_2"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "assignment_sigh_2": {
+      "text": "She knew it wouldn't be easy, but she had hoped for a gentler start to the semester.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "antagonist_encounter_1"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "assignment_start": {
+      "text": "Sage decides to tackle the assignment sooner rather than later, hoping to get ahead of the workload.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "assignment_start_2"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+    },
+    "assignment_start_2": {
+      "text": "She knows procrastination will only make things worse.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "antagonist_encounter_1"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+    },
+    "antagonist_encounter_1": {
+      "text": "As Sage approaches the dorms, a familiar voice stops her cold.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "antagonist_encounter_2"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "antagonist_encounter_2": {
+      "text": "It's [Antagonist], a classmate who always seems to have something snide to say.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "antagonist_encounter_3"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "antagonist_encounter_3": {
+      "text": "Antagonist: Hey, still playing catch-up from last semester?",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "antagonist_encounter_4"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "antagonist_encounter_4": {
+      "text": "Sage (internal): Not today…",
+      "choices": [
+        {
+          "text": "Stay Quiet",
+          "next": "antagonist_quiet"
+        },
+        {
+          "text": "Stand Up for Yourself",
+          "next": "antagonist_standup"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "antagonist_quiet": {
+      "text": "Sage avoids eye contact and walks past the antagonist, her silence amplifying the self-doubt already swirling in her mind.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "dorm_arrival_1"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "antagonist_standup": {
+      "text": "Sage stops and faces the antagonist, meeting their gaze with a newfound resolve.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "antagonist_standup_2"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+    },
+    "antagonist_standup_2": {
+      "text": "She replies with a firm, dismissive tone, establishing her boundaries.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "dorm_arrival_1"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+    },
+    "dorm_arrival_1": {
+      "text": "Inside her dorm room, Sage unpacks while her phone buzzes again—a social invitation from a study group.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "dorm_arrival_2"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+    },
+    "dorm_arrival_2": {
+      "text": "Sage (internal): I should focus on my assignments... but maybe I need a break?",
+      "choices": [
+        {
+          "text": "Decline",
+          "next": "study_decline"
+        },
+        {
+          "text": "Accept",
+          "next": "study_accept"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+    },
+    "study_decline": {
+      "text": "Sage declines the invitation, choosing to focus on her assignments.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "study_decline_2"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
     }
   }
-  
+}

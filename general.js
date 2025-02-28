@@ -1,4 +1,4 @@
-let story; // Declare story variable
+let story;
 let isMuted = false;
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             crossFade('Background_Images/Campus_WIP.png', () => {
                 titleScreen.style.display = 'none';
                 gameContainer.style.display = 'block';
-                makeChoice('intro_1');
+                makeChoice('campus_walk_1'); // Start with the first scene
             });
         });
 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 foregroundImage.style.display = 'none';
                 titleScreen.style.display = 'flex';
                 document.body.style.backgroundImage = "url('Background_Images/Title_Official.png')";
-                makeChoice('intro_1');
+                makeChoice('campus_walk_1'); // Reset to the first scene
             });
         } else {
             console.error('Reset game button not found');
@@ -92,9 +92,9 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error("Audio play error:", error);
             console.log("Attempting to play audio on user interaction");
             document.addEventListener('click', () => {
-              bgMusic.play().catch(retryError => {
-                console.error("Second audio play attempt failed:", retryError);
-              });
+                bgMusic.play().catch(retryError => {
+                    console.error("Second audio play attempt failed:", retryError);
+                });
             }, { once: true });
         });
     }
@@ -175,19 +175,19 @@ function updateSceneContent(scene) {
         foregroundImage.style.display = 'none';
     }
 
-     // Handle NPCs
-     const npc1 = document.getElementById('npc1');
-     const npc2 = document.getElementById('npc2');
- 
-     if (scene.npc1 && scene.npc2) {
-         npc1.src = scene.npc1;
-         npc2.src = scene.npc2;
-         npc1.style.display = 'block';
-         npc2.style.display = 'block';
-     } else {
-         npc1.style.display = 'none';
-         npc2.style.display = 'none';
-     }
+    // Handle NPCs
+    const npc1 = document.getElementById('npc1');
+    const npc2 = document.getElementById('npc2');
+
+    if (scene.npc1 && scene.npc2) {
+        npc1.src = scene.npc1;
+        npc2.src = scene.npc2;
+        npc1.style.display = 'block';
+        npc2.style.display = 'block';
+    } else {
+        npc1.style.display = 'none';
+        npc2.style.display = 'none';
+    }
 }
 
 // Settings Adjustments
@@ -211,7 +211,7 @@ document.getElementById('reset-btn').onclick = function () {
 
     document.getElementById('story-text').style.fontSize = 'medium';
     document.getElementById('story-text').style.color = '#ffffff';
-    document.getElementById('game-container').style.background = 'rgba(100, 100, 50, 0.7)';
+    document.getElementById('game-container').style.background = 'rgba(100, 100, 100, 0.7)'; // corrected to 100.
 };
 
 // Handle background music volume change
