@@ -152,7 +152,7 @@ function makeChoice(choice) {
 
 function updateSceneContent(scene) {
     // Update the story text
-    document.getElementById('story-text').innerText = scene.text;
+    document.getElementById('story-text').innerHTML = scene.text; // Changed to innerHTML
 
     // Update choices
     const choicesContainer = document.getElementById('choices');
