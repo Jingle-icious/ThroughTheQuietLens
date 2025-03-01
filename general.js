@@ -197,6 +197,7 @@ function updateSceneContent(scene) {
     console.log("Name box:", nameBox);
 
     if (text.startsWith("\"")) {
+    // Blake's dialogue 
         if (text.includes("Well, well, look who it is") ||
             text.includes("Hey, still playing catch-up from last semester? Or did you manage to scrape by?") ||
             text.includes("Just wondering if you finally figured out how to study. You know, since you were… struggling last semester.") ||
@@ -206,14 +207,17 @@ function updateSceneContent(scene) {
             text.includes("Didn’t think I’d see you back. Guess you didn’t flunk out after all.") ||
             text.includes("I’m still here. And I’m doing just fine. Maybe don’t assume you know everything, Blake.")) {
             nameBox.innerText = "Blake";
+    // Mom's dialogue 
         } else if (text.includes("Hey, sweetheart. How’s the first day back? Are you settled in?") ||
         text.includes("Busy is good. Just stay focused. We know you can do this. You’ve always been so bright.") ||
         text.includes("Well, that’s normal. You’re doing fine, Sage. You always put too much pressure on yourself. Don’t overthink it. Just keep your head down and work hard.") ||
         text.includes("You’ll be fine. Just remember why you’re there. To get a good education, to build a future. We’re all rooting for you.")) {
         nameBox.innerText = "Mom";
+    // Harmony's dialogue 
     } else if (text.includes("Sage! I'm glad you're still here! I was worried after last semester.") ||
         text.includes("Ah, well, I was just saying hi! So, I guess I’ll be going now. See you around, Sage.")) {
         nameBox.innerText = "Harmony";
+    // Professor Sharma's dialogue 
     } else if (text.includes("You don’t have to be perfect, Sage. Just be honest with your work. Let your true voice come through.") ||
         text.includes("Who is everyone, Sage? And what do you expect from yourself?") ||
         text.includes("That’s all anyone can ask. You’ve got this. And remember, vulnerability is strength.") ||
