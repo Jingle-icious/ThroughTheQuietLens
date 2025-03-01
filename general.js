@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function setupGame() {
         console.log("Setting up the game");
         bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav";
-        
+
         startButton.addEventListener('click', function() {
             console.log("Start button clicked");
             settingsModal.style.display = 'none';
@@ -193,37 +193,50 @@ function updateSceneContent(scene) {
     const nameBox = document.getElementById('character-name-box');
     const text = scene.text;
 
-    console.log("Scene text:", text); // Log the scene text
-    console.log("Name box:", nameBox); // Log the name box element
+    console.log("Scene text:", text);
+    console.log("Name box:", nameBox);
 
-    if (text.startsWith("\"")) { // Check for dialogue first
-        // Identify the speaker based on the dialogue content
-        if (text.includes("Hey, still playing catch-up from last semester?")) {
+    if (text.startsWith("\"")) {
+        if (text.includes("Well, well, look who it is") ||
+            text.includes("Hey, still playing catch-up from last semester? Or did you manage to scrape by?") ||
+            text.includes("Just wondering if you finally figured out how to study. You know, since you were… struggling last semester.") ||
+            text.includes("Cat got your tongue? Figures.") ||
+            text.includes("Oh, I will. But don’t come crying to me when you’re failing again.") ||
+            text.includes("Cute. Good luck keeping up. You’ll need it.") ||
+            text.includes("Didn’t think I’d see you back. Guess you didn’t flunk out after all.") ||
+            text.includes("I’m still here. And I’m doing just fine. Maybe don’t assume you know everything, Blake.")) {
             nameBox.innerText = "Blake";
-        } else if (text.includes("Hey, sweetheart. How’s the first day back? Are you settled in?")) {
-            nameBox.innerText = "Mom";
-        } else if (text.includes("Didn’t think I’d see you back. Guess you didn’t flunk out after all.")) {
-            nameBox.innerText = "Blake";
-        } else if (text.includes("You don’t have to be perfect, Sage. Just be honest with your work. Let your true voice come through.")) {
-            nameBox.innerText = "Professor Sharma";
-        } else {
-            // If no specific dialogue is found, assume it's Sage
-            nameBox.innerText = "Sage";
-        }
-        nameBox.style.display = "block"; // Show the name box for dialogue
-        console.log("Name box display: block, name:", nameBox.innerText); // Log when display is set to block
-    } else if (text.startsWith("<em>")) { // Check for internal thoughts
-        nameBox.innerText = "Sage"; // Internal thoughts are always Sage's
-        nameBox.style.display = "block"; // Show the name box for internal thoughts
-        console.log("Name box display: block, name:", nameBox.innerText); // Log when display is set to block
+        } else if (text.includes("Hey, sweetheart. How’s the first day back? Are you settled in?") ||
+        text.includes("Busy is good. Just stay focused. We know you can do this. You’ve always been so bright.") ||
+        text.includes("Well, that’s normal. You’re doing fine, Sage. You always put too much pressure on yourself. Don’t overthink it. Just keep your head down and work hard.") ||
+        text.includes("You’ll be fine. Just remember why you’re there. To get a good education, to build a future. We’re all rooting for you.")) {
+        nameBox.innerText = "Mom";
+    } else if (text.includes("Sage! I'm glad you're still here! I was worried after last semester.") ||
+        text.includes("Ah, well, I was just saying hi! So, I guess I’ll be going now. See you around, Sage.")) {
+        nameBox.innerText = "Harmony";
+    } else if (text.includes("You don’t have to be perfect, Sage. Just be honest with your work. Let your true voice come through.") ||
+        text.includes("Who is everyone, Sage? And what do you expect from yourself?") ||
+        text.includes("That’s all anyone can ask. You’ve got this. And remember, vulnerability is strength.") ||
+        text.includes("If you need anything, my door is always open. Don’t hesitate.")) {
+        nameBox.innerText = "Professor Sharma";
     } else {
-        nameBox.style.display = "none"; // Hide the name box for narration
-        console.log("Name box display: none"); // Log when display is set to none
+        // If no specific dialogue is found, assume it's Sage
+        nameBox.innerText = "Sage";
     }
-
-    // Calculate and set the position of the character name box
-    positionNameBox();
+    nameBox.style.display = "block";
+} else if (text.startsWith("<em>")) {
+    nameBox.innerText = "Sage";
+    nameBox.style.display = "block";
+    console.log("Name box display: block, name:", nameBox.innerText);
+} else {
+    nameBox.style.display = "none";
+    console.log("Name box display: none");
 }
+
+// Calculate and set the position of the character name box
+positionNameBox();
+}
+    
 
 function positionNameBox() {
     const nameBox = document.getElementById('character-name-box');
