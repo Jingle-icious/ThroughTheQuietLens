@@ -189,38 +189,55 @@ function updateSceneContent(scene) {
         npc2.style.display = 'none';
     }
 
-// Handle character name box
-const nameBox = document.getElementById('character-name-box');
-const text = scene.text;
+    // Handle character name box
+    const nameBox = document.getElementById('character-name-box');
+    const text = scene.text;
 
-if (text.startsWith("\"")) { // Check for dialogue first
-    if (text.includes("\"Hey, still playing catch-up from last semester?\"")) {
-        nameBox.innerText = "Blake";
-        nameBox.style.display = "block";
+    console.log("Scene text:", text); // Log the scene text
+    console.log("Name box:", nameBox); // Log the name box element
+
+    if (text.startsWith("\"")) { // Check for dialogue first
+        // Identify the speaker based on the dialogue content
+        if (text.includes("Hey, still playing catch-up from last semester?")) {
+            nameBox.innerText = "Blake";
+        } else if (text.includes("Hey, sweetheart. How’s the first day back? Are you settled in?")) {
+            nameBox.innerText = "Mom";
+        } else if (text.includes("Didn’t think I’d see you back. Guess you didn’t flunk out after all.")) {
+            nameBox.innerText = "Blake";
+        } else if (text.includes("You don’t have to be perfect, Sage. Just be honest with your work. Let your true voice come through.")) {
+            nameBox.innerText = "Professor Sharma";
+        } else {
+            // If no specific dialogue is found, assume it's Sage
+            nameBox.innerText = "Sage";
+        }
+        nameBox.style.display = "block"; // Show the name box for dialogue
+        console.log("Name box display: block, name:", nameBox.innerText); // Log when display is set to block
+    } else if (text.startsWith("<em>")) { // Check for internal thoughts
+        nameBox.innerText = "Sage"; // Internal thoughts are always Sage's
+        nameBox.style.display = "block"; // Show the name box for internal thoughts
+        console.log("Name box display: block, name:", nameBox.innerText); // Log when display is set to block
     } else {
-        nameBox.innerText = "Sage";
-        nameBox.style.display = "block";
+        nameBox.style.display = "none"; // Hide the name box for narration
+        console.log("Name box display: none"); // Log when display is set to none
     }
-} else if (text.startsWith("<em>Sage (internal):")) { // Check for Sage's internal thoughts
-    nameBox.innerText = "Sage";
-    nameBox.style.display = "block";
-} else {
-    nameBox.style.display = "none";
-}
 
-// Calculate and set the position of the character name box
-positionNameBox();
+    // Calculate and set the position of the character name box
+    positionNameBox();
 }
 
 function positionNameBox() {
-const nameBox = document.getElementById('character-name-box');
-const gameContainer = document.getElementById('game-container');
+    const nameBox = document.getElementById('character-name-box');
+    const gameContainer = document.getElementById('game-container');
 
-const gameContainerRect = gameContainer.getBoundingClientRect();
-const nameBoxHeight = nameBox.offsetHeight;
+    // Get the bounding rectangles of both elements
+    const gameContainerRect = gameContainer.getBoundingClientRect();
+    const nameBoxRect = nameBox.getBoundingClientRect();
 
-nameBox.style.top = (gameContainerRect.top - nameBoxHeight - 10) + 'px';
-nameBox.style.left = gameContainerRect.left + 'px'; // Directly set left property
+    // Calculate the top position
+    const topPosition = gameContainerRect.top - nameBoxRect.height - 10; // 10px spacing
+
+    // Set the position using transform: translate()
+    nameBox.style.transform = `translate(${gameContainerRect.left}px, ${topPosition}px)`;
 }
 
 // Call positionNameBox on window resize

@@ -61,7 +61,8 @@ body {
 
 #character-name-box {
     position: absolute;
-    left: 5vw;
+    left: 0; /* Initial position - will be adjusted by JavaScript */
+    top: 0; /* Initial position - will be adjusted by JavaScript */
     background: rgba(50, 50, 50, 0.9);
     color: white;
     padding: 10px 20px;
@@ -97,7 +98,7 @@ body {
     flex-direction: row-reverse;
 }
 
-#npc1, #npc2 {
+#npc1, #npc2, #npc3 {
     max-height: 60vh; /* Increased max-height again */
 }
 
@@ -105,6 +106,9 @@ body {
     margin-right: -2vw;
 }
 
+#npc3 {
+    left: 50%; /* Adjust position as needed */
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
