@@ -55,7 +55,7 @@
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npc1": "NPC_Images/NPC1.png",
-      "npc2": "NPC_Images/NPC2.png"    
+      "npc2": "NPC_Images/NPC2.png"
     },
     "campus_walk_6": {
       "text": "Sage's footsteps slow as a group of peers from her first semester cross her path—already deep in conversation.",
@@ -117,6 +117,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "antagonist_encounter_2": {
+      "speaker": "Blake",
       "text": "\"Well, well, look who it is.\"",
       "choices": [
         {
@@ -150,6 +151,7 @@
       "sprite": "Sage_Images/SageVar3_closedmouth.png"
     },
     "antagonist_encounter_5": {
+      "speaker": "Blake",
       "text": "\"Hey, still playing catch-up from last semester? Or did you manage to scrape by?\"",
       "choices": [
         {
@@ -209,6 +211,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "antagonist_quiet_4": {
+      "speaker": "Blake",
       "text": "\"Cat got your tongue? Figures.\"",
       "choices": [
         {
@@ -253,6 +256,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "antagonist_standup_3": {
+      "speaker": "Sage",
       "text": "\"What do you want, Blake?\"",
       "choices": [
         {
@@ -264,6 +268,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "antagonist_standup_4": {
+      "speaker": "Blake",
       "text": "\"Just wondering if you finally figured out how to study. You know, since you were… struggling last semester.\"",
       "choices": [
         {
@@ -275,6 +280,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "antagonist_standup_5": {
+      "speaker": "Sage",
       "text": "\"I'm doing fine. And I'd appreciate it if you'd mind your own business.\"",
       "choices": [
         {
@@ -286,6 +292,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "antagonist_standup_6": {
+      "speaker": "Blake",
       "text": "\"Oh, I will. But don’t come crying to me when you’re failing again.\"",
       "choices": [
         {
@@ -297,6 +304,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "antagonist_standup_7": {
+      "speaker": "Sage",
       "text": "\"I won’t be.\"",
       "choices": [
         {
@@ -319,6 +327,7 @@
       "sprite": "Sage_Images/SageVar2WIP3.png"
     },
     "antagonist_standup_9": {
+      "speaker": "Blake",
       "text": "\"Cute. Good luck keeping up. You’ll need it.\"",
       "choices": [
         {
@@ -396,6 +405,7 @@
       "sprite": "Sage_Images/SageVar1_surprised.png"
     },
     "dorm_arrival_5": {
+      "speaker": "Sage",
       "text": "\"Home sweet home. Sort of. More like… a holding cell.\"",
       "choices": [
         {
@@ -429,6 +439,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_8": {
+      "speaker": "Sage",
       "text": "\"Great. Another thing to mess up. Another chance to prove I’m not creative enough.\"",
       "choices": [
         {
@@ -484,6 +495,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "phone_call_2": {
+      "speaker": "Mom",
       "text": "\"Hey, sweetheart. How’s the first day back? Are you settled in?\"",
       "choices": [
         {
@@ -499,6 +511,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "call_vague_1": {
+      "speaker": "Sage",
       "text": "\"Oh, you know… busy. Just unpacking and getting organized. Nothing too exciting.\"",
       "choices": [
         {
@@ -510,6 +523,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "call_vague_2": {
+      "speaker": "Mom",
       "text": "\"Busy is good. Just stay focused. We know you can do this. You’ve always been so bright.\"",
       "choices": [
         {
@@ -521,6 +535,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "call_vague_3": {
+      "speaker": "Sage",
       "text": "\"Yeah… right. Thanks, Mom.\"",
       "choices": [
         {
@@ -532,6 +547,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "call_honest_1": {
+      "speaker": "Sage",
       "text": "\"It’s… kind of overwhelming, honestly. I feel like I’m already behind.\"",
       "choices": [
         {
@@ -543,6 +559,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "call_honest_2": {
+      "speaker": "Mom",
       "text": "\"Well, that’s normal. You’re doing fine, Sage. You always put too much pressure on yourself. Don’t overthink it. Just keep your head down and work hard.\"",
       "choices": [
         {
@@ -554,6 +571,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "call_honest_3": {
+      "speaker": "Sage",
       "text": "\"Easier said than done.\"",
       "choices": [
         {
@@ -565,6 +583,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "call_honest_4": {
+      "speaker": "Mom",
       "text": "\"You’ll be fine. Just remember why you’re there. To get a good education, to build a future. We’re all rooting for you.\"",
       "choices": [
         {
@@ -723,6 +742,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "next_day_3": {
+      "speaker": "Melody",
       "text": "\"Sage! I'm glad you're still here! I was worried after last semester.\"",
       "choices": [
         {
@@ -782,6 +802,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "respond_1": {
+      "speaker": "Sage",
       "text": "\" Yup, I’m still here. Still, existing.\"",
       "choices": [
         {
@@ -793,7 +814,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "respond_2": {
-      "text": "Melody raises an eyebrow, a flicker of surprise in her eyes, as she flashes the largest, but somehow offensive, smile. Then she walks off, leaving Sage with a flicker of pride—or unease—depending on her choice.",
+      "text": "Melody looks at her thoughtfully, her big, bright, but somehow fake smile drilling itself into Sage’s mind.",
       "choices": [
         {
           "text": "Continue",
@@ -804,6 +825,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "respond_3": {
+      "speaker": "Melody",
       "text": "\"Ah, well, I was just saying hi! So, I guess I’ll be going now. See you around, Sage.\"",
       "choices": [
         {
@@ -826,7 +848,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "mentor_advice_1": {
-      "text": "Later, Sage meets with Professor Anya Sharma, her mentor, who offers advice on managing the upcoming <em><b>creative prompt assignment</b></em>.",
+      "text": "Later, Sage meets with Professor Ardyn Sharma, her mentor, who offers advice on managing the upcoming <em><b>creative prompt assignment</b></em>.",
       "choices": [
         {
           "text": "Continue",
@@ -859,6 +881,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "mentor_advice_4": {
+      "speaker": "Professor Sharma",
       "text": "\"You don’t have to be perfect, Sage. Just be honest with your work. Let your true voice come through.\"",
       "choices": [
         {
@@ -870,6 +893,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "mentor_advice_5": {
+      "speaker": "Sage",
       "text": "\"Honest... right. Because that's easy. Everyone expects me to be something else.\"",
       "choices": [
         {
@@ -881,6 +905,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "mentor_advice_6": {
+      "speaker": "Professor Sharma",
       "text": "\"Who is everyone, Sage? And what do you expect from yourself?\"",
       "choices": [
         {
@@ -896,6 +921,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "trust_1": {
+      "speaker": "Sage",
       "text": "\"Okay… I’ll try. I’ll try to be honest. Thanks, Professor.\"",
       "choices": [
         {
@@ -907,6 +933,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "trust_2": {
+      "speaker": "Professor Sharma",
       "text": "\"That’s all anyone can ask. You’ve got this. And remember, vulnerability is strength.\"",
       "choices": [
         {
@@ -918,6 +945,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "distance_1": {
+      "speaker": "Sage",
       "text": "\"Sure. I’ll figure it out. I always do.\"",
       "choices": [
         {
@@ -929,6 +957,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "distance_2": {
+      "speaker": "Professor Sharma",
       "text": "\"If you need anything, my door is always open. Don’t hesitate.\"",
       "choices": [
         {
@@ -1032,6 +1061,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "unconventional_4": {
+      "speaker": "Sage",
       "text": "\"If I’m going to mess up, might as well make it interesting. Might as well make it mine.\"",
       "choices": [
         {

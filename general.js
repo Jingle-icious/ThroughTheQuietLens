@@ -1,7 +1,7 @@
 let story;
 let isMuted = false;
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
     const titleScreen = document.getElementById('title-screen');
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const foregroundImage = document.getElementById('foreground-image');
 
     // Fetch the story data from the JSON file
-    fetch('Capstone_Story.json')
+    fetch('./Capstone_Story.json')
         .then(response => response.json())
         .then(data => {
             console.log("JSON data loaded successfully");
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Setting up the game");
         bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav";
 
-        startButton.addEventListener('click', function() {
+        startButton.addEventListener('click', function () {
             console.log("Start button clicked");
             settingsModal.style.display = 'none';
             crossFade('Background_Images/Campus_WIP.png', () => {
@@ -40,37 +40,37 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        audioControlBtn.addEventListener('click', function() {
+        audioControlBtn.addEventListener('click', function () {
             console.log("Audio control button clicked");
             isMuted = !isMuted;
             bgMusic.muted = isMuted;
             audioControlBtn.querySelector('img').src = isMuted ? 'Icons/Audio_Off_Icon.svg' : 'Icons/Audio_On_Icon.svg';
         });
 
-        settingsBtn.addEventListener('click', function() {
+        settingsBtn.addEventListener('click', function () {
             console.log("Settings button clicked");
             settingsModal.style.display = 'block';
         });
 
-        closeBtn.addEventListener('click', function() {
+        closeBtn.addEventListener('click', function () {
             console.log("Close button clicked");
             settingsModal.style.display = 'none';
         });
 
         // Close modal if clicking outside
-        window.addEventListener('click', function(event) {
+        window.addEventListener('click', function (event) {
             if (event.target === settingsModal) {
                 settingsModal.style.display = 'none';
             }
         });
 
         // Prevent closing when clicking inside the modal
-        settingsModal.addEventListener('click', function(event) {
+        settingsModal.addEventListener('click', function (event) {
             event.stopPropagation();
         });
 
         if (resetGameBtn) {
-            resetGameBtn.addEventListener('click', function() {
+            resetGameBtn.addEventListener('click', function () {
                 console.log("Reset game button clicked");
                 gameContainer.style.display = 'none';
                 foregroundImage.style.display = 'none';
@@ -196,51 +196,22 @@ function updateSceneContent(scene) {
     console.log("Scene text:", text);
     console.log("Name box:", nameBox);
 
-    if (text.startsWith("\"")) {
-    // Blake's dialogue 
-        if (text.includes("Well, well, look who it is") ||
-            text.includes("Hey, still playing catch-up from last semester? Or did you manage to scrape by?") ||
-            text.includes("Just wondering if you finally figured out how to study. You know, since you were… struggling last semester.") ||
-            text.includes("Cat got your tongue? Figures.") ||
-            text.includes("Oh, I will. But don’t come crying to me when you’re failing again.") ||
-            text.includes("Cute. Good luck keeping up. You’ll need it.") ||
-            text.includes("Didn’t think I’d see you back. Guess you didn’t flunk out after all.") ||
-            text.includes("I’m still here. And I’m doing just fine. Maybe don’t assume you know everything, Blake.")) {
-            nameBox.innerText = "Blake";
-    // Mom's dialogue 
-        } else if (text.includes("Hey, sweetheart. How’s the first day back? Are you settled in?") ||
-        text.includes("Busy is good. Just stay focused. We know you can do this. You’ve always been so bright.") ||
-        text.includes("Well, that’s normal. You’re doing fine, Sage. You always put too much pressure on yourself. Don’t overthink it. Just keep your head down and work hard.") ||
-        text.includes("You’ll be fine. Just remember why you’re there. To get a good education, to build a future. We’re all rooting for you.")) {
-        nameBox.innerText = "Mom";
-    // Harmony's dialogue 
-    } else if (text.includes("Sage! I'm glad you're still here! I was worried after last semester.") ||
-        text.includes("Ah, well, I was just saying hi! So, I guess I’ll be going now. See you around, Sage.")) {
-        nameBox.innerText = "Harmony";
-    // Professor Sharma's dialogue 
-    } else if (text.includes("You don’t have to be perfect, Sage. Just be honest with your work. Let your true voice come through.") ||
-        text.includes("Who is everyone, Sage? And what do you expect from yourself?") ||
-        text.includes("That’s all anyone can ask. You’ve got this. And remember, vulnerability is strength.") ||
-        text.includes("If you need anything, my door is always open. Don’t hesitate.")) {
-        nameBox.innerText = "Professor Sharma";
-    } else {
-        // If no specific dialogue is found, assume it's Sage
+    if (scene.speaker) {
+        nameBox.innerText = scene.speaker;
+        nameBox.style.display = "block";
+    } else if (text.startsWith("<em>")) {
         nameBox.innerText = "Sage";
+        nameBox.style.display = "block";
+        console.log("Name box display: block, name:", nameBox.innerText);
+    } else {
+        nameBox.style.display = "none";
+        console.log("Name box display: none");
     }
-    nameBox.style.display = "block";
-} else if (text.startsWith("<em>")) {
-    nameBox.innerText = "Sage";
-    nameBox.style.display = "block";
-    console.log("Name box display: block, name:", nameBox.innerText);
-} else {
-    nameBox.style.display = "none";
-    console.log("Name box display: none");
+
+    // Calculate and set the position of the character name box
+    positionNameBox();
 }
 
-// Calculate and set the position of the character name box
-positionNameBox();
-}
-    
 
 function positionNameBox() {
     const nameBox = document.getElementById('character-name-box');
