@@ -720,7 +720,7 @@
       "sprite": "Sage_Images/Sage_OFFICIAL.png"
     },
     "next_day_1": {
-      "text": "The next day, Sage crosses paths with another student. Her name was...what was it again? Ah, that's right, Harmony.",
+      "text": "The next day, Sage crosses paths with another student. Her name was...what was it again? Ah, that's right, Melody.",
       "choices": [
         {
           "text": "Continue",
@@ -731,7 +731,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "next_day_2": {
-      "text": "Harmony spots her, smiling as she notices Sage.",
+      "text": "Melody spots her, smiling as she notices Sage.",
       "choices": [
         {
           "text": "Continue",
