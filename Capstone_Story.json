@@ -127,7 +127,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Talk.png"
     },
     "antagonist_encounter_3": {
       "text": "Sage freezes, her shoulders tensing.",
@@ -139,10 +139,10 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar3_closedmouth.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_encounter_4": {
-      "text": "She turns to see Blake, a classmate who always seems to have something snide to say, leaning against a campus railing, arms crossed.",
+      "text": "She turns to see Blake, a classmate who always seems to have something snide to say, leaning against a campus railing, arms at her sides.",
       "choices": [
         {
           "text": "Continue",
@@ -151,7 +151,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar3_closedmouth.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_encounter_5": {
       "speaker": "Blake",
@@ -164,7 +164,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar3_closedmouth.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Talk.png"
     },
     "antagonist_encounter_6": {
       "text": "<em>Not today…</em>",
@@ -180,7 +180,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar3_closedmouth.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_quiet_1": {
       "text": "<em>I can't deal with this.</em>",
@@ -191,7 +191,8 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png"
+      "sprite": "Sage_Images/SageVar3_closedmouth.png",
+      "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_quiet_2": {
       "text": "She avoids eye contact and walks past Blake, her silence amplifying the self-doubt already swirling in her mind.",
@@ -203,7 +204,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
     "antagonist_quiet_3": {
       "text": "She focuses on the door of her dorm, the safe haven she seeks.",
@@ -227,7 +228,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar3_closedmouth.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Talk.png"
     },
     "antagonist_quiet_5": {
       "text": "Sage's silence allows Blake's words to fester, deepening her insecurity.",
@@ -239,7 +240,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar3_closedmouth.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_standup_1": {
       "text": "<em>I'm not letting her get to me.</em>",
@@ -251,7 +252,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_standup_2": {
       "text": "Sage stops and faces Blake, meeting her gaze with a newfound resolve.",
@@ -263,7 +264,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/Sage_OFFICIAL.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
     "antagonist_standup_3": {
       "speaker": "Sage",
@@ -276,7 +277,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_talk.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
     "antagonist_standup_4": {
       "speaker": "Blake",
@@ -289,7 +290,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/Sage_OFFICIAL.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Talk.png"
     },
     "antagonist_standup_5": {
       "speaker": "Sage",
@@ -302,7 +303,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_talk.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Frown.png"
     },
     "antagonist_standup_6": {
       "speaker": "Blake",
@@ -315,7 +316,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Talk.png"
     },
     "antagonist_standup_7": {
       "speaker": "Sage",
@@ -328,7 +329,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_talk.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
     "antagonist_standup_8": {
       "text": "Blake raises an eyebrow, a flicker of surprise in her eyes, but recovers quickly and walks off, leaving Sage with a flicker of pride—or unease—depending on her choice.",
@@ -340,7 +341,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar2WIP3.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
     "antagonist_standup_9": {
       "speaker": "Blake",
@@ -353,7 +354,7 @@
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
-      "npcBlake": "NPC_Images/BlakeWIP4.png"
+      "npcBlake": "NPC_Images/Blake_Talk.png"
     },
     "antagonist_standup_10": {
       "text": "Her words linger long after she’s gone, echoing in Sage’s mind, fueling her insecurities.",
