@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("Setting up the game");
         bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav";
 
+        document.getElementById('blake-image').style.display = 'none';
+
         startButton.addEventListener('click', function () {
             console.log("Start button clicked");
             settingsModal.style.display = 'none';
@@ -173,6 +175,23 @@ function updateSceneContent(scene) {
         foregroundImage.style.display = 'block';
     } else {
         foregroundImage.style.display = 'none';
+    }
+
+// Handle Blake's image
+    const blakeImage = document.getElementById('blake-image');
+    if (scene.blake) {
+        blakeImage.src = scene.blake;
+        blakeImage.style.display = 'block';
+
+        // Force a reflow
+        setTimeout(() => {
+            blakeImage.style.opacity = 0.99; // Change opacity slightly
+            setTimeout(() => {
+                blakeImage.style.opacity = 1; // Reset opacity
+            }, 10);
+        }, 10);
+    } else {
+        blakeImage.style.display = 'none';
     }
 
     // Handle NPCs

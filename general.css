@@ -110,6 +110,16 @@ body {
     left: 50%; /* Adjust position as needed */
 }
 
+#blake-image {
+    display: none; /* Hide the image initially */
+    position: absolute;
+    bottom: 0;
+    left: 55%; /* Adjust this value to position Blake to the right of Sage */
+    transform: translateX(-50%);
+    max-width: 45%; /* Same size as Sage's image */
+    z-index: 1; /* Ensure Blake is behind the game container */
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     #npc1, #npc2 {
