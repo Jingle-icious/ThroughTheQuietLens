@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeBtn = document.querySelector('.close-btn');
     const foregroundImage = document.getElementById('foreground-image');
 
+
     // Fetch the story data from the JSON file
     fetch('./Capstone_Story.json')
         .then(response => response.json())
@@ -177,21 +178,13 @@ function updateSceneContent(scene) {
         foregroundImage.style.display = 'none';
     }
 
-// Handle Blake's image
-    const blakeImage = document.getElementById('blake-image');
-    if (scene.blake) {
-        blakeImage.src = scene.blake;
-        blakeImage.style.display = 'block';
-
-        // Force a reflow
-        setTimeout(() => {
-            blakeImage.style.opacity = 0.99; // Change opacity slightly
-            setTimeout(() => {
-                blakeImage.style.opacity = 1; // Reset opacity
-            }, 10);
-        }, 10);
+    // Update Blake's image
+    const npcBlake = document.getElementById('blake-image');
+    if (scene.npcBlake) {
+        npcBlake.src = scene.npcBlake;
+        npcBlake.style.display = 'block';
     } else {
-        blakeImage.style.display = 'none';
+        npcBlake.style.display = 'none';
     }
 
     // Handle NPCs

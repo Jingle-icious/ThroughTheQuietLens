@@ -111,14 +111,14 @@ body {
 }
 
 #blake-image {
-    display: none; /* Hide the image initially */
-    position: absolute;
+    display: none; /* Start hidden, shown during scene */
+    position: absolute; /* Adjust as needed */
     bottom: 0;
-    left: 55%; /* Adjust this value to position Blake to the right of Sage */
-    transform: translateX(-50%);
-    max-width: 45%; /* Same size as Sage's image */
-    z-index: 1; /* Ensure Blake is behind the game container */
+    right: 10%;
+    max-width: 700px;
+    z-index: 1; 
 }
+
 
 /* Media Queries */
 @media (max-width: 768px) {
