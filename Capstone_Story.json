@@ -126,7 +126,7 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sprite": "Sage_Images/SageVar3_stressteeth.png",
       "npcBlake": "NPC_Images/Blake_Talk.png"
     },
     "antagonist_encounter_3": {
@@ -138,7 +138,7 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png",
+      "sprite": "Sage_Images/SageVar3_stressteeth.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_encounter_4": {
@@ -203,7 +203,7 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sprite": "Sage_Images/SageVar3_closedmouth.png",
       "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
     "antagonist_quiet_3": {
@@ -215,7 +215,8 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar3_stressteeth.png",
+      "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_quiet_4": {
       "speaker": "Blake",
@@ -227,7 +228,7 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png",
+      "sprite": "Sage_Images/SageVar3_stressteeth.png",
       "npcBlake": "NPC_Images/Blake_Talk.png"
     },
     "antagonist_quiet_5": {
@@ -239,7 +240,7 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png",
+      "sprite": "Sage_Images/SageVar3_glazedover.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
     "antagonist_standup_1": {
