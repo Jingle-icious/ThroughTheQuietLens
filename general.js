@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const foregroundImage = document.getElementById('foreground-image');
 
 
+    
     // Fetch the story data from the JSON file
     fetch('./Capstone_Story.json')
         .then(response => response.json())

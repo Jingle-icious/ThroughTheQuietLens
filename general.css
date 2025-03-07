@@ -33,9 +33,59 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
+#title-screen h1 {
+    position: absolute;
+    top: 8%; /* Adjust as needed to fit within the swirly area */
+    left: 55%; /* Shift to the right */
+    transform: translateX(-50%);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6em;
+    color: #EFFAC5;
+    text-align: center;
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+        overflow: hidden; /* Ensure the text stays within the container */
+        border-right: .15em solid #EFFAC5; /* Add a blinking cursor */
+        white-space: nowrap; /* Keep the title on one line */
+        animation: 
+        typing 3.5s steps(22, end) forwards,
+        blink-caret .75s step-end 3.5s; 
+}
+
+#title-screen h1 span {
+    display: block;
+}
+
+/* The typing effect */
+@keyframes typing { 
+    from { width: 0 } 
+    to { 
+        width: 100%; 
+        border-right-color: #EFFAC5; /* Show caret at the end */
+    } 
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret { 
+    from, to { border-color: transparent } 
+    50% { border-color: #EFFAC5; } 
+}
+
+/* Hide the caret after the animation (using animation properties) */
+#title-screen h1 {
+  animation: 
+      typing 3.5s steps(22, end) forwards,
+      blink-caret .75s step-end 3.5s; /* Stop blinking after 3.5s */
+}
+
+
 #start-button {
     padding: 15px 30px;
-    font-size: 24px;
+    font-size: 40px;
+    font-family: 'Karantina', cursive;
     background-color: #6cbf6c;
     color: white;
     border: none;
