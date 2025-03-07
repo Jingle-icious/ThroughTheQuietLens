@@ -114,6 +114,7 @@ body {
     left: 0; /* Initial position - will be adjusted by JavaScript */
     top: 0; /* Initial position - will be adjusted by JavaScript */
     background: rgba(50, 50, 50, 0.9);
+    font-family: 'Joti One', sans-serif;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -134,7 +135,8 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3em;
     z-index: 2; /* This ensures the game container is above Sage */
 }
 
@@ -205,6 +207,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: 'Joti One', sans-serif;
 }
 
 #choices button:hover {
@@ -310,7 +313,6 @@ body {
 }
 
 
-
 /* Audio Button */
 #audio-control-btn {
     position: fixed;
@@ -370,7 +372,7 @@ body {
     width: 400px;
     max-width: 80%;
     color: #ddd;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Joti One', sans-serif;
 }
 
 /* Modal Close Button */

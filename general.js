@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const foregroundImage = document.getElementById('foreground-image');
 
 
-    
     // Fetch the story data from the JSON file
     fetch('./Capstone_Story.json')
         .then(response => response.json())
@@ -225,7 +224,6 @@ function updateSceneContent(scene) {
     positionNameBox();
 }
 
-
 function positionNameBox() {
     const nameBox = document.getElementById('character-name-box');
     const gameContainer = document.getElementById('game-container');
@@ -245,27 +243,36 @@ function positionNameBox() {
 window.addEventListener('resize', positionNameBox);
 
 // Settings Adjustments
-document.getElementById('text-size').onchange = function () {
-    document.getElementById('story-text').style.fontSize = this.value;
-};
+document.getElementById('text-size').addEventListener('change', function () {
+    let fontSize = '1.3em'; // Default (medium)
+    switch (this.value) {
+        case 'small':
+            fontSize = '1em';
+            break;
+        case 'large':
+            fontSize = '1.6em';
+            break;
+    }
+    document.getElementById('story-text').style.fontSize = fontSize;
+});
 
 document.getElementById('text-color').oninput = function () {
     document.getElementById('story-text').style.color = this.value;
 };
 
 document.getElementById('bg-opacity').oninput = function () {
-    document.getElementById('game-container').style.background = `rgba(100, 100, 100, ${this.value})`;
+    document.getElementById('game-container').style.backgroundColor = `rgba(50, 50, 50, ${this.value})`;
 };
 
 // Reset Settings
 document.getElementById('reset-btn').onclick = function () {
     document.getElementById('text-size').value = 'medium';
     document.getElementById('text-color').value = '#ffffff';
-    document.getElementById('bg-opacity').value = '0.7';
+    document.getElementById('bg-opacity').value = '0.8'; // Reset to the actual default value
 
-    document.getElementById('story-text').style.fontSize = 'medium';
+    document.getElementById('story-text').style.fontSize = '1.3em'; // Reset to the actual default value
     document.getElementById('story-text').style.color = '#ffffff';
-    document.getElementById('game-container').style.background = 'rgba(100, 100, 100, 0.7)'; // corrected to 100.
+    document.getElementById('game-container').style.backgroundColor = 'rgba(50, 50, 50, 0.8)'; // Reset to the actual default value
 };
 
 // Handle background music volume change
