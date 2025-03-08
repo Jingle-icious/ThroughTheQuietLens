@@ -412,7 +412,7 @@ input[type="range"] {
     width: 100%;
     height: 8px;
     border-radius: 5px;
-    background: #fff; /* White background */
+    background: #fff;
     outline: none;
     margin: 10px 0;
     position: relative;
@@ -424,9 +424,9 @@ input[type="range"]::-webkit-slider-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #A8D5BA; /* Green thumb */
+    background: #A8D5BA;
     cursor: pointer;
-    margin-top: -6px; /* This centers the thumb vertically */
+    margin-top: -6px;
     position: relative;
     z-index: 2;
 }
@@ -443,7 +443,7 @@ input[type="range"]::-moz-range-thumb {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #A8D5BA; /* Green Thumb */
+    background: #A8D5BA;
     cursor: pointer;
     border: none;
     position: relative;
@@ -497,4 +497,37 @@ body, #title-screen {
 
 #game-container {
     display: none;
+}
+
+/* Text Color Choices */
+#text-color-choices {
+    display: flex;
+    justify-content: center; /* Horizontally center the buttons */
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.color-choice {
+    display: inline-block;
+    position: relative;
+}
+
+.color-choice input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.color-choice span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid transparent; /* Initially transparent border */
+    cursor: pointer; /* Add cursor: pointer to the color circles */
+}
+
+.color-choice input[type="radio"]:checked + span {
+    border-color: #CF7EDF; /* Replace with your hover color */
 }

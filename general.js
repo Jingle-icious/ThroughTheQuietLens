@@ -280,17 +280,5 @@ document.getElementById('bg-music-volume').oninput = function () {
     document.getElementById('background-music').volume = this.value;
 };
 
-function updateRange() {
-    const sliders = document.querySelectorAll('input[type="range"]');
-
-    sliders.forEach(slider => {
-        const min = slider.min;
-        const max = slider.max;
-        const val = slider.value;
-
-        slider.style.setProperty('--range-progress', (val - min) / (max - min) * 100 + '%');
-    });
-}
-
 document.addEventListener('DOMContentLoaded', updateRange);
 document.addEventListener('input', updateRange);

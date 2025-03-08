@@ -47,29 +47,55 @@
         <img src="Icons/Audio_On_Icon.svg" alt="Audio Control">
     </button>
 
-    <div id="settings-modal" class="modal">
+    <div id="settings-modal">
         <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Settings</h2>
-            <label for="text-size">Text Size:</label>
+          <span class="close-btn">&times;</span>
+          <h2>Settings</h2>
+      
+          <div class="setting-item">
+            <label for="text-size">Text Size</label>
             <select id="text-size">
-                <option value="small">Small</option>
-                <option value="medium" selected>Medium</option>
-                <option value="large">Large</option>
+              <option value="small">Small</option>
+              <option value="medium" selected>Medium</option>
+              <option value="large">Large</option>
             </select>
-
-            <label for="text-color">Text Color:</label>
-            <input type="color" id="text-color">
-
-            <label for="bg-opacity">Text Box Opacity:</label>
-            <input type="range" id="bg-opacity" min="0.1" max="1" step="0.1" value="0.8">
-
-            <label for="bg-music-volume">Music Volume:</label>
+          </div>
+      
+          <div class="setting-item">
+            <label>Text Color</label>
+            <div id="text-color-choices">
+              <label class="color-choice">
+                <input type="radio" name="text-color" value="#000000">
+                <span style="background-color: #000000;"></span>
+              </label>
+              <label class="color-choice">
+                <input type="radio" name="text-color" value="#ffffff" checked>
+                <span style="background-color: #ffffff;"></span>
+              </label>
+              <label class="color-choice">
+                <input type="radio" name="text-color" value="#808080">
+                <span style="background-color: #808080;"></span>
+              </label>
+              <label class="color-choice">
+                <input type="radio" name="text-color" value="#ADFF2F">
+                <span style="background-color: #ADFF2F;"></span>
+              </label>
+            </div>
+          </div>
+      
+          <div class="setting-item">
+            <label for="bg-opacity">Text Box Opacity</label>
+            <input type="range" id="bg-opacity" min="0" max="1" step="0.1" value="0.8">
+          </div>
+      
+          <div class="setting-item">
+            <label for="bg-music-volume">Music Volume</label>
             <input type="range" id="bg-music-volume" min="0" max="1" step="0.1" value="0.5">
-
-            <button id="reset-btn">Reset to Default</button>
+          </div>
+      
+          <button id="reset-btn">Reset to Default</button>
         </div>
-    </div>
+      </div>
 
     <audio id="background-music" loop>
         <source src="Audio/Quiet_Lens_Soundtrack_Option.wav" type="audio/wav">
