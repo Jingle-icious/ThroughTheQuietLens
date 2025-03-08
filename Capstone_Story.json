@@ -1,7 +1,7 @@
 {
   "story": {
     "campus_walk_1": {
-      "text": "The soft hum of distant conversations fills the air as Sage walks through the bustling campus, heading towards her dorm.",
+      "text": "The soft hum of distant conversations fills the air as Sage walks through the bustling campus. The spring semester has begun, but the weight of unfinished feelings from the fall still lingers. She adjusts her mint-green cardigan against the chill of the breeze.",
       "choices": [
         {
           "text": "Continue",
@@ -9,21 +9,26 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "campus_walk_2": {
-      "text": "The spring semester has begun, but the weight of unfinished feelings from the fall still lingers.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "campus_walk_3"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "campus_walk_3": {
-      "text": "She adjusts her mint-green cardigan against the chill of the breeze, pulling it tighter around her.",
+    
+
+  "campus_walk_2": {
+    "speaker": "Sage",
+    "text": "<i>Okay... Second semester, an experienced Freshman - now that I survived the first. I can handle this... right? Writing classes, reading classes, a ridiculously hard math class - all part of the fun? I am supposed to embrace this - love it even, so why does everything feel scary and overwhelming?</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "campus_walk_3"
+      }
+    ],
+    "background": "Background_Images/Campus_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+
+
+  "campus_walk_3": {
+      "text": "Students pass by, laughing, chatting easily. Sage's footsteps slow as a group of peers from her first semester cross her path—already deep in conversation.",
       "choices": [
         {
           "text": "Continue",
@@ -31,10 +36,13 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "npc1": "NPC_Images/NPC1.png",
+      "npc2": "NPC_Images/NPC2.png"
     },
     "campus_walk_4": {
-      "text": "<em>Okay... Second semester. Fresh start, right? I survived the first. I can handle this... right? Just breathe, Sage, breathe.</em>",
+      "speaker": "Sage",
+      "text": "<i>They make it seem so easy. I would say hello, but…they do not seem at all worried about anything - I would be a downer to them… I should... keep moving.</i>",
       "choices": [
         {
           "text": "Continue",
@@ -42,10 +50,12 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "npc1": "NPC_Images/NPC1.png",
+      "npc2": "NPC_Images/NPC2.png"
     },
     "campus_walk_5": {
-      "text": "Students pass by, laughing, chatting easily.",
+      "text": "A phone notification buzzes in her pocket, but she ignores it for now, focusing on the path ahead. She sighs quietly, her eyes scanning the campus, lingering on students who already seem at ease.",
       "choices": [
         {
           "text": "Continue",
@@ -53,186 +63,103 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png",
-      "npc1": "NPC_Images/NPC1.png",
-      "npc2": "NPC_Images/NPC2.png"
+      "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "campus_walk_6": {
-      "text": "Sage's footsteps slow as a group of peers from her first semester cross her path—already deep in conversation.",
+      "speaker": "Sage",
+      "text": "“I should feel better about this. But I don't.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "campus_walk_7"
+          "next": "blake_encounter_1"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_talk.png"
+    },
+    "blake_encounter_1": {
+      "text": "As she approaches the dorms, Sage crosses paths with Blake who shares the same major as Sage —a sharp-eyed, confident student who is always at the top of the class. Blake spots her and approaches her wanting to talk about the great first semester.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "blake_encounter_2"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
-      "npc1": "NPC_Images/NPC1.png",
-      "npc2": "NPC_Images/NPC2.png"
-    },
-    "campus_walk_7": {
-      "text": "She recognizes a few faces, but they don't seem to notice her.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "campus_walk_8"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_surprised.png",
-      "npc1": "NPC_Images/NPC1.png",
-      "npc2": "NPC_Images/NPC2.png"
-    },
-    "campus_walk_8": {
-      "text": "Their easy camaraderie makes her stomach churn.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "campus_walk_9"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "campus_walk_9": {
-      "text": "<em>They make it seem so easy. Like they have a secret I don't. I should... keep moving. Just keep moving.</em>",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_encounter_1"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "antagonist_encounter_1": {
-      "text": "As Sage approaches the dorms, a familiar voice stops her cold.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_encounter_2"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "antagonist_encounter_2": {
-      "speaker": "Blake",
-      "text": "\"Well, well, look who it is.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_encounter_3"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_stressteeth.png",
-      "npcBlake": "NPC_Images/Blake_Talk.png"
-    },
-    "antagonist_encounter_3": {
-      "text": "Sage freezes, her shoulders tensing.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_encounter_4"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_stressteeth.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
-    "antagonist_encounter_4": {
-      "text": "She turns to see Blake, a classmate who always seems to have something snide to say, leaning against a campus railing, arms at her sides.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_encounter_5"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png",
-      "npcBlake": "NPC_Images/Blake_Smile.png"
-    },
-    "antagonist_encounter_5": {
+    "blake_encounter_2": {
       "speaker": "Blake",
-      "text": "\"Hey, still playing catch-up from last semester? Or did you manage to scrape by?\"",
+      "text": "“Hi Sage - Ready for another semester? I am so excited! I thought last semester was soooo much fun with all the new stuff we learned and the meaningful projects we were assigned, but this semester we get to do even more!”",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_encounter_6"
+          "next": "blake_encounter_3"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png",
+      "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Talk.png"
     },
-    "antagonist_encounter_6": {
-      "text": "<em>Not today…</em>",
+    "blake_encounter_3": {
+      "speaker": "Sage",
+      "text": "<i>Wow, she is exactly where I wish I were. Enjoying college, living the life, making the most of it all…that’s what I’m supposed to be - but I know I’m not - I don’t even belong in the same program as her - this could be soooo embarrassing - I would just die if she knew how inept I really am.</i>",
       "choices": [
         {
-          "text": "Stay Quiet",
-          "next": "antagonist_quiet_1"
+          "text": "Fake it till you Make it",
+          "next": "blake_fakeit_1"
         },
         {
-          "text": "Stand Up for Yourself",
-          "next": "antagonist_standup_1"
+          "text": "Be Open and Honest",
+          "next": "blake_honest_1"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png",
+      "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
-    "antagonist_quiet_1": {
-      "text": "<em>I can't deal with this.</em>",
+    "blake_fakeit_1": {
+      "speaker": "Sage",
+      "text": "“Oh of course - it will be great! And last semester was great too - if I choose to only think about the good times.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_quiet_2"
+          "next": "blake_fakeit_2"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png",
-      "npcBlake": "NPC_Images/Blake_Smile.png"
-    },
-    "antagonist_quiet_2": {
-      "text": "She avoids eye contact and walks past Blake, her silence amplifying the self-doubt already swirling in her mind.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_quiet_3"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png",
+      "sprite": "Sage_Images/SageVar1_talk.png",
       "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
-    "antagonist_quiet_3": {
-      "text": "She focuses on the door of her dorm, the safe haven she seeks.",
+    "blake_fakeit_2": {
+      "speaker": "Sage",
+      "text": "<i>Great - keep the positive thoughts in the front Sage….she does not need to see your insecurities.</i>",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_quiet_4"
+          "next": "blake_fakeit_3"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_stressteeth.png",
-      "npcBlake": "NPC_Images/Blake_Smile.png"
+      "sprite": "Sage_Images/SageVar1_smile.png",
+      "npcBlake": "NPC_Images/Blake_Frown.png"
     },
-    "antagonist_quiet_4": {
+    "blake_fakeit_3": {
       "speaker": "Blake",
-      "text": "\"Cat got your tongue? Figures.\"",
+      "text": "“Okay, well, I guess I will see you later.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_quiet_5"
+          "next": "blake_fakeit_4"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_stressteeth.png",
+      "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Talk.png"
     },
-    "antagonist_quiet_5": {
-      "text": "Sage's silence allows Blake's words to fester, deepening her insecurity.",
+    "blake_fakeit_4": {
+      "text": "Blake walks away, leaving Sage to her thoughts.",
       "choices": [
         {
           "text": "Continue",
@@ -240,270 +167,294 @@
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_glazedover.png",
-      "npcBlake": "NPC_Images/Blake_Smile.png"
+      "sprite": "Sage_Images/SageVar1_smile.png"
     },
-    "antagonist_standup_1": {
-      "text": "<em>I'm not letting her get to me.</em>",
+    "blake_honest_1": {
+      "text": "Sage stops and faces Blake, meeting her gaze with a newfound resolve",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_standup_2"
+          "next": "blake_honest_2"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sprite": "Sage_Images/SageVar1_surprised.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
-    "antagonist_standup_2": {
-      "text": "Sage stops and faces Blake, meeting her gaze with a newfound resolve.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_standup_3"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png",
-      "npcBlake": "NPC_Images/Blake_Ooh.png"
-    },
-    "antagonist_standup_3": {
+    "blake_honest_2": {
       "speaker": "Sage",
-      "text": "\"What do you want, Blake?\"",
+      "text": "“Well, I’m still here, but honestly, last semester was tough for me. I was just relieved to pull through.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_standup_4"
+          "next": "blake_honest_3"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_talk.png",
-      "npcBlake": "NPC_Images/Blake_Ooh.png"
+      "npcBlake": "NPC_Images/Blake_Smile.png"
     },
-    "antagonist_standup_4": {
-      "speaker": "Blake",
-      "text": "\"Just wondering if you finally figured out how to study. You know, since you were… struggling last semester.\"",
+    "blake_honest_3": {
+      "text": "Blake raises an eyebrow, but offers encouragement",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_standup_5"
+          "next": "blake_honest_4"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png",
-      "npcBlake": "NPC_Images/Blake_Talk.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
-    "antagonist_standup_5": {
-      "speaker": "Sage",
-      "text": "\"I'm doing fine. And I'd appreciate it if you'd mind your own business.\"",
+    "blake_honest_4": {
+      "speaker": "Blake",
+      "text": "“You know, most of us were… struggling last semester. I think I finally figured out how to study. Chin up - we’ve all been there!”",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_standup_6"
+          "next": "blake_honest_5"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "npcBlake": "NPC_Images/Blake_Talk.png"
+    },
+    "blake_honest_5": {
+      "speaker": "Sage",
+      "text": "“I guess so…”",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "blake_honest_6"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_talk.png",
       "npcBlake": "NPC_Images/Blake_Frown.png"
     },
-    "antagonist_standup_6": {
-      "speaker": "Blake",
-      "text": "\"Oh, I will. But don’t come crying to me when you’re failing again.\"",
+    "blake_honest_6": {
+      "text": "Her words linger long after she’s gone.",
       "choices": [
         {
           "text": "Continue",
-          "next": "antagonist_standup_7"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png",
-      "npcBlake": "NPC_Images/Blake_Talk.png"
-    },
-    "antagonist_standup_7": {
-      "speaker": "Sage",
-      "text": "\"I won’t be.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_standup_8"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png",
-      "npcBlake": "NPC_Images/Blake_Ooh.png"
-    },
-    "antagonist_standup_8": {
-      "text": "Blake raises an eyebrow, a flicker of surprise in her eyes, but recovers quickly and walks off, leaving Sage with a flicker of pride—or unease—depending on her choice.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_standup_9"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar2WIP3.png",
-      "npcBlake": "NPC_Images/Blake_Ooh.png"
-    },
-    "antagonist_standup_9": {
-      "speaker": "Blake",
-      "text": "\"Cute. Good luck keeping up. You’ll need it.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_standup_10"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png",
-      "npcBlake": "NPC_Images/Blake_Talk.png"
-    },
-    "antagonist_standup_10": {
-      "text": "Her words linger long after she’s gone, echoing in Sage’s mind, fueling her insecurities.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "antagonist_standup_11"
+          "next": "blake_honest_7"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "antagonist_standup_11": {
-      "text": "Sage turns and enters the dorm, her steps heavy.",
+    "blake_honest_7": {
+      "text": "Sage turns and enters the dorm, her steps echoing as she goes.",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_1"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Lobby_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
+
     },
     "dorm_arrival_1": {
-      "text": "Sage swipes her keycard and pushes open the door to her dorm room.",
+      "text": "Sage walks into her dorm lobby, the scent of old coffee lingers from the communal kitchen, a stale reminder of late-night study sessions.",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_2"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Lobby_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_2": {
-      "text": "It’s quiet—almost too quiet.",
+      "text": "She looks around – everyone seems busy with the first round of exams and project deadlines soon approaching. She eyes the calendar on the wall–",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_3"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Lobby_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_3": {
-      "text": "The scent of old coffee lingers from the communal kitchen, a stale reminder of late-night study sessions.",
+      "speaker": "Sage",
+      "text": "<i>Three weeks into the semester - how can I already be so far behind?</i>",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_4"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Lobby_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_4": {
-      "text": "She drops her bag onto her bed, the thud echoing in the small space, and exhales, a sigh that's more like a weary exhale.",
+      "text": "Looking around she sees a few dorm-mates watching <i>One Piece.</i>",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_5"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Lobby_WIP.png",
       "sprite": "Sage_Images/SageVar1_surprised.png"
     },
     "dorm_arrival_5": {
       "speaker": "Sage",
-      "text": "\"Home sweet home. Sort of. More like… a holding cell.\"",
+      "text": "<i>oooohhhh, I could just sit and join them and take a break for a while - I really love that show.</i>",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_6"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png"
+      "background": "Background_Images/Lobby_WIP.png",
+      "sprite": "Sage_Images/SageVar1_surprised.png"
     },
     "dorm_arrival_6": {
-      "text": "She checks her phone—a reminder from a professor about an upcoming <em><b>creative prompt assignment</b></em>, the subject line reading: \"Unleash Your Inner Voice.\"",
+      "text": "She checks her phone— a missed call from home and a reminder from a professor about an upcoming assignment.",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_7"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Lobby_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_7": {
-      "text": "Her stomach twists into a knot.",
+      "speaker": "Sage",
+      "text": "“Great. Deadline approaching – I am always behind and it has to be done well or there goes my grade, my GPA, my entire academic standing - lose my scholarship - get kicked out - never get a good job - “aaaaaaaccccckkkkkk!”",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_8"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "dorm_arrival_8": {
-      "speaker": "Sage",
-      "text": "\"Great. Another thing to mess up. Another chance to prove I’m not creative enough.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "dorm_arrival_9"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Lobby_WIP.png",
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
-    "dorm_arrival_9": {
-      "text": "The phone buzzes again—this time, a text from her mother.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "dorm_arrival_10"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_surprised.png"
-    },
-    "dorm_arrival_10": {
-      "text": "She hesitates before answering, staring at the screen as if it might bite.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "dorm_arrival_11"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "dorm_arrival_11": {
-      "text": "<em>What do they want now? A progress report? A lecture on how I’m not living up to my potential?</em>",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "phone_call_1"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
+"dorm_arrival_8": {
+    "speaker": "Sage",
+    "text": "<i>Better get up to my room.</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_arrival_9"
+      }
+    ],
+    "background": "Background_Images/Lobby_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_arrival_9": {
+    "text": "She heads upstairs, swiping her keycard and pushing open the door to her dorm room.\nIt’s quiet—almost too quiet.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_arrival_10"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_arrival_10": {
+    "text": "Sage sighs as she sits at her desk, the assignment staring back at her. The instructions seem to blur together as Sage forces her attention back into place.",
+    "choices": [
+      {
+        "text": "Strive for the A",
+        "next": "dorm_striveA_1"
+      },
+      {
+        "text": "Reasonable Effort",
+        "next": "dorm_reasonable_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_striveA_1": {
+    "speaker": "Sage",
+    "text": "<i>I better get started, I know that I need the A or I will not be happy.</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_striveA_2"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_striveA_2": {
+    "text": "She decides to work on the project for several hours.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_striveA_3"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_striveA_3": {
+    "text": "Sage stands up and stretches, she is finally satisfied that she will get an A on the assignment. She looks at the time - it's late - after midnight - did she even eat dinner?",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "phone_call_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_reasonable_1": {
+    "speaker": "Sage",
+    "text": "<i>Since this is due tomorrow, I better prioritize my time. I can start the assignment and set a timer to take a dinner break in one hour so I can come back and evaluate my progress with a clear mind.</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_reasonable_2"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_reasonable_2": {
+    "text": "Sage works on the assignment for an hour and stops for dinner before returning to the assignment",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_reasonable_3"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_reasonable_3": {
+    "speaker": "Sage",
+    "text": "<i>Have I met the criteria - let me check - yep - but I could add to this and really wow my professor. That would ensure I got an A.</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_reasonable_4"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar2WIP3.png"
+  },
+  "dorm_reasonable_4": {
+    "text": "She looks at the time - it's 7:30 and her roommates are talking about the weekend - she looks at her assignment and decides it is sufficient. She joins her friends and connects with them before getting ready for bed.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "phone_call_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
     "phone_call_1": {
-      "text": "The phone rings as Sage hesitates. Finally, she answers, her voice laced with a forced lightness.",
+      "text": "The next morning, Sage wakes as her phone buzzes again—this time, a text from home. She hesitates before answering, staring at the screen as if it might bite.",
       "choices": [
         {
           "text": "Continue",
@@ -514,725 +465,309 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "phone_call_2": {
-      "speaker": "Mom",
-      "text": "\"Hey, sweetheart. How’s the first day back? Are you settled in?\"",
+      "speaker": "Sage",
+      "text": "<i>What do they want now? A progress report? A lecture on how I’m not living up to my potential?</i>",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_call_3"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar3_stressteeth.png"
+    },
+    "phone_call_3": {
+      "text": "The phone rings as Sage hesitates. Finally, she answers, her voice laced with a forced lightness.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_call_4"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "phone_call_4": {
+      "speaker": "Parent",
+      "text": "“Hey, sweetheart. How’s the grind? Are you feeling okay about your schoolwork?”",
       "choices": [
         {
           "text": "Be Vague",
-          "next": "call_vague_1"
+          "next": "phone_vague_1"
         },
         {
           "text": "Share Honestly",
-          "next": "call_honest_1"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "call_vague_1": {
-      "speaker": "Sage",
-      "text": "\"Oh, you know… busy. Just unpacking and getting organized. Nothing too exciting.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "call_vague_2"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png"
-    },
-    "call_vague_2": {
-      "speaker": "Mom",
-      "text": "\"Busy is good. Just stay focused. We know you can do this. You’ve always been so bright.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "call_vague_3"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "call_vague_3": {
-      "speaker": "Sage",
-      "text": "\"Yeah… right. Thanks, Mom.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "call_end_vague"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png"
-    },
-    "call_honest_1": {
-      "speaker": "Sage",
-      "text": "\"It’s… kind of overwhelming, honestly. I feel like I’m already behind.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "call_honest_2"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png"
-    },
-    "call_honest_2": {
-      "speaker": "Mom",
-      "text": "\"Well, that’s normal. You’re doing fine, Sage. You always put too much pressure on yourself. Don’t overthink it. Just keep your head down and work hard.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "call_honest_3"
+          "next": "phone_honest_1"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "call_honest_3": {
+    "phone_vague_1": {
       "speaker": "Sage",
-      "text": "\"Easier said than done.\"",
+      "text": "“Oh, you know…same old thing, nothing too exciting. I am just busy as always.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "call_honest_4"
+          "next": "phone_vague_2"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
-    "call_honest_4": {
-      "speaker": "Mom",
-      "text": "\"You’ll be fine. Just remember why you’re there. To get a good education, to build a future. We’re all rooting for you.\"",
+    "phone_vague_2": {
+      "speaker": "Parent",
+      "text": "“Well, busy is good. Just stay focused. We know you can do this. You’ve always been so bright.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "call_end_honest"
+          "next": "phone_vague_3"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "call_end_vague": {
-      "text": "Regardless of the choice, the call ends with a reminder to \"stay on top of things\"—a subtle but familiar pressure.",
+    "phone_vague_3": {
+      "speaker": "Sage",
+      "text": "“Yeah… right.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "call_end_2"
+          "next": "phone_vague_4"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+      "sprite": "Sage_Images/SageVar1_talk.png"
     },
-    "call_end_honest": {
-      "text": "Regardless of the choice, the call ends with a reminder to \"stay on top of things\"—a subtle but familiar pressure.",
+    "phone_vague_4": {
+      "speaker": "Sage",
+      "text": "<i>Soooo bright, so capable, can do it all - can’t you see that does NOT help! I am drowning here and talking just feels like more expectations to live up to.</i>",
       "choices": [
         {
           "text": "Continue",
-          "next": "call_end_2"
+          "next": "phone_vague_5"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+      "sprite": "Sage_Images/SageVar3_stressteeth.png"
     },
-    "call_end_2": {
-      "text": "Sage stares at the phone after hanging up, her smile fading.",
+    "phone_vague_5": {
+      "speaker": "Sage",
+      "text": "“Well, I’m sorry to cut you short, but I have to get to a study group. Talk to you later, love you.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "call_end_3"
+          "next": "phone_call_5"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar3_talk.png"
+    },
+    "phone_honest_1": {
+      "speaker": "Sage",
+      "text": "“It’s… kind of overwhelming, honestly. I feel like I’m already behind.”",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_honest_2"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar1_talk.png"
+    },
+    "phone_honest_2": {
+      "speaker": "Parent",
+      "text": "“Well, that’s normal. You’re doing fine, Sage. You always put too much pressure on yourself. Don’t overthink it. Just keep your head down and work hard - you know, do the best you can.”",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_honest_3"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "call_end_3": {
-      "text": "<em>Why does everything feel so heavy? Like I’m carrying the weight of the world on my shoulders.</em>",
+    "phone_honest_3": {
+      "speaker": "Sage",
+      "text": "“Easier said than done.”",
       "choices": [
         {
           "text": "Continue",
-          "next": "social_invitation_1"
+          "next": "phone_honest_4"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar1_talk.png"
+    },
+    "phone_honest_4": {
+      "speaker": "Sage",
+      "text": "<i>Can’t you see that “doing my best” all the time is exhausting, not to mention impossible to maintain. I am eventually going to fail and let you down. (feels tears welling)</i>",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_honest_5"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar3_squigglemouth.png"
+    },
+    "phone_honest_5": {
+      "speaker": "Parent",
+      "text": "“You’ll be fine. Just remember why you’re there. To get a good education, to build a future. We’re all rooting for you.”",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_honest_6"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar3_crying.png"
+    },
+    "phone_honest_6": {
+      "speaker": "Sage",
+      "text": "“I know you are, and I know you believe in me, but I really feel like I am going to burn out. Sometimes I feel so scared to let you down - I really want to make you proud of me.”",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_honest_7"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar3_talk.png"
+    },
+    "phone_honest_7": {
+      "speaker": "Parent",
+      "text": "“Oh Sage. No honey, really, there is nothing you can do to make me love you less and I am already so VERY proud of you. You only have to make yourself proud. Make choices that you believe in, not the ones you think we want from you. Sage - hear me on this - we love you unconditionally - you are enough.”",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_honest_8"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar3_crying.png"
+    },
+    "phone_honest_8": {
+      "speaker": "Sage",
+      "text": "<i>Why does everything feel so heavy? Like I’m carrying the weight of the world on my shoulders. It’s not that I don’t feel loved, I just - well - I hope I don't let anyone down.</i>",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "phone_call_5"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar3_closedmouth.png"
+    },
+    "phone_call_5": {
+      "text": "Regardless of the choice, the call ends with a feeling of subtle but familiar pressure. Sage stares at the phone after hanging up.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "social_invite_1"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "social_invitation_1": {
-      "text": "A notification pops up: a group from one of Sage’s classes is organizing a casual study meet-up at the campus coffee shop. The message reads: \"Join us for some study and chill! No pressure!\"",
+    "social_invite_1": {
+      "text": "It’s now Friday and campus is emptying quickly as students rush to get to their weekend plans. A notification pops up: a group from one of Sage’s classes is organizing a casual study meet-up at the campus coffee shop.",
       "choices": [
         {
-          "text": "Accept",
-          "next": "study_accept_1"
-        },
-        {
-          "text": "Decline",
-          "next": "study_decline_1"
+          "text": "Continue",
+          "next": "social_invite_2"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_surprised.png"
     },
-    "study_accept_1": {
+    "social_invite_2": {
+      "text": "The message reads: \"Join us for some study and chill! No pressure!\" She hovers over the message, torn between the allure of connection and the safety of isolation.",
+      "choices": [
+        {
+          "text": "Accept",
+          "next": "social_accept_1"
+        },
+        {
+          "text": "Ignore",
+          "next": "social_ignore_1"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar1_surprised.png"
+    },
+    "social_accept_1": {
+      "speaker": "Sage",
       "text": "Sage types a quick reply: \"I’m in. See you guys there!\"",
       "choices": [
         {
           "text": "Continue",
-          "next": "study_accept_2"
+          "next": "social_accept_2"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+      "sprite": "Sage_Images/SageVar1_smile.png"
     },
-    "study_accept_2": {
-      "text": "<em>Maybe this’ll help. Maybe if I’m around other people, I won’t feel so alone. I can’t do everything alone, right?</em>",
+    "social_accept_2": {
+      "speaker": "Sage",
+      "text": "<i>Maybe this’ll help. I could certainly use some group study since I am not doing great with the subject matter. And maybe if I’m around other people, I won’t feel so alone. I can’t do everything alone, right?</i>",
       "choices": [
         {
           "text": "Continue",
-          "next": "next_day_1"
+          "next": "social_accept_3"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar2WIP3.png"
+      "sprite": "Sage_Images/SageVar1_smile.png"
     },
-    "study_decline_1": {
+    "social_accept_4": {
+      "text": "Sage gets back late, the study session was helpful but now she is exhausted - and heads straight to bed.",
+      "choices": [
+        {
+          "text": "End of Act 1",
+          "next": "END"
+        }
+      ],
+      "background": "Background_Images/Dorm.png",
+      "sprite": "Sage_Images/SageVar1_smile.png"
+    },
+    "social_ignore_1": {
       "text": "She closes the message without replying, her thumb hovering over the \"mute notifications\" button.",
       "choices": [
         {
           "text": "Continue",
-          "next": "study_decline_2"
+          "next": "social_ignore_2"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "study_decline_2": {
-      "text": "<em>No point. I’ll just make a fool of myself. I’ll figure it out myself, like always.</em>",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "study_decline_3"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "study_decline_3": {
-      "text": "Her decision lingers as she glances toward her untouched textbooks, the spines mocking her.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "study_decline_4"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "study_decline_4": {
-      "text": "The silence feels heavier now, amplified by the missed opportunity.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "next_day_1"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "next_day_1": {
-      "text": "The next day, Sage crosses paths with another student. Her name was...what was it again? Ah, that's right, Melody.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "next_day_2"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "next_day_2": {
-      "text": "Melody spots her, smiling as she notices Sage.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "next_day_3"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "next_day_3": {
-      "speaker": "Melody",
-      "text": "\"Sage! I'm glad you're still here! I was worried after last semester.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "next_day_4"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "next_day_4": {
-      "text": "<em>Ah, it's her...\"overly friendly\" girl.</em>",
-      "choices": [
-        {
-          "text": "Stay Quiet",
-          "next": "quiet_1"
-        },
-        {
-          "text": "Respond",
-          "next": "respond_1"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "quiet_1": {
-      "text": "Sage looks away, biting back a response.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "quiet_2"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png"
-    },
-    "quiet_2": {
-      "text": "She feels a flush of shame creep up her neck.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "quiet_3"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "quiet_3": {
-      "text": "<em>Not worth it. Not worth the interaction.</em>",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "mentor_advice_1"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "respond_1": {
+    "social_ignore_2": {
       "speaker": "Sage",
-      "text": "\" Yup, I’m still here. Still, existing.\"",
+      "text": "<i>No point in going, I’ll just make a fool of myself. I can figure it out myself, I always do. Besides, socializing is so taxing!</i>",
       "choices": [
         {
           "text": "Continue",
-          "next": "respond_2"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png"
-    },
-    "respond_2": {
-      "text": "Melody looks at her thoughtfully, her big, bright, but somehow fake smile drilling itself into Sage’s mind.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "respond_3"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "respond_3": {
-      "speaker": "Melody",
-      "text": "\"Ah, well, I was just saying hi! So, I guess I’ll be going now. See you around, Sage.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "respond_4"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "respond_4": {
-      "text": "Her words linger awhile after she’s gone, echoing in Sage’s mind.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "mentor_advice_1"
-        }
-      ],
-      "background": "Background_Images/Campus_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "mentor_advice_1": {
-      "text": "Later, Sage meets with Professor Ardyn Sharma, her mentor, who offers advice on managing the upcoming <em><b>creative prompt assignment</b></em>.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "mentor_advice_2"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "mentor_advice_2": {
-      "text": "The office is cluttered but warm—a stark contrast to Sage’s chaotic thoughts.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "mentor_advice_3"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/SageVar1_surprised.png"
-    },
-    "mentor_advice_3": {
-      "text": "Professor Sharma offers her a cup of tea.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "mentor_advice_4"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "mentor_advice_4": {
-      "speaker": "Professor Sharma",
-      "text": "\"You don’t have to be perfect, Sage. Just be honest with your work. Let your true voice come through.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "mentor_advice_5"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "mentor_advice_5": {
-      "speaker": "Sage",
-      "text": "\"Honest... right. Because that's easy. Everyone expects me to be something else.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "mentor_advice_6"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png"
-    },
-    "mentor_advice_6": {
-      "speaker": "Professor Sharma",
-      "text": "\"Who is everyone, Sage? And what do you expect from yourself?\"",
-      "choices": [
-        {
-          "text": "Trust Mentor",
-          "next": "trust_1"
-        },
-        {
-          "text": "Distance Yourself",
-          "next": "distance_1"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "trust_1": {
-      "speaker": "Sage",
-      "text": "\"Okay… I’ll try. I’ll try to be honest. Thanks, Professor.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "trust_2"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png"
-    },
-    "trust_2": {
-      "speaker": "Professor Sharma",
-      "text": "\"That’s all anyone can ask. You’ve got this. And remember, vulnerability is strength.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "creative_prompt_1"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "distance_1": {
-      "speaker": "Sage",
-      "text": "\"Sure. I’ll figure it out. I always do.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "distance_2"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/SageVar1_talk.png"
-    },
-    "distance_2": {
-      "speaker": "Professor Sharma",
-      "text": "\"If you need anything, my door is always open. Don’t hesitate.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "distance_3"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "distance_3": {
-      "text": "Her response shapes how much support the mentor continues to offer moving forward.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "distance_4"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "distance_4": {
-      "text": "As she leaves the office, the weight in her chest feels no lighter, but a tiny seed of hope has been planted.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "creative_prompt_1"
-        }
-      ],
-      "background": "Background_Images/Classroom_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "creative_prompt_1": {
-      "text": "Sage sits in her dorm later, the prompt staring back at her: \"Interpret a personal challenge in a creative medium.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "creative_prompt_2"
+          "next": "social_ignore_3"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "creative_prompt_2": {
-      "text": "The words blur as anxiety churns inside her.",
+    "social_ignore_3": {
+      "text": "Her decision lingers as the silence feels heavier now. She works on homework for a while and then heads to bed.",
       "choices": [
         {
-          "text": "Continue",
-          "next": "creative_prompt_3"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png"
-    },
-    "creative_prompt_3": {
-      "text": "She stares at the blank page, her mind racing.",
-      "choices": [
-        {
-          "text": "Unconventional Approach",
-          "next": "unconventional_1"
-        },
-        {
-          "text": "Safe/Familiar",
-          "next": "safe_1"
+          "text": "End of Act 1",
+          "next": "END"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "unconventional_1": {
-      "text": "Sage sketches an abstract, bold piece reflecting the chaos in her mind.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "unconventional_2"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "unconventional_2": {
-      "text": "Lines tangle and swirl, colors clash, mirroring her inner turmoil.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "unconventional_3"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_surprised.png"
-    },
-    "unconventional_3": {
-      "text": "She feels a surge of rebellious energy.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "unconventional_4"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "unconventional_4": {
-      "speaker": "Sage",
-      "text": "\"If I’m going to mess up, might as well make it interesting. Might as well make it mine.\"",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_1"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "safe_1": {
-      "text": "She writes a straightforward, careful reflection on study habits, outlining a structured plan for success.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "safe_2"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "safe_2": {
-      "text": "It’s neat, organized, and utterly devoid of emotion.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "safe_3"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "safe_3": {
-      "text": "<em>Just play it safe. No one criticizes what’s predictable. No one sees the real me.</em>",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_1"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "final_decision_1": {
-      "text": "At the end of the week, Sage reflects in her dorm, tension building.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_2"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "final_decision_2": {
-      "text": "Her choices so far weigh on her thoughts—was she honest with herself? With others?",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_3"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "final_decision_3": {
-      "text": "Did she take a risk, or did she play it safe?",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_4"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "final_decision_4": {
-      "text": "She looks out the window, watching the campus lights flicker on as the sun sets.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_5"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_surprised.png"
-    },
-    "final_decision_5": {
-      "text": "<em>Maybe… I’m more in control than I thought. Or maybe I’m just pretending.</em>",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_6"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "final_decision_6": {
-      "text": "<em>Maybe I’m just good at hiding how much I’m struggling. Did I make the right choices? Did I even make my choices?</em>",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_7"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "final_decision_7": {
-      "text": "She glances at the <em><b>creative prompt assignment</b></em>, either a chaotic abstract or a neatly written plan.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_8"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_surprised.png"
-    },
-    "final_decision_8": {
-      "text": "Her expression is a mix of uncertainty and a flicker of self-awareness.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_9"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-    },
-    "final_decision_9": {
-      "text": "<em>Whatever happens, I can’t keep living like this. I need to figure out who I am, not who everyone else wants me to be.</em>",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "final_decision_10"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
-    },
-    "final_decision_10": {
-      "text": "Her reflection sets the stage for Act 2: The Dream, where these internal struggles manifest in a surreal, emotional landscape.",
-      "choices": [
-        {
-          "text": "Continue",
-          "next": "end"
-        }
-      ],
-      "background": "Background_Images/Dorm_WIP.png",
-      "sprite": "Sage_Images/Sage_OFFICIAL.png"
+    "END": {
+      "text": "End of Act 1. To Be Continued...",
+      "choices": []
     }
   }
 }
