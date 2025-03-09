@@ -163,14 +163,14 @@
       "choices": [
         {
           "text": "Continue",
-          "next": "dorm_arrival_1"
+          "next": "transition_dorm_lobby"
         }
       ],
       "background": "Background_Images/Campus_WIP.png",
       "sprite": "Sage_Images/SageVar1_smile.png"
     },
     "blake_honest_1": {
-      "text": "Sage stops and faces Blake, meeting her gaze with a newfound resolve",
+      "text": "Sage stops and faces Blake, meeting her gaze with a newfound resolve.",
       "choices": [
         {
           "text": "Continue",
@@ -244,16 +244,26 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "blake_honest_7": {
-      "text": "Sage turns and enters the dorm, her steps echoing as she goes.",
+      "text": "Sage turns and walks away, her steps echoing as she goes.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "transition_dorm_lobby"
+        }
+      ],
+      "background": "Background_Images/Campus_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+
+    },
+    "transition_dorm_lobby": {
+      "text": "3 weeks into the semester...",
       "choices": [
         {
           "text": "Continue",
           "next": "dorm_arrival_1"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
-
+      "background": "Background_Images/Lobby_WIP.png"
     },
     "dorm_arrival_1": {
       "text": "Sage walks into her dorm lobby, the scent of old coffee lingers from the communal kitchen, a stale reminder of late-night study sessions.",
@@ -492,7 +502,18 @@
       "text": "“Hey, sweetheart. How’s the grind? Are you feeling okay about your schoolwork?”",
       "choices": [
         {
-          "text": "Be Vague",
+          "text": "Continue",
+          "next": "phone_call_5"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
+    },
+    "phone_call_5" : {
+      "text": "<i>The concerned voice reminds Sage that even her family is worried.</i>",
+      "choices": [
+        {
+          "text": "Answer Vaguely",
           "next": "phone_vague_1"
         },
         {
@@ -557,7 +578,7 @@
       "choices": [
         {
           "text": "Continue",
-          "next": "phone_call_5"
+          "next": "phone_call_6"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
@@ -653,13 +674,13 @@
       "choices": [
         {
           "text": "Continue",
-          "next": "phone_call_5"
+          "next": "phone_call_6"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar3_closedmouth.png"
     },
-    "phone_call_5": {
+    "phone_call_6": {
       "text": "Regardless of the choice, the call ends with a feeling of subtle but familiar pressure. Sage stares at the phone after hanging up.",
       "choices": [
         {
@@ -720,16 +741,27 @@
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_smile.png"
     },
+    "social_accept_3": {
+      "text": "Sage puts her phone away, packing her backpack and primping up a bit before heading out.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "social_accept_4"
+        }
+      ],
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar1_smile.png"
+    },
     "social_accept_4": {
       "text": "Sage gets back late, the study session was helpful but now she is exhausted - and heads straight to bed.",
       "choices": [
         {
-          "text": "End of Act 1",
-          "next": "END"
+          "text": "Continue",
+          "next": "dream_seq_transition"
         }
       ],
-      "background": "Background_Images/Dorm.png",
-      "sprite": "Sage_Images/SageVar1_smile.png"
+      "background": "Background_Images/Dorm_WIP.png",
+      "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "social_ignore_1": {
       "text": "She closes the message without replying, her thumb hovering over the \"mute notifications\" button.",
@@ -758,16 +790,43 @@
       "text": "Her decision lingers as the silence feels heavier now. She works on homework for a while and then heads to bed.",
       "choices": [
         {
-          "text": "End of Act 1",
-          "next": "END"
+          "text": "Continue",
+          "next": "dream_seq_transition"
         }
       ],
       "background": "Background_Images/Dorm_WIP.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
-    "END": {
-      "text": "End of Act 1. To Be Continued...",
-      "choices": []
+    "dream_seq_transition": {
+      "text": "That night...Sage is tossing in her bed...surreal and emotional dreams plaguing her sleep.",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "dream_entrance"
+        }
+      ],
+      "background": "Background_Images/Dream1.png"
+    },
+    "dream_entrance": {
+      "text": "WELCOME to the Stress & Anxiety Carnival",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "anti_social_Sage_1"
+        }
+      ],
+      "background": "Background_Images/Dream1_banner.png"
+    },
+    "anti_social_Sage_1": {
+      "text": "Anti-Social Sage",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": ""
+        }
+      ],
+      "background": "Background_Images/Dream1_banner.png",
+      "sprite": "Sage_Images/SageVar4_antisocial.png"
     }
   }
 }
