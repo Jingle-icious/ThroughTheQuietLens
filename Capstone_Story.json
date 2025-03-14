@@ -837,7 +837,55 @@
         }
       ],
       "background": "Background_Images/Dream1_banner.png",
-      "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+      "sprite": "Sage_Images/SageVar5_perfectionist.png"
+    },
+    "pleaser_Sage_1": {
+    "text": "Pleaser Sage",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "anti_social_Sage_1"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+  },
+  "anti_social_Sage_1": {
+    "text": "Anti-social Sage",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "choose_sage"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar4_antisocial.png"
+  },
+  "choose_sage": {
+    "text": "Choose your Sage",
+    "choices": [
+        {
+            "text": "Imposter Sage",
+            "next": "imposter_choice"
+        },
+        {
+            "text": "Perfectionist Sage",
+            "next": "perfectionist_choice"
+        },
+        {
+            "text": "Pleaser Sage",
+            "next": "pleaser_choice"
+        },
+        {
+            "text": "Anti-social Sage",
+            "next": "anti_social_choice"
+        }
+    ],
+        "background": "Background_Images/Dream1_banner.png",
+        "sprite": "Sage_Images/SageVar7_pleaser_smile.png", 
+        "perfectionistSage": "Sage_Images/SageVar5_perfectionist.png", 
+        "antiSocialSage": "Sage_Images/SageVar4_antisocial.png", 
+        "imposterSage": "Sage_Images/SageVar6_imposter_teeth.png" 
     }
 
   }

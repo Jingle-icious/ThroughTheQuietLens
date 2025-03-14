@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeBtn = document.querySelector('.close-btn');
     const foregroundImage = document.getElementById('foreground-image');
 
-
     // Fetch the story data from the JSON file
     fetch('./Capstone_Story.json')
         .then(response => response.json())
@@ -161,13 +160,36 @@ function updateSceneContent(scene) {
     const choicesContainer = document.getElementById('choices');
     choicesContainer.innerHTML = '';
 
-    scene.choices.forEach(option => {
-        const button = document.createElement('button');
-        button.classList.add('choice');
-        button.innerText = option.text;
-        button.onclick = () => makeChoice(option.next);
-        choicesContainer.appendChild(button);
-    });
+  // Handle Dream sequence logic
+    if (scene.next === "imposter_Sage_1") {
+        displaySage("imposter-sage");
+    } else if (scene.next === "perfectionistic_Sage_1") {
+        displaySage("perfectionist-sage");
+    } else if (scene.next === "pleaser_Sage_1") {
+        displaySage("pleaser-sage");
+    } else if (scene.next === "anti_social_Sage_1") {
+        displaySage("anti-social-sage");
+    } else if (scene.next === "choose_sage") {
+        displayAllSages(scene);
+    } else {
+        // Normal choice handling
+        if (scene.choices && scene.choices.length > 0) {
+            scene.choices.forEach(option => {
+                const button = document.createElement('button');
+                button.classList.add('choice');
+                button.innerText = option.text;
+                button.onclick = () => makeChoice(option.next);
+                choicesContainer.appendChild(button);
+            });
+        } else {
+            choicesContainer.innerHTML = "";
+        }
+
+        document.getElementById("pleaser-sage-sprite").style.display = "none";
+        document.getElementById("anti-social-sage").style.display = "none";
+        document.getElementById("perfectionist-sage").style.display = "none";
+        document.getElementById("imposter-sage").style.display = "none";
+    }
 
     // Handle sprite
     const foregroundImage = document.getElementById('foreground-image');
@@ -206,9 +228,7 @@ function updateSceneContent(scene) {
     const text = scene.text;
 
     console.log("Scene text:", text);
-    console.log("Name box:", nameBox);
-
-    if (scene.speaker) {
+    console.log("Name box:", nameBox);if (scene.speaker) {
         nameBox.innerText = scene.speaker;
         nameBox.style.display = "block";
     } else if (text.startsWith("<em>")) {
@@ -264,7 +284,7 @@ document.getElementById('bg-opacity').oninput = function () {
     document.getElementById('game-container').style.backgroundColor = `rgba(50, 50, 50, ${this.value})`;
 };
 
-// Reset Settings
+// Reset Settings (currently FUCKED)
 document.getElementById('reset-btn').onclick = function () {
     document.getElementById('text-size').value = 'medium';
     document.getElementById('text-color').value = '#ffffff';
@@ -282,3 +302,24 @@ document.getElementById('bg-music-volume').oninput = function () {
 
 document.addEventListener('DOMContentLoaded', updateRange);
 document.addEventListener('input', updateRange);
+
+function displaySage(sageId) {
+    const sages = document.querySelectorAll("#sage-lineup img");
+    sages.forEach(sage => sage.style.display = "none"); // Hide all
+    document.getElementById(sageId).style.display = "block"; // Show current
+    document.getElementById("sage-lineup").style.display = "flex";
+}
+
+function displayAllSages(scene) {
+    // Show Pleaser Sage (sprite)
+    document.getElementById("pleaser-sage-sprite").src = scene.sprite;
+    document.getElementById("pleaser-sage-sprite").style.display = "block";
+
+    // Show other Sages
+    document.getElementById("perfectionist-sage").src = scene.perfectionistSage;
+    document.getElementById("perfectionist-sage").style.display = "block";
+    document.getElementById("anti-social-sage").src = scene.antiSocialSage;
+    document.getElementById("anti-social-sage").style.display = "block";
+    document.getElementById("imposter-sage").src = scene.imposterSage;
+    document.getElementById("imposter-sage").style.display = "block";
+}
