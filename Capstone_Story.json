@@ -812,21 +812,33 @@
       "choices": [
         {
           "text": "Continue",
-          "next": "anti_social_Sage_1"
+          "next": "imposter_Sage_1"
         }
       ],
       "background": "Background_Images/Dream1_banner.png"
     },
-    "anti_social_Sage_1": {
-      "text": "Anti-Social Sage",
+    "imposter_Sage_1": {
+      "text": "Imposter Sage",
       "choices": [
         {
           "text": "Continue",
-          "next": ""
+          "next": "perfectionistic_Sage_1"
         }
       ],
       "background": "Background_Images/Dream1_banner.png",
-      "sprite": "Sage_Images/SageVar4_antisocial.png"
+      "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    },
+    "perfectionistic_Sage_1": {
+      "text": "Perfectionist Sage",
+      "choices": [
+        {
+          "text": "Continue",
+          "next": "pleaser_Sage_1"
+        }
+      ],
+      "background": "Background_Images/Dream1_banner.png",
+      "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
     }
+
   }
 }

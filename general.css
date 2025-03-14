@@ -98,15 +98,18 @@ body {
     background-color: #5aa95a;
 }
 
-/* Foreground Image (Sage's Sprite) */
 #foreground-image {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     max-width: 45%;
-    z-index: 1; /* This puts Sage behind the game container */
+    max-height: 90vh; /* Adjust this value as needed */
+    height: auto;
+    z-index: 1;
     display: none;
+    /* optional: */
+    /* object-fit: cover; */
 }
 
 #character-name-box {
@@ -163,12 +166,16 @@ body {
 }
 
 #blake-image {
-    display: none; /* Start hidden, shown during scene */
-    position: absolute; /* Adjust as needed */
+    display: none;
+    position: absolute;
     bottom: 0;
     right: 10%;
     max-width: 700px;
-    z-index: 1; 
+    max-height: 90vh; /* Adjust this value as needed */
+    height: auto;
+    z-index: 1;
+    /* Optional: */
+    /* object-fit: cover; */
 }
 
 
