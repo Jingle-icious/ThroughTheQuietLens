@@ -866,19 +866,19 @@
     "choices": [
         {
             "text": "Imposter Sage",
-            "next": "imposter_choice"
+            "next": "imposter_challenge_1"
         },
         {
             "text": "Perfectionist Sage",
-            "next": "perfectionist_choice"
+            "next": "perfect_challenge_1"
         },
         {
             "text": "Pleaser Sage",
-            "next": "pleaser_choice"
+            "next": "pleaser_challenge_1"
         },
         {
             "text": "Anti-social Sage",
-            "next": "anti_social_choice"
+            "next": "antiSocial_challenge_1"
         }
     ],
         "background": "Background_Images/Dream1_banner.png",
@@ -886,7 +886,284 @@
         "perfectionistSage": "Sage_Images/SageVar5_perfectionist.png", 
         "antiSocialSage": "Sage_Images/SageVar4_antisocial.png", 
         "imposterSage": "Sage_Images/SageVar6_imposter_teeth.png" 
-    }
-
+    },
+    "imposter_challenge_1": {
+    "text": "Sage looks around and sees performers like jugglers and clowns around her. She realizes that she is one of them and high above the crowd on stilts. Everyone watching her - but one stilt is lifted and she is off-balance and about to fall - people are already pointing. She is not a stilt walker and has no business being above the crowd. They all know.",
+        "choices": [
+      {
+        "text": "Continue",
+        "next": "imposter_challenge_2"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+  },
+  "imposter_challenge_2" : {
+    "speaker": "Sage",
+    "text": "“What in the actual hell am I doing up here?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "imposter_challenge_3"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+  },
+  "imposter_challenge_3" : {
+    "speaker": "Sage",
+    "text": "“I know I can’t walk on stilts - I am not a performer and now everyone else knows that too. That’s right, point and laugh at the imposter. Come gawk at the silly girl on stilts trying to do something she has no business doing.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "imposter_challenge_4"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+  },
+  "imposter_challenge_4" : {
+    "text": "Sage looks around at the faces beneath her and feels gravity pulling her off the stilts. She knows that she is going to fall on her face - literally - and she can only hope she doesn’t hurt anyone on the way down. ",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "imposter_challenge_5"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+  },
+  "imposter_challenge_5" : {
+    "text": "Sage opens her eyes and gasps as her body feels like it is falling. She realizes that she was dreaming and thinks about how embarrassed she is feeling. What a strange dream - she is NOT a performer and would never try to walk on stilts. But it was accurate - if she did try to do something she was so unqualified for, on her butt on the ground is exactly where she would be - and even more horrifying - everyone would laugh.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meeting_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+  },
+  "perfect_challenge_1" : {
+    "text": "Sage stands in line at the booth that reads “Perfection Contest” with a line of contestants that goes farther than the eye can see. She will never get there, it’s impossible.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "perfect_challenge_2"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+  },
+  "perfect_challenge_2" : {
+    "speaker": "Sage",
+    "text": "“I am such an idiot. What am I doing in this line? This is stupid and impossible. I should have gotten here sooner. That was a big mistake.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "perfect_challenge_3"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+  },
+  "perfect_challenge_3" : {
+    "speaker": "Sage",
+    "text": "“I knew I had to be first in line - I knew that this is the contest I had to win and now I am so screwed. Figures - all because I didn’t get up early enough. I am never far enough ahead - always playing catch up - always falling short.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "perfect_challenge_4"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+  },
+  "perfect_challenge_4" : {
+    "speaker": "Sage",
+    "text": "“Wow, all these people were better than me at planning this out. I don't know why I thought I could do this.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "perfect_challenge_5"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+  },
+  "perfect_challenge_5" : {
+    "speaker": "Sage",
+    "text": "“Really, I do know why - I need to have this accolade. This is the proof that I did it right. This is the evidence that I am worthy.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "perfect_challenge_6"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+  },
+  "perfect_challenge_6" : {
+    "speaker": "Sage",
+    "text": "Sage wakes up and looks around her messy dorm room. Self critical as always, she starts to berate herself for not keeping up. She turns over and pulls the covers over her head. Sometimes the pressure that she puts on herself and others is so overwhelming - she tries to shut out the world and go back to sleep, but she keeps thinking about falling short of her own expectations and continues to criticize herself.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meeting_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+  },
+  "pleaser_challenge_1" : {
+    "text": "Sage is at a pie eating contest table with a mostly empty pie pan in front of her and a terrible stomach ache. The judges facing her are all holding up scores of 8 or 9 and smiling at her.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "pleaser_challenge_2"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+  },
+  "pleaser_challenge_2" : {
+    "speaker": "Sage",
+    "text": "“Okay - they are happy with me - I did it.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "pleaser_challenge_3"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+  },
+  "pleaser_challenge_3" : {
+    "speaker": "Sage",
+    "text": "“I sure feel awful though - my stomach is so sick - and everyone is looking at me - oh why do I keep doing things that feel bad just to make others happy?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "pleaser_challenge_4"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+  },
+  "pleaser_challenge_4" : {
+    "speaker": "Sage",
+    "text": "“At least no one is calling me out and I am not in a confrontation with the others. That really is the most important thing.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "pleaser_challenge_5"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+  },
+  "pleaser_challenge_5" : {
+    "text": "Sage tries to quietly exit the area - suddenly she is running and crying. She feels her legs burning and she can't seem to catch her breath. Exhausted and falls to the ground.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "pleaser_challenge_6"
+      }
+    ],
+    "background": "Background_Images/Dream1_banner.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+  },
+  "pleaser_challenge_6" : {
+    "text": "Sage wakes up with her heart pounding and cold from sweat - like she just went for a run. Knowing that she won't be going back to sleep, she heads to the shower to start her day.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meeting_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+  },
+  "antiSocial_challenge_1" : {
+    "text": "Sage looks at the ferris wheel in the distance - each bucket has something written on it. She is excited to get on the ride and see the POV from the top - she heads to the line.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_challenge_2"
+      }
+    ],
+    "background": "Background_Images/Dream1.png",
+    "sprite": "Sage_Images/SageVar4_antisocial.png"
+  },
+  "antiSocial_challenge_2" : {
+    "speaker": "Sage",
+    "text": "“I want to ride the ferris wheel - but what is that - wait - are those all…invites?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_challenge_3"
+      }
+    ],
+    "background": "Background_Images/Dream_Ferris_WIP.png",
+    "sprite": "Sage_Images/SageVar4_antisocial.png"
+  },
+  "antiSocial_challenge_3" : {
+    "speaker": "Sage",
+    "text": "“It’s almost my turn - I have to pick one, but which one? A Club Meeting - I should go since I missed the last one. Or the Study Group - I really need that. Date Night because I have not seen my guy in ages. Sheila’s Birthday Party - oh jeez - is that now?” ",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_challenge_4"
+      }
+    ],
+    "background": "Background_Images/Dream_Ferris_WIP.png",
+    "sprite": "Sage_Images/SageVar4_antisocial.png"
+  },
+  "antiSocial_challenge_4" : {
+    "speaker": "Sage",
+    "text": "“Oh no - so many choices - exhausting - scary - decisions - the wheel never stops - not enough time - but I am really so lonely sometimes - and I don’t want to miss out.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_challenge_5"
+      }
+    ],
+    "background": "Background_Images/Dream_Ferris_WIP.png",
+    "sprite": "Sage_Images/SageVar4_antisocial.png"
+  },
+  "antiSocial_challenge_5" : {
+    "text": "Sage opens her eyes and looks at the clock - it's five a.m. She feels compelled to open her calendar and scan her upcoming commitments. Her anxiety grows as she reads all the pending “Will you be attending this event? Maybe - Yes - No” options. Since she knows that she won't be going back to sleep, she decides to get up and start her day.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meeting_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar4_antisocial.png"
+  },
+  "mentor_meeting_1" : {
+    "text": "Later, Sage meets with Professor Sharma, her mentor, who offers advice on managing stress, assignments, and life in general.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meeting_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "mentor_meeting_2" : {
+    "text": "The office is cluttered but warm—a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "..."
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcBlake": "NPC_Images/Sharma_smile.png"
+  }
   }
 }

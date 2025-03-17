@@ -204,32 +204,6 @@ body {
     }
 }
 
-#pleaser-sage-sprite,
-#perfectionist-sage,
-#anti-social-sage,
-#imposter-sage {
-    position: absolute;
-    bottom: 20px; /* Adjust as needed */
-    max-width: 20%; /* Adjust as needed */
-    height: auto;
-    margin: 0 10px; /* Adjust as needed */
-    left: 10%; /* Adjust positions as needed */
-}
-
-#perfectionist-sage {
-    left: 30%;
-}
-
-#anti-social-sage {
-    left: 50%;
-}
-
-#imposter-sage {
-    left: 70%;
-}
-
-
-
 /* Choice Buttons */
 #choices button {
     background-color: #A8D5BA;
