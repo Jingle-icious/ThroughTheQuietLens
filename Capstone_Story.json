@@ -1163,7 +1163,7 @@
     ],
     "background": "Background_Images/Classroom_WIP.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcBlake": "NPC_Images/Sharma_smile.png"
+    "npcSharma": "NPC_Images/Sharma_smile.png"
   }
   }
 }

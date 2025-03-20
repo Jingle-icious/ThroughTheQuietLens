@@ -187,6 +187,15 @@ function updateSceneContent(scene) {
         npcBlake.style.display = 'none';
     }
 
+        // Update Sharma's image
+    const npcSharma = document.getElementById('sharma-image');
+    if (scene.npcSharma) {
+        npcSharma.src = scene.npcSharma;
+        npcSharma.style.display = 'block';
+    } else {
+        npcSharma.style.display = 'none';
+    }
+
     // Handle NPCs
     const npc1 = document.getElementById('npc1');
     const npc2 = document.getElementById('npc2');
