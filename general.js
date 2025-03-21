@@ -16,6 +16,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const foregroundImage = document.getElementById('foreground-image');
 
 
+    // Disclaimer code added here:
+    const disclaimerPopup = document.getElementById('disclaimer-popup');
+    const disclaimerAcceptButton = document.getElementById('disclaimer-accept-button');
+
+    // Create and append the overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'disclaimer-popup-overlay';
+    document.body.appendChild(overlay);
+
+    disclaimerAcceptButton.addEventListener('click', function () {
+        disclaimerPopup.style.display = 'none';
+        overlay.style.display = 'none'; // Hide the overlay
+        startButton.style.display = 'block'; // Show the start button
+    });
+
+    // End of disclaimer code
+
+
     // Fetch the story data from the JSON file
     fetch('./Capstone_Story.json')
         .then(response => response.json())
