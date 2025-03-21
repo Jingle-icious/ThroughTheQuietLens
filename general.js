@@ -271,41 +271,44 @@ window.addEventListener('resize', positionNameBox);
 
 // Settings Adjustments
 document.getElementById('text-size').addEventListener('change', function () {
-    let fontSize = '1.3em'; // Default (medium)
-    switch (this.value) {
-        case 'small':
-            fontSize = '1em';
-            break;
-        case 'large':
-            fontSize = '1.6em';
-            break;
-    }
+    const fontSize = this.value === 'small' ? '1em' : this.value === 'large' ? '1.6em' : '1.3em';
     document.getElementById('story-text').style.fontSize = fontSize;
 });
 
-document.getElementById('text-color').oninput = function () {
+document.getElementById('text-color').addEventListener('input', function () {
     document.getElementById('story-text').style.color = this.value;
-};
+});
 
-document.getElementById('bg-opacity').oninput = function () {
-    document.getElementById('game-container').style.backgroundColor = `rgba(50, 50, 50, ${this.value})`;
-};
-
-// Reset Settings
-document.getElementById('reset-btn').onclick = function () {
-    document.getElementById('text-size').value = 'medium';
-    document.getElementById('text-color').value = '#ffffff';
-    document.getElementById('bg-opacity').value = '0.8'; // Reset to the actual default value
-
-    document.getElementById('story-text').style.fontSize = '1.3em'; // Reset to the actual default value
-    document.getElementById('story-text').style.color = '#ffffff';
-    document.getElementById('game-container').style.backgroundColor = 'rgba(50, 50, 50, 0.8)'; // Reset to the actual default value
-};
+document.getElementById('bg-opacity').addEventListener('input', function () {
+    const opacity = this.value;
+    document.getElementById('game-container').style.backgroundColor = `rgba(50, 50, 50, ${opacity})`;
+    this.style.setProperty('--range-progress', `${opacity * 100}%`);
+});
 
 // Handle background music volume change
-document.getElementById('bg-music-volume').oninput = function () {
-    document.getElementById('background-music').volume = this.value;
-};
+document.getElementById('bg-music-volume').addEventListener('input', function () {
+    const volume = this.value;
+    document.getElementById('background-music').volume = volume;
+    this.style.setProperty('--range-progress', `${volume * 100}%`); // Add this line
+});
 
-document.addEventListener('DOMContentLoaded', updateRange);
-document.addEventListener('input', updateRange);
+// Reset Settings
+document.getElementById('reset-btn').addEventListener('click', function () {
+    document.getElementById('text-size').value = 'medium';
+    document.getElementById('text-color').value = '#ffffff';
+    document.getElementById('bg-opacity').value = '0.8';
+    document.getElementById('bg-music-volume').value = '0.5';
+
+    document.getElementById('story-text').style.fontSize = '1.3em';
+    document.getElementById('story-text').style.color = '#ffffff';
+    document.getElementById('game-container').style.backgroundColor = 'rgba(50, 50, 50, 0.8)';
+    document.getElementById('background-music').volume = '0.5';
+
+    document.getElementById('bg-opacity').style.setProperty('--range-progress', '80%');
+    document.getElementById('bg-music-volume').style.setProperty('--range-progress', '50%'); // Add this line
+});
+
+// Close Modal
+document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('settings-modal').style.display = 'none';
+});

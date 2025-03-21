@@ -59,55 +59,28 @@
     <img id="anti-social-sage" style="display: none; position: absolute; top: 300px; left: 300px; width: 100px;" />
     <img id="imposter-sage" style="display: none; position: absolute; top: 400px; left: 400px; width: 100px;" />
 
-    <div id="settings-modal">
-        <div class="modal-content">
-          <span class="close-btn">&times;</span>
-          <h2>Settings</h2>
-      
-          <div class="setting-item">
-            <label for="text-size">Text Size</label>
-            <select id="text-size">
-              <option value="small">Small</option>
-              <option value="medium" selected>Medium</option>
-              <option value="large">Large</option>
-            </select>
-          </div>
-      
-          <div class="setting-item">
-            <label>Text Color</label>
-            <div id="text-color-choices">
-              <label class="color-choice">
-                <input type="radio" name="text-color" value="#000000">
-                <span style="background-color: #000000;"></span>
-              </label>
-              <label class="color-choice">
-                <input type="radio" name="text-color" value="#ffffff" checked>
-                <span style="background-color: #ffffff;"></span>
-              </label>
-              <label class="color-choice">
-                <input type="radio" name="text-color" value="#808080">
-                <span style="background-color: #808080;"></span>
-              </label>
-              <label class="color-choice">
-                <input type="radio" name="text-color" value="#ADFF2F">
-                <span style="background-color: #ADFF2F;"></span>
-              </label>
-            </div>
-          </div>
-      
-          <div class="setting-item">
-            <label for="bg-opacity">Text Box Opacity</label>
-            <input type="range" id="bg-opacity" min="0" max="1" step="0.1" value="0.8">
-          </div>
-      
-          <div class="setting-item">
-            <label for="bg-music-volume">Music Volume</label>
-            <input type="range" id="bg-music-volume" min="0" max="1" step="0.1" value="0.5">
-          </div>
-      
-          <button id="reset-btn">Reset to Default</button>
-        </div>
-      </div>
+    <div id="settings-modal" style="display: none;">
+      <div class="close-btn">&times;</div>
+      <h2>Settings</h2>
+  
+      <label for="text-size">Text Size</label>
+      <select id="text-size">
+          <option value="small">Small</option>
+          <option value="medium" selected>Medium</option>
+          <option value="large">Large</option>
+      </select>
+  
+      <label for="text-color">Text Color</label>
+      <input type="color" id="text-color" value="#ffffff">
+  
+      <label for="bg-opacity">Text Box Opacity</label>
+      <input type="range" id="bg-opacity" min="0" max="1" step="0.05" value="0.8">
+  
+      <label for="bg-music-volume">Music Volume</label>
+      <input type="range" id="bg-music-volume" min="0" max="1" step="0.05" value="0.5">
+  
+      <button id="reset-btn">Reset to Default</button>
+  </div>
 
     <audio id="background-music" loop>
         <source src="Audio/Quiet_Lens_Soundtrack_Option.wav" type="audio/wav">
