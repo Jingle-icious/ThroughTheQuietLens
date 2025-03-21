@@ -938,7 +938,7 @@
     "choices": [
       {
         "text": "Continue",
-        "next": "mentor_meeting_1"
+        "next": "mentor_meetingImposter_1"
       }
     ],
     "background": "Background_Images/Dorm_WIP.png",
@@ -1009,7 +1009,7 @@
     "choices": [
       {
         "text": "Continue",
-        "next": "mentor_meeting_1"
+        "next": "mentor_meetingPerfect_1"
       }
     ],
     "background": "Background_Images/Dorm_WIP.png",
@@ -1078,7 +1078,7 @@
     "choices": [
       {
         "text": "Continue",
-        "next": "mentor_meeting_1"
+        "next": "mentor_meetingPleaser_1"
       }
     ],
     "background": "Background_Images/Dorm_WIP.png",
@@ -1136,34 +1136,899 @@
     "choices": [
       {
         "text": "Continue",
-        "next": "mentor_meeting_1"
+        "next": "mentor_meetingAntiSocial_1"
       }
     ],
     "background": "Background_Images/Dorm_WIP.png",
     "sprite": "Sage_Images/SageVar4_antisocial.png"
   },
-  "mentor_meeting_1" : {
+  "mentor_meetingImposter_1" : {
     "text": "Later, Sage meets with Professor Sharma, her mentor, who offers advice on managing stress, assignments, and life in general.",
     "choices": [
       {
         "text": "Continue",
-        "next": "mentor_meeting_2"
+        "next": "mentor_meetingImposter_2"
       }
     ],
     "background": "Background_Images/Classroom_WIP.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
-  "mentor_meeting_2" : {
+  "mentor_meetingImposter_2" : {
     "text": "The office is cluttered but warm—a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
     "choices": [
       {
         "text": "Continue",
-        "next": "..."
+        "next": "Imposter_Sage_advice_1"
       }
     ],
     "background": "Background_Images/Classroom_WIP.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "Imposter_Sage_advice_1" : {
+    "speaker" : "Professor Sharma",
+    "text":"“Sage, many people feel inadequate and are afraid of falling short of their own or others’ expectations, but these should be temporary feelings, not a life mantra.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Imposter_Sage_advice_2" : {
+    "speaker" : "Sage",
+    "text":"“I guess so...”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "Imposter_Sage_advice_3" : {
+    "speaker" : "Professor Sharma",
+    "text":"“So, you have spoken to me before about feeling like an imposter and now you are dreaming about it. Perhaps we should get a bit more informed and try for a better understanding of these feelings? Do you know anyone else who feels similar to you?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Imposter_Sage_advice_4" : {
+    "speaker" : "Sage",
+    "text":"“No, not really. I suppose some other folks feel unworthy but I would never pry, and chance them feeling afraid of exposure. It seems like that would be unkind. Well, it would definitely feel terrible to me.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_5"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_frown.png"
+  },
+  "Imposter_Sage_advice_5" : {
+    "speaker" : "Professor Sharma",
+    "text":"“Actually, it’s not some people, but many, who relate to those types of feelings, Sage. ”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_6"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Imposter_Sage_advice_6" : {
+    "speaker" : "Professor Sharma",
+    "text":"“Would it surprise you to know that people like Michelle Obama, Tina Fey, Sonya Sotomayer, and Tom Hanks have discussed having imposter feelings?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_7"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Imposter_Sage_advice_7" : {
+    "speaker" : "Sage",
+    "text":"“Really, wow. That seems misplaced  — why would successful people think that they are not as good as everyone seems to THINK they are?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_8"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "Imposter_Sage_advice_8" : {
+    "speaker" : "Professor Sharma",
+    "text":"“Well, do you think they are unworthy?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_9"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Imposter_Sage_advice_9" : {
+    "speaker" : "Sage",
+    "text":"“No, of course not, they already proved they are fantastic with the evidence of their accomplishments.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_10"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_ooh.png"
+  },
+  "Imposter_Sage_advice_10" : {
+    "speaker" : "Professor Sharma",
+    "text":"“But what if they think that they will be unmasked as an imposter at any minute? Perhaps that their successes are flukes, or that they’re just hiding their failures really well?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_11"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Imposter_Sage_advice_11" : {
+    "speaker" : "Sage",
+    "text":"“I suppose I could see that, but what could they, or I, do about it?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_12"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_slightfrown.png"
+  },
+  "Imposter_Sage_advice_12" : {
+    "speaker" : "Professor Sharma",
+    "text":"“You are NOT an imposter, Sage, but to believe that you may need to look at making some individual changes. There are lots of therapies and research models you could choose from but I can get you started with a couple that I have used.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_13"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Imposter_Sage_advice_13" : {
+    "speaker" : "Sage",
+    "text":"“You’ve used? You mean you’ve felt this way too?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Imposter_Sage_advice_14"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "Imposter_Sage_advice_14" : {
+    "speaker" : "Professor Sharma",
+    "text":"“I sure have, I told you it's surprising how many of us there are! Lets see, I remember using a research model called “Reflect, Plan, Change” and I remember doing an acceptance  and commitment therapy (ACT) exercise with a counselor I knew. Which one interests you?”",
+    "choices": [
+    {
+        "text": "Ask about ACT",
+        "next": "act_exercise_1"
+    },
+    {
+      "text": "Ask about the Research Model",
+      "next": "research_model_1"
+    }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "act_exercise_1": {
+    "speaker": "Professor Sharma",
+    "text": "“My therapist had me write my imposter thoughts on a piece of paper and destroy it. It symbolized the non-permanence of such thoughts and feelings.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "act_exercise_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "act_exercise_2": {
+    "speaker": "Professor Sharma",
+    "text": "“They can be acknowledged and changed. The thing is, the purpose was to accept the presence of the thoughts but remember that they are just that — thoughts — not facts.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "act_exercise_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "act_exercise_3": {
+    "speaker": "Professor Sharma",
+    "text": "“So it can be as easy to change them as crumpling up a piece of paper, if you practice.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingImposter_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "mentor_meetingImposter_3" : {
+    "speaker": "Sage",
+    "text": "“Okay… I’ll try. I’ll try to be honest with myself and I will try to use your advice. Thanks, Professor.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingImposter_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "mentor_meetingImposter_4" : {
+    "speaker": "Professor Sharma",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something - it's just the nature of the journey.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingImposter_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "mentor_meetingPerfect_1" : {
+    "text": "Later, Sage meets with Professor Sharma, her mentor, who offers advice on managing stress, assignments, and life in general.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingPerfect_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "mentor_meetingPerfect_2" : {
+    "text": "The office is cluttered but warm—a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Perfect_Sage_advice_1"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "Perfect_Sage_advice_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“You don’t have to be perfect, Sage. Just be honest with yourself. Let your true voice come through.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Perfect_Sage_advice_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Perfect_Sage_advice_2" : {
+    "speaker": "Sage",
+    "text": "“Honest... right. Because that's easy. Everyone expects me to be perfect.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Perfect_Sage_advice_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_slightfrown.png"
+  },
+  "Perfect_Sage_advice_3" : {
+    "speaker": "Professor Sharma",
+    "text": "“Who is everyone, Sage? And what do you expect from yourself?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Perfect_Sage_advice_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Perfect_Sage_advice_4" : {
+    "speaker": "Sage",
+    "text": "“Well, I suppose, even I expect to be my best self - all the time. I like getting great grades and being a good friend and family member, and feeling like I succeeded.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Perfect_Sage_advice_5"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "Perfect_Sage_advice_5" : {
+    "speaker": "Professor Sharma",
+    "text": "“Is it possible to be perfect? In your dream, do you expect that you would ever reach the front of the line — or do you think you know that it is impossible and that your expectation was always unrealistic?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Perfect_Sage_advice_6"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Perfect_Sage_advice_6" : {
+    "speaker": "Sage",
+    "text": "“I do know that it's impossible. I think it's ridiculous to even consider being perfect. I think that's why I am so angry with myself — I feel stupid and like I should know better.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Perfect_Sage_advice_7"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_frown.png"
+  },  
+  "Perfect_Sage_advice_7" : {
+    "speaker": "Sage",
+    "text": "“You know, there are a couple of things you could try to be less of a perfectionist and hopefully happier.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Perfect_Sage_advice_8"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  }, 
+  "Perfect_Sage_advice_8" : {
+    "speaker": "Professor Sharma",
+    "text": "“I am concerned about how hard you are on yourself and how much pressure you create. Have you ever heard of the Pareto Principle or considered keeping a Thought Diary?”",
+    "choices": [
+      {
+        "text": "Ask about Thought Diary",
+        "next": "thought_diary_1"
+      },
+      {
+        "text": "Ask about Pareto Principle",
+        "next": "pareto_principle_1"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  }, 
+  "thought_diary_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“A thought diary is one way to see your negative thoughts. Once you acknowledge your own thoughts, you can see their effect on how you feel and act.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "thought_diary_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  }, 
+  "thought_diary_2" : {
+    "speaker": "Professor Sharma",
+    "text": "“You can learn to challenge your own negative thinking and make a conscious effort to stop unhelpful thoughts and create more grace for yourself. It takes patience, but can be very insightful.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingPerfect_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_ooh.png"
+  },
+  "pareto_principle_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“The Pareto Principle helps people focus on what is most important, and save time.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "pareto_principle_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "pareto_principle_2" : {
+    "speaker": "Professor Sharma",
+    "text": "“You focus on the 20 percent of your tasks that  will yield the best 80 percent of results and you take things to 80 percent quality and move on — allowing yourself to return to the task, but only if time allows and decreasing the pressure to do everything every time.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingPerfect_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "mentor_meetingPerfect_3" : {
+    "speaker": "Sage",
+    "text": "“Okay… I’ll try. I’ll try to be honest with myself and I will try to use your advice. Thanks, Professor.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingPerfect_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "mentor_meetingPerfect_4" : {
+    "speaker": "Professor Sharma",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something - it's just the nature of the journey.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingPerfect_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "mentor_meetingPleaser_1" : {
+    "text": "Later, Sage meets with Professor Sharma, her mentor, who offers advice on managing stress, assignments, and life in general.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingPleaser_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "mentor_meetingPleaser_2" : {
+    "text": "The office is cluttered but warm—a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Pleaser_Sage_advice_1"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "Pleaser_Sage_advice_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“I know that you are a very kind and compassionate person Sage, those are wonderful qualities that I admire about you.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Pleaser_Sage_advice_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Pleaser_Sage_advice_2" : {
+    "speaker": "Professor Sharma",
+    "text": "“I wonder if you realize how much you do for others at your own expense. It’s like you are eating pie until you are literally sick. When you feel unhappy about something, I believe it’s because your actions aren't aligned with your values.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Pleaser_Sage_advice_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Pleaser_Sage_advice_3" : {
+    "speaker": "Sage",
+    "text": "“I am not sure what to do about that, or even how to see when it may happen, since I find myself unhappy after the fact.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Pleaser_Sage_advice_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_slightfrown.png"
+  },
+  "Pleaser_Sage_advice_4" : {
+    "speaker": "Professor Sharma",
+    "text": "“Pleasing others is an extension of being nice. It is not inherently bad behavior. However, if you do things for others to the point of being unhappy, it can be harmful to your well-being.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Pleaser_Sage_advice_5"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Pleaser_Sage_advice_5" : {
+    "speaker": "Professor Sharma",
+    "text": "“Perhaps you would consider trying some things to help you take care of yourself?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Pleaser_Sage_advice_6"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "Pleaser_Sage_advice_6" : {
+    "speaker": "Sage",
+    "text": "“Sure, I guess, but I think I will be okay if I just stay the course.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "Pleaser_Sage_advice_7"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "Pleaser_Sage_advice_7" : {
+    "speaker": "Professor Sharma",
+    "text": "“There are a couple of things I can suggest. One I call the Taking Your Time technique and the other I refer to as Structuring Your Boundaries. Which one would you like me to tell you about?”",
+    "choices": [
+      {
+        "text": "Ask about Taking Your Time",
+        "next": "time_1"
+      },
+      {
+        "text": "Ask about Structuring Your Boundaries",
+        "next": "boundaries_1"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "time_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“Taking your time involves not answering requests with a yes or no answer, but answering them with questions.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "time_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "time_2" : {
+    "speaker": "Professor Sharma",
+    "text": "“Does this feel stressful to me? How long will it take and do I have that much time? Can I afford the opportunity cost of saying ‘yes’?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "time_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_ooh.png"
+  },
+  "time_3" : {
+    "speaker": "Professor Sharma",
+    "text": "“You give yourself the time to gather more information and think about your own desires, instead of automatically agreeing out of a fear of rejection.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingPleaser_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "boundaries_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“Structuring your boundaries requires actual limitations on real life commitments. For example, setting a timer to start or stop activities, time-boxing conversations, creating a schedule, or even making yourself use prepared responses to common situations.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "boundaries_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "boundaries_2" : {
+    "speaker": "Professor Sharma",
+    "text": "“You can practice small steps. Saying things that are not your usual responses like ‘maybe next time’ ‘I gotta pass’ or ‘I really do not have the bandwidth for that right now’.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "boundaries_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_ooh.png"
+  },
+  "boundaries_3" : {
+    "speaker": "Professor Sharma",
+    "text": "“Instead of always making time and energy for others, you can tell yourself it’s okay that you did not have time to meet a friend because you had to take care of a personal priority.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "boundaries_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "boundaries_4" : {
+    "speaker": "Professor Sharma",
+    "text": "“Here is one that I bet feels uncomfortable: you can try committing to not making excuses. Literally just saying ‘No’ as your entire response, with that winning smile of yours of course.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingPleaser_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "mentor_meetingPleaser_3" : {
+    "speaker": "Sage",
+    "text": "“Okay… I’ll try. I’ll try to be honest with myself and I will try to use your advice. Thanks, Professor.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingPleaser_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "mentor_meetingPleaser_4" : {
+    "speaker": "Professor Sharma",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something - it's just the nature of the journey.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingPleaser_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "mentor_meetingAntiSocial_1" : {
+    "text": "Later, Sage meets with Professor Sharma, her mentor, who offers advice on managing stress, assignments, and life in general.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingAntiSocial_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "mentor_meetingAntiSocial_2" : {
+    "text": "The office is cluttered but warm—a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_Sage_advice_1"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "antiSocial_Sage_advice_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“That seems like a pretty straightforward dream Sage. I think you are correct in noticing that you feel overwhelmed— by both a want, and an expectation, to participate while still needing to recharge alone— like most introverts do!”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_Sage_advice_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "antiSocial_Sage_advice_2" : {
+    "speaker": "Sage",
+    "text": "“Yeah, the huge ferris wheel sure felt overwhelming.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_Sage_advice_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_slightfrown.png"
+  },
+  "antiSocial_Sage_advice_3" : {
+    "speaker": "Professor Sharma",
+    "text": "“Frankly, I am more concerned with how you feel and talk to yourself when you do participate and the fears that push you to avoid participation.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_Sage_advice_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_ooh.png"
+  },
+"antiSocial_Sage_advice_4" : {
+    "speaker": "Professor Sharma",
+    "text": "“But how could I possibly change that?”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "antiSocial_Sage_advice_5"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_slightfrown.png"
+  },  
+"antiSocial_Sage_advice_5" : {
+    "speaker": "Professor Sharma",
+    "text": "“Well, I have a couple of ideas. Two websites come to mind for you to check out— one is Charisma on Command and the other is Project Helping.”",
+    "choices": [
+      {
+        "text": "Ask about Charisma on Command",
+        "next": "charisma_1"
+      },
+      {
+        "text": "Aks about Project Helping",
+        "next": "projectHelping_1"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+"charisma_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“Charisma on Command is a program that has a YouTube channel and an instructional curriculum through Charisma University.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "charisma_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  }, 
+  "charisma_2" : {
+    "speaker": "Professor Sharma",
+    "text": "“The premise is that you can learn charisma, the skills you need to feel more confident, and have greater social success. It’s all about practice, just like everything else!”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingAntiSocial_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_ooh.png"
+  }, 
+  "projectHelping_1" : {
+    "speaker": "Professor Sharma",
+    "text": "“Project Helping is a program that connects people to volunteer opportunities. Helping others is a very powerful tool for improving mental wellness overall.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "projectHelping_2"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "projectHelping_2" : {
+    "speaker": "Professor Sharma",
+    "text": "“The website makes it very easy to volunteer and helping can have immediate positive effects.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingAntiSocial_3"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  }, 
+  "mentor_meetingAntiSocial_3" : {
+    "speaker": "Sage",
+    "text": "“Okay… I’ll try. I’ll try to be honest with myself and I will try to use your advice. Thanks, Professor.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingAntiSocial_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png",
+    "npcSharma": "NPC_Images/Sharma_smile.png"
+  },
+  "mentor_meetingAntiSocial_4" : {
+    "speaker": "Professor Sharma",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something - it's just the nature of the journey.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingAntiSocial_4"
+      }
+    ],
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
   }
-  }
+}
 }
