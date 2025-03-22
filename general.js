@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
         startButton.style.display = 'block'; // Show the start button
     });
 
-    // End of disclaimer code
 
 
     // Fetch the story data from the JSON file
@@ -90,22 +89,53 @@ document.addEventListener('DOMContentLoaded', function () {
             event.stopPropagation();
         });
 
-        if (resetGameBtn) {
-            resetGameBtn.addEventListener('click', function () {
-                console.log("Reset game button clicked");
-                gameContainer.style.display = 'none';
-                foregroundImage.style.display = 'none';
-                titleScreen.style.display = 'flex';
-                document.body.style.backgroundImage = "url('Background_Images/Title_Official.png')";
-                makeChoice('campus_walk_1'); // Reset to the first scene
-            });
-        } else {
-            console.error('Reset game button not found');
-        }
-
         // Play music
         playMusic();
     }
+
+    // Navigation Modal Setup (Moved back inside setupGame)
+    const storyNavBtn = document.getElementById('story-nav-btn');
+    const navModal = document.getElementById('nav-modal');
+    const navCloseBtn = navModal.querySelector('.close-btn');
+    const navTitleScreenBtn = document.getElementById('nav-title-screen');
+    const navAct1Btn = document.getElementById('nav-act1');
+    const navAct2Btn = document.getElementById('nav-act2');
+    const navAct3Btn = document.getElementById('nav-act3');
+
+    storyNavBtn.addEventListener('click', () => {
+        navModal.style.display = 'block';
+    });
+
+    navCloseBtn.addEventListener('click', () => {
+        navModal.style.display = 'none';
+    });
+
+    function navigateTo(section) {
+        if (section === 'Title Screen') {
+            titleScreen.style.display = 'flex';
+            gameContainer.style.display = 'none';
+            foregroundImage.style.display = 'none';
+            document.body.style.backgroundImage = "url('Background_Images/Title_Official.png')";
+        } else if (section === 'Act 1 Start') {
+            makeChoice('campus_walk_1');
+            gameContainer.style.display = 'block';
+            titleScreen.style.display = 'none';
+        } else if (section === 'Act 2 Start') {
+            makeChoice('dream_seq_transition'); // Replace with your actual Act 2 start scene key
+            gameContainer.style.display = 'block';
+            titleScreen.style.display = 'none';
+        } else if (section === 'Act 3 Start') {
+            makeChoice('dormfinalProj_1'); // Replace with your actual Act 3 start scene key
+            gameContainer.style.display = 'block';
+            titleScreen.style.display = 'none';
+        }
+        navModal.style.display = 'none';
+    }
+
+    navTitleScreenBtn.addEventListener('click', () => navigateTo('Title Screen'));
+    navAct1Btn.addEventListener('click', () => navigateTo('Act 1 Start'));
+    navAct2Btn.addEventListener('click', () => navigateTo('Act 2 Start'));
+    navAct3Btn.addEventListener('click', () => navigateTo('Act 3 Start'));
 
     function playMusic() {
         bgMusic.volume = 0.5;
