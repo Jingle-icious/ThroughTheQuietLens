@@ -146,11 +146,13 @@ body {
 #npc-container {
     position: absolute;
     bottom: 0;
-    right: 5vw;
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Make it full width */
     display: flex;
     align-items: flex-end;
     z-index: 1;
-    flex-direction: row-reverse;
+    flex-direction: row; /* Change to row to align left to right */
+    justify-content: space-around; /* Distribute images evenly */
 }
 
 #npc1, #npc2, #npc3 {
@@ -189,6 +191,52 @@ body {
     z-index: 1;
     /* Optional: */
     /* object-fit: cover; */
+}
+
+#imposter-image {
+    display: block; /* Make sure it's visible */
+    position: absolute;
+    bottom: 0;
+    left: 4%; /* Position at the left edge */
+    max-width: 700px;
+    max-height: 88vh;
+    height: auto;
+    z-index: 1;
+}
+
+#perfectionist-image {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 28%; /* Space evenly */
+    transform: translateX(0%); /* Center based on image width */
+    max-width: 700px;
+    max-height: 85vh;
+    height: auto;
+    z-index: 1;
+}
+
+#pleaser-image { /* Added pleaser-image */
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 51%; /* Space evenly */
+    transform: translateX(0%); /* Center based on image width */
+    max-width: 700px;
+    max-height: 92vh;
+    height: auto;
+    z-index: 1;
+}
+
+#antiSocial-image {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 80%; /* Space evenly */
+    transform: translateX(0%); /* Center based on image width */
+    max-height: 80vh;
+    height: auto;
+    z-index: 1;
 }
 
 /* Media Queries */

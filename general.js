@@ -228,6 +228,41 @@ function updateSceneContent(scene) {
         npc2.style.display = 'none';
     }
 
+    // Update the Sages image
+
+    const imposterSage = document.getElementById('imposter-image');
+    if (scene.imposterSage) {
+        imposterSage.src = scene.imposterSage;
+        imposterSage.style.display = 'block';
+    } else {
+        imposterSage.style.display = 'none';
+    }
+    const perfectionistSage = document.getElementById('perfectionist-image');
+    if (scene.perfectionistSage) {
+        perfectionistSage.src = scene.perfectionistSage;
+        perfectionistSage.style.display = 'block';
+    } else {
+        perfectionistSage.style.display = 'none';
+    }
+
+    const pleaserSage = document.getElementById('pleaser-image');
+    if (scene.pleaserSage) {
+        pleaserSage.src = scene.pleaserSage;
+        pleaserSage.style.display = 'block';
+    } else {
+        pleaserSage.style.display = 'none';
+    }
+
+    const antiSocialSage = document.getElementById('antiSocial-image');
+    if (scene.antiSocialSage) {
+        antiSocialSage.src = scene.antiSocialSage;
+        antiSocialSage.style.display = 'block';
+    } else {
+        antiSocialSage.style.display = 'none';
+    }
+
+
+
     // Handle character name box
     const nameBox = document.getElementById('character-name-box');
     const text = scene.text;

@@ -882,7 +882,7 @@
         }
     ],
         "background": "Background_Images/Dream1_banner.png",
-        "sprite": "Sage_Images/SageVar7_pleaser_smile.png", 
+        "pleaserSage": "Sage_Images/SageVar7_pleaser_smile.png", 
         "perfectionistSage": "Sage_Images/SageVar5_perfectionist.png", 
         "antiSocialSage": "Sage_Images/SageVar4_antisocial.png", 
         "imposterSage": "Sage_Images/SageVar6_imposter_teeth.png" 
@@ -952,7 +952,7 @@
         "next": "perfect_challenge_2"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
+    "background": "Background_Images/Dream_PerfContest_WIP.png",
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "perfect_challenge_2" : {
@@ -964,7 +964,7 @@
         "next": "perfect_challenge_3"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
+    "background": "Background_Images/Dream_PerfContest_WIP.png",
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "perfect_challenge_3" : {
@@ -976,7 +976,7 @@
         "next": "perfect_challenge_4"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
+    "background": "Background_Images/Dream_PerfContest_WIP.png",
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "perfect_challenge_4" : {
@@ -988,7 +988,7 @@
         "next": "perfect_challenge_5"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
+    "background": "Background_Images/Dream_PerfContest_WIP.png",
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "perfect_challenge_5" : {
@@ -1000,7 +1000,7 @@
         "next": "perfect_challenge_6"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
+    "background": "Background_Images/Dream_PerfContest_WIP.png",
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "perfect_challenge_6" : {
