@@ -1,6 +1,42 @@
 let story;
 let isMuted = false;
 
+function scaleBody(aspectRatio) {
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    let newWidth, newHeight;
+  
+    if (windowWidth / windowHeight > aspectRatio) {
+      newHeight = windowHeight;
+      newWidth = windowHeight * aspectRatio;
+    } else {
+      newWidth = windowWidth;
+      newHeight = windowWidth / aspectRatio;
+    }
+
+    const outerContainer = document.getElementById('outer-container');
+
+    document.body.style.width = `${newWidth}px`;
+    document.body.style.height = `${newHeight}px`;
+    outerContainer.style.width = `${newWidth}px`;
+    outerContainer.style.height = `${newHeight}px`;
+
+    // The following should allow scaling of all UI elements together, but does
+    // not work properly because we don't have a way to properly scale to max
+    // width or height like we do above.
+    // document.body.style.transformOrigin = 'top left';
+    // document.body.style.transform = `scale(${newWidth / 2560}, ${newHeight / 1440})`;
+}
+  
+  // Example usage with a 16:9 aspect ratio:
+  scaleBody(16 / 9);
+  
+  // Update on window resize:
+  window.addEventListener('resize', () => {
+    scaleBody(16 / 9);
+  });
+
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
@@ -115,7 +151,8 @@ document.addEventListener('DOMContentLoaded', function () {
             titleScreen.style.display = 'flex';
             gameContainer.style.display = 'none';
             foregroundImage.style.display = 'none';
-            document.body.style.backgroundImage = "url('Background_Images/Title_Official.png')";
+            const outerContainer = document.getElementById('outer-container');
+            outerContainer.style.backgroundImage = "url('Background_Images/Title_Official.png')";
         } else if (section === 'Act 1 Start') {
             makeChoice('campus_walk_1');
             gameContainer.style.display = 'block';
@@ -171,7 +208,8 @@ function crossFade(newBackgroundSrc, callback) {
 
     // After fading to black, change the background and fade in
     setTimeout(() => {
-        document.body.style.backgroundImage = `url('${newBackgroundSrc}')`;
+        const outerContainer = document.getElementById('outer-container');
+        outerContainer.style.backgroundImage = `url('${newBackgroundSrc}')`;
         overlay.style.opacity = '0';
     }, 1100);
 
@@ -190,7 +228,8 @@ function makeChoice(choice) {
     }
 
     const scene = story[choice];
-    const currentBackground = document.body.style.backgroundImage.replace(/^url\(['"](.+)['"]\)/, '$1');
+    const outerContainer = document.getElementById('outer-container');
+    const currentBackground = outerContainer.style.backgroundImage.replace(/^url\(['"](.+)['"]\)/, '$1');
     const newBackground = scene.background;
 
     if (newBackground && newBackground !== currentBackground) {
