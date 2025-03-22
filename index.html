@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,90 +12,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="title-screen">
-        <h1>
-            <span>Through the</span>
-            <span>Quiet Lens</span>
-          </h1>
-        <button id="start-button">Start</button>
-    </div>
-
-    <img id="foreground-image" src="Sage_Images/SageVar1_frown.png" alt="Sage Character">
-
-    <div id="character-name-box"></div>
-    <div id="game-container">
-        <p id="story-text"></p>
-        <div id="choices">
-            <button onclick="makeChoice(1)"></button>
-            <button onclick="makeChoice(2)"></button>
+    <div id="outer-container">
+        <div id="title-screen">
+            <h1>
+                <span>Through the</span>
+                <span>Quiet Lens</span>
+            </h1>
+            <button id="start-button">Start</button>
         </div>
+
+        <img id="foreground-image" src="Sage_Images/SageVar1_frown.png" alt="Sage Character">
+
+        <div id="character-name-box"></div>
+        <div id="game-container">
+            <p id="story-text"></p>
+            <div id="choices">
+                <button onclick="makeChoice(1)"></button>
+                <button onclick="makeChoice(2)"></button>
+            </div>
+        </div>
+
+        <div id="disclaimer-popup">
+            <h2>Disclaimer</h2>
+            <p>This game explores complex emotional themes, including anxiety, social challenges, and personal
+                struggles. If you are sensitive to these topics or find them triggering, please consider whether this
+                experience is right for you.</p>
+            <button id="disclaimer-accept-button">Accept</button>
+        </div>
+
+        <div id="npc-container">
+            <img id="npc1" src="NPC1.png" alt="Student 1">
+            <img id="npc2" src="NPC2.png" alt="Student 2">
+            <img id="blake-image" src="NPC_Images/BlakeWIP4.png" alt="Blake Character">
+            <img id="sharma-image" src="NPC_images/Sharma_smile.png" alt="Sharma Character">
+            <img id="imposter-image" src="Sage_Images/SageVar6_imposter_teeth.png" alt="Imposter Sage Character">
+            <img id="perfectionist-image" src="Sage_Images/SageVar5_perfectionist.png"
+                alt="Perfectionist Sage Character">
+            <img id="pleaser-image" src="Sage_Images/SageVar7_Pleaser_smile.png" alt="Pleaser Sage Character">
+            <img id="antiSocial-image" src="Sage_Images/SageVar4_antisocial.png" alt="Anti-Social Sage Character">
+        </div>
+
+        <button id="settings-btn">
+            <img src="Icons/Settings_Icon.svg" alt="Settings">
+        </button>
+        <button id="audio-control-btn">
+            <img src="Icons/Audio_On_Icon.svg" alt="Audio Control">
+        </button>
+        <button id="story-nav-btn">
+            <img src="Icons/Book_Navigation_Icon.svg" alt="Story Navigation">
+        </button>
+
+        <div id="nav-modal" style="display: none;">
+            <div class="close-btn">&times;</div>
+            <h2>Navigation</h2>
+            <button id="nav-title-screen">Title Screen</button>
+            <button id="nav-act1">Act 1 Start</button>
+            <button id="nav-act2">Act 2 Start</button>
+            <button id="nav-act3">Act 3 Start</button>
+        </div>
+
+        <div id="settings-modal" style="display: none;">
+            <div class="close-btn">&times;</div>
+            <h2>Settings</h2>
+
+            <label for="text-size">Text Size</label>
+            <select id="text-size">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="text-color">Text Color</label>
+            <input type="color" id="text-color" value="#ffffff">
+
+            <label for="bg-opacity">Text Box Opacity</label>
+            <input type="range" id="bg-opacity" min="0" max="1" step="0.05" value="0.8">
+
+            <label for="bg-music-volume">Music Volume</label>
+            <input type="range" id="bg-music-volume" min="0" max="1" step="0.05" value="0.5">
+
+            <button id="reset-btn">Reset to Default</button>
+        </div>
+
+        <audio id="background-music" loop>
+            <source src="Audio/Quiet_Lens_Soundtrack_Option.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script src="general.js"></script>
     </div>
-    
-    <div id="disclaimer-popup">
-      <h2>Disclaimer</h2>
-      <p>This game explores complex emotional themes, including anxiety, social challenges, and personal struggles. If you are sensitive to these topics or find them triggering, please consider whether this experience is right for you.</p>
-      <button id="disclaimer-accept-button">Accept</button>
-  </div>
-
-    <div id="npc-container">
-        <img id="npc1" src="NPC1.png" alt="Student 1">
-        <img id="npc2" src="NPC2.png" alt="Student 2">
-        <img id="blake-image" src="NPC_Images/BlakeWIP4.png" alt="Blake Character">
-        <img id="sharma-image" src="NPC_images/Sharma_smile.png" alt="Sharma Character">
-        <img id="imposter-image" src="Sage_Images/SageVar6_imposter_teeth.png" alt="Imposter Sage Character">
-        <img id="perfectionist-image" src="Sage_Images/SageVar5_perfectionist.png" alt="Perfectionist Sage Character">
-        <img id="pleaser-image" src="Sage_Images/SageVar7_Pleaser_smile.png" alt="Pleaser Sage Character">
-        <img id="antiSocial-image" src="Sage_Images/SageVar4_antisocial.png" alt="Anti-Social Sage Character">
-    </div>
-
-    <button id="settings-btn">
-        <img src="Icons/Settings_Icon.svg" alt="Settings">
-    </button>
-    <button id="audio-control-btn">
-        <img src="Icons/Audio_On_Icon.svg" alt="Audio Control">
-    </button>
-    <button id="story-nav-btn">
-        <img src="Icons/Book_Navigation_Icon.svg" alt="Story Navigation">
-    </button>
-    
-    <div id="nav-modal" style="display: none;">
-        <div class="close-btn">&times;</div>
-        <h2>Navigation</h2>
-        <button id="nav-title-screen">Title Screen</button>
-        <button id="nav-act1">Act 1 Start</button>
-        <button id="nav-act2">Act 2 Start</button>
-        <button id="nav-act3">Act 3 Start</button>
-    </div>
-
-    <div id="settings-modal" style="display: none;">
-      <div class="close-btn">&times;</div>
-      <h2>Settings</h2>
-  
-      <label for="text-size">Text Size</label>
-      <select id="text-size">
-          <option value="small">Small</option>
-          <option value="medium" selected>Medium</option>
-          <option value="large">Large</option>
-      </select>
-  
-      <label for="text-color">Text Color</label>
-      <input type="color" id="text-color" value="#ffffff">
-  
-      <label for="bg-opacity">Text Box Opacity</label>
-      <input type="range" id="bg-opacity" min="0" max="1" step="0.05" value="0.8">
-  
-      <label for="bg-music-volume">Music Volume</label>
-      <input type="range" id="bg-music-volume" min="0" max="1" step="0.05" value="0.5">
-  
-      <button id="reset-btn">Reset to Default</button>
-  </div>
-
-    <audio id="background-music" loop>
-        <source src="Audio/Quiet_Lens_Soundtrack_Option.wav" type="audio/wav">
-        Your browser does not support the audio element.
-    </audio>
-
-    <script src="general.js"></script>
 </body>
+
 </html>
