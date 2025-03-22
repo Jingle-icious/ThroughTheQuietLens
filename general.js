@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gameContainer.style.display = 'block';
             titleScreen.style.display = 'none';
         } else if (section === 'Act 3 Start') {
-            makeChoice('dormfinalProj_1'); 
+            makeChoice('dorm_finalProj_1'); 
             gameContainer.style.display = 'block';
             titleScreen.style.display = 'none';
         }

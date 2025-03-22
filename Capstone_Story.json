@@ -277,7 +277,7 @@
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_2": {
-      "text": "She looks around – everyone seems busy with the first round of exams and project deadlines soon approaching. She eyes the calendar on the wall–",
+      "text": "She looks around — everyone seems busy with the first round of exams and project deadlines soon approaching. She eyes the calendar on the wall–",
       "choices": [
         {
           "text": "Continue",
@@ -289,7 +289,7 @@
     },
     "dorm_arrival_3": {
       "speaker": "Sage",
-      "text": "<i>Three weeks into the semester - how can I already be so far behind?</i>",
+      "text": "<i>Three weeks into the semester — how can I already be so far behind?</i>",
       "choices": [
         {
           "text": "Continue",
@@ -312,7 +312,7 @@
     },
     "dorm_arrival_5": {
       "speaker": "Sage",
-      "text": "<i>oooohhhh, I could just sit and join them and take a break for a while - I really love that show.</i>",
+      "text": "<i>oooohhhh, I could just sit and join them and take a break for a while — I really love that show.</i>",
       "choices": [
         {
           "text": "Continue",
@@ -323,7 +323,7 @@
       "sprite": "Sage_Images/SageVar1_surprised.png"
     },
     "dorm_arrival_6": {
-      "text": "She checks her phone— a missed call from home and a reminder from a professor about an upcoming assignment.",
+      "text": "She checks her phone — a missed call from home and a reminder from a professor about an upcoming assignment.",
       "choices": [
         {
           "text": "Continue",
@@ -335,7 +335,7 @@
     },
     "dorm_arrival_7": {
       "speaker": "Sage",
-      "text": "“Great. Deadline approaching – I am always behind and it has to be done well or there goes my grade, my GPA, my entire academic standing - lose my scholarship - get kicked out - never get a good job - “aaaaaaaccccckkkkkk!”",
+      "text": "“Great. Deadline approaching — I am always behind and it has to be done well or there goes my grade, my GPA, my entire academic standing — lose my scholarship — get kicked out — never get a good job — “aaaaaaaccccckkkkkk!”",
       "choices": [
         {
           "text": "Continue",
@@ -358,7 +358,7 @@
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_arrival_9": {
-    "text": "She heads upstairs, swiping her keycard and pushing open the door to her dorm room.\nIt’s quiet—almost too quiet.",
+    "text": "She heads upstairs, swiping her keycard and pushing open the door to her dorm room.\nIt’s quiet — almost too quiet.",
     "choices": [
       {
         "text": "Continue",
@@ -407,7 +407,7 @@
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_striveA_3": {
-    "text": "Sage stands up and stretches, she is finally satisfied that she will get an A on the assignment. She looks at the time - it's late - after midnight - did she even eat dinner?",
+    "text": "Sage stands up and stretches, she is finally satisfied that she will get an A on the assignment. She looks at the time — it's late — after midnight — did she even eat dinner?",
     "choices": [
       {
         "text": "Continue",
@@ -442,7 +442,7 @@
   },
   "dorm_reasonable_3": {
     "speaker": "Sage",
-    "text": "<i>Have I met the criteria - let me check - yep - but I could add to this and really wow my professor. That would ensure I got an A.</i>",
+    "text": "<i>Have I met the criteria — let me check — yep — but I could add to this and really wow my professor. That would ensure I got an A.</i>",
     "choices": [
       {
         "text": "Continue",
@@ -453,7 +453,7 @@
     "sprite": "Sage_Images/SageVar2WIP3.png"
   },
   "dorm_reasonable_4": {
-    "text": "She looks at the time - it's 7:30 and her roommates are talking about the weekend - she looks at her assignment and decides it is sufficient. She joins her friends and connects with them before getting ready for bed.",
+    "text": "She looks at the time — it's 7:30 and her roommates are talking about the weekend — she looks at her assignment and decides it is sufficient. She joins her friends and connects with them before getting ready for bed.",
     "choices": [
       {
         "text": "Continue",
@@ -550,7 +550,7 @@
     },
     "phone_vague_3": {
       "speaker": "Sage",
-      "text": "“Yeah… right.”",
+      "text": "“Yeah... right.”",
       "choices": [
         {
           "text": "Continue",
@@ -562,7 +562,7 @@
     },
     "phone_vague_4": {
       "speaker": "Sage",
-      "text": "<i>Soooo bright, so capable, can do it all - can’t you see that does NOT help! I am drowning here and talking just feels like more expectations to live up to.</i>",
+      "text": "<i>Soooo bright, so capable, can do it all — can’t you see that does NOT help! I am drowning here and talking just feels like more expectations to live up to.</i>",
       "choices": [
         {
           "text": "Continue",
@@ -586,7 +586,7 @@
     },
     "phone_honest_1": {
       "speaker": "Sage",
-      "text": "“It’s… kind of overwhelming, honestly. I feel like I’m already behind.”",
+      "text": "“It’s...kind of overwhelming, honestly. I feel like I’m already behind.”",
       "choices": [
         {
           "text": "Continue",
@@ -646,7 +646,7 @@
     },
     "phone_honest_6": {
       "speaker": "Sage",
-      "text": "“I know you are, and I know you believe in me, but I really feel like I am going to burn out. Sometimes I feel so scared to let you down - I really want to make you proud of me.”",
+      "text": "“I know you are, and I know you believe in me, but I really feel like I am going to burn out. Sometimes I feel so scared to let you down — I really want to make you proud of me.”",
       "choices": [
         {
           "text": "Continue",
@@ -912,7 +912,7 @@
   },
   "imposter_challenge_3" : {
     "speaker": "Sage",
-    "text": "“I know I can’t walk on stilts - I am not a performer and now everyone else knows that too. That’s right, point and laugh at the imposter. Come gawk at the silly girl on stilts trying to do something she has no business doing.”",
+    "text": "“I know I can’t walk on stilts — I am not a performer and now everyone else knows that too. That’s right, point and laugh at the imposter. Come gawk at the silly girl on stilts trying to do something she has no business doing.”",
     "choices": [
       {
         "text": "Continue",
@@ -923,7 +923,7 @@
     "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
   },
   "imposter_challenge_4" : {
-    "text": "Sage looks around at the faces beneath her and feels gravity pulling her off the stilts. She knows that she is going to fall on her face - literally - and she can only hope she doesn’t hurt anyone on the way down. ",
+    "text": "Sage looks around at the faces beneath her and feels gravity pulling her off the stilts. She knows that she is going to fall on her face — literally — and she can only hope she doesn’t hurt anyone on the way down. ",
     "choices": [
       {
         "text": "Continue",
@@ -969,7 +969,7 @@
   },
   "perfect_challenge_3" : {
     "speaker": "Sage",
-    "text": "“I knew I had to be first in line - I knew that this is the contest I had to win and now I am so screwed. Figures - all because I didn’t get up early enough. I am never far enough ahead - always playing catch up - always falling short.”",
+    "text": "“I knew I had to be first in line - I knew that this is the contest I had to win and now I am so screwed. Figures — all because I didn’t get up early enough. I am never far enough ahead - always playing catch up - always falling short.”",
     "choices": [
       {
         "text": "Continue",
@@ -993,7 +993,7 @@
   },
   "perfect_challenge_5" : {
     "speaker": "Sage",
-    "text": "“Really, I do know why - I need to have this accolade. This is the proof that I did it right. This is the evidence that I am worthy.”",
+    "text": "“Really, I do know why — I need to have this accolade. This is the proof that I did it right. This is the evidence that I am worthy.”",
     "choices": [
       {
         "text": "Continue",
@@ -1028,7 +1028,7 @@
   },
   "pleaser_challenge_2" : {
     "speaker": "Sage",
-    "text": "“Okay - they are happy with me - I did it.”",
+    "text": "“Okay — they are happy with me — I did it.”",
     "choices": [
       {
         "text": "Continue",
@@ -1040,7 +1040,7 @@
   },
   "pleaser_challenge_3" : {
     "speaker": "Sage",
-    "text": "“I sure feel awful though - my stomach is so sick - and everyone is looking at me - oh why do I keep doing things that feel bad just to make others happy?”",
+    "text": "“I sure feel awful though — my stomach is so sick — and everyone is looking at me — oh why do I keep doing things that feel bad just to make others happy?”",
     "choices": [
       {
         "text": "Continue",
@@ -1063,7 +1063,7 @@
     "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
   },
   "pleaser_challenge_5" : {
-    "text": "Sage tries to quietly exit the area - suddenly she is running and crying. She feels her legs burning and she can't seem to catch her breath. Exhausted and falls to the ground.",
+    "text": "Sage tries to quietly exit the area — suddenly she is running and crying. She feels her legs burning and she can't seem to catch her breath. Exhausted and falls to the ground.",
     "choices": [
       {
         "text": "Continue",
@@ -1074,7 +1074,7 @@
     "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
   },
   "pleaser_challenge_6" : {
-    "text": "Sage wakes up with her heart pounding and cold from sweat - like she just went for a run. Knowing that she won't be going back to sleep, she heads to the shower to start her day.",
+    "text": "Sage wakes up with her heart pounding and cold from sweat — like she just went for a run. Knowing that she won't be going back to sleep, she heads to the shower to start her day.",
     "choices": [
       {
         "text": "Continue",
@@ -1085,7 +1085,7 @@
     "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
   },
   "antiSocial_challenge_1" : {
-    "text": "Sage looks at the ferris wheel in the distance - each bucket has something written on it. She is excited to get on the ride and see the POV from the top - she heads to the line.",
+    "text": "Sage looks at the ferris wheel in the distance — each bucket has something written on it. She is excited to get on the ride and see the POV from the top — she heads to the line.",
     "choices": [
       {
         "text": "Continue",
@@ -1097,7 +1097,7 @@
   },
   "antiSocial_challenge_2" : {
     "speaker": "Sage",
-    "text": "“I want to ride the ferris wheel - but what is that - wait - are those all…invites?”",
+    "text": "“I want to ride the ferris wheel — but what is that - wait - are those all…invites?”",
     "choices": [
       {
         "text": "Continue",
@@ -1109,7 +1109,7 @@
   },
   "antiSocial_challenge_3" : {
     "speaker": "Sage",
-    "text": "“It’s almost my turn - I have to pick one, but which one? A Club Meeting - I should go since I missed the last one. Or the Study Group - I really need that. Date Night because I have not seen my guy in ages. Sheila’s Birthday Party - oh jeez - is that now?” ",
+    "text": "“It’s almost my turn — I have to pick one, but which one? A Club Meeting — I should go since I missed the last one. Or the Study Group — I really need that. Date Night because I have not seen my guy in ages. Sheila’s Birthday Party - oh jeez - is that now?” ",
     "choices": [
       {
         "text": "Continue",
@@ -1121,7 +1121,7 @@
   },
   "antiSocial_challenge_4" : {
     "speaker": "Sage",
-    "text": "“Oh no - so many choices - exhausting - scary - decisions - the wheel never stops - not enough time - but I am really so lonely sometimes - and I don’t want to miss out.”",
+    "text": "“Oh no — so many choices — exhausting — scary — decisions — the wheel never stops — not enough time — but I am really so lonely sometimes — and I don’t want to miss out.”",
     "choices": [
       {
         "text": "Continue",
@@ -1245,7 +1245,7 @@
   },
   "Imposter_Sage_advice_7" : {
     "speaker" : "Sage",
-    "text":"“Really, wow. That seems misplaced  — why would successful people think that they are not as good as everyone seems to THINK they are?”",
+    "text":"“Really, wow. That seems misplaced — why would successful people think that they are not as good as everyone seems to THINK they are?”",
     "choices": [
       {
         "text": "Continue",
@@ -1405,11 +1405,11 @@
   },
   "mentor_meetingImposter_4" : {
     "speaker": "Professor Sharma",
-    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something - it's just the nature of the journey.”",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it's just the nature of the journey.”",
     "choices": [
       {
           "text": "Continue",
-          "next": "mentor_meetingImposter_4"
+          "next": "dorm_finalProj_1"
       }
     ],
     "background": "Background_Images/Classroom_WIP.png",
@@ -1428,7 +1428,7 @@
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "mentor_meetingPerfect_2" : {
-    "text": "The office is cluttered but warm—a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
+    "text": "The office is cluttered but warm — a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
     "choices": [
       {
         "text": "Continue",
@@ -1614,11 +1614,11 @@
   },
   "mentor_meetingPerfect_4" : {
     "speaker": "Professor Sharma",
-    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something - it's just the nature of the journey.”",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it's just the nature of the journey.”",
     "choices": [
       {
           "text": "Continue",
-          "next": "mentor_meetingPerfect_4"
+          "next": "dorm_finalProj_1"
       }
     ],
     "background": "Background_Images/Classroom_WIP.png",
@@ -1689,7 +1689,7 @@
   },
   "Pleaser_Sage_advice_4" : {
     "speaker": "Professor Sharma",
-    "text": "“Pleasing others is an extension of being nice. It is not inherently bad behavior. However, if you do things for others to the point of being unhappy, it can be harmful to your well-being.”",
+    "text": "“Pleasing others is an extension of being nice. It's not inherently bad behavior. However, if you do things for others to the point of being unhappy, it can be harmful to your well-being.”",
     "choices": [
       {
         "text": "Continue",
@@ -1849,11 +1849,11 @@
   },
   "mentor_meetingPleaser_4" : {
     "speaker": "Professor Sharma",
-    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something - it's just the nature of the journey.”",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it's just the nature of the journey.”",
     "choices": [
       {
           "text": "Continue",
-          "next": "mentor_meetingPleaser_4"
+          "next": "dorm_finalProj_1"
       }
     ],
     "background": "Background_Images/Classroom_WIP.png",
@@ -1872,7 +1872,7 @@
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "mentor_meetingAntiSocial_2" : {
-    "text": "The office is cluttered but warm—a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
+    "text": "The office is cluttered but warm — a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
     "choices": [
       {
         "text": "Continue",
@@ -1885,7 +1885,7 @@
   },
   "antiSocial_Sage_advice_1" : {
     "speaker": "Professor Sharma",
-    "text": "“That seems like a pretty straightforward dream Sage. I think you are correct in noticing that you feel overwhelmed— by both a want, and an expectation, to participate while still needing to recharge alone— like most introverts do!”",
+    "text": "“That seems like a pretty straightforward dream Sage. I think you are correct in noticing that you feel overwhelmed — by both a want, and an expectation, to participate while still needing to recharge alone— like most introverts do!”",
     "choices": [
       {
         "text": "Continue",
@@ -1937,7 +1937,7 @@
   },  
 "antiSocial_Sage_advice_5" : {
     "speaker": "Professor Sharma",
-    "text": "“Well, I have a couple of ideas. Two websites come to mind for you to check out— one is Charisma on Command and the other is Project Helping.”",
+    "text": "“Well, I have a couple of ideas. Two websites come to mind for you to check out — one is Charisma on Command and the other is Project Helping.”",
     "choices": [
       {
         "text": "Ask about Charisma on Command",
@@ -2019,19 +2019,19 @@
   },
   "mentor_meetingAntiSocial_4" : {
     "speaker": "Professor Sharma",
-    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something - it's just the nature of the journey.”",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it's just the nature of the journey.”",
     "choices": [
       {
           "text": "Continue",
-          "next": "mentor_meetingAntiSocial_4"
+          "next": "dorm_finalProj_1"
       }
     ],
     "background": "Background_Images/Classroom_WIP.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
-  "dormfinalProj_1" : {
-    "text": "As the semseter dwindles to a close, Sage sits in her dorm, staring at the prompt for her final project.",
+  "dorm_finalProj_1" : {
+    "text": "As the semester dwindles to a close, Sage sits in her dorm, staring at the prompt for her final project.",
     "choices": [
       {
         "text": "Continue",
@@ -2040,7 +2040,321 @@
     ],
     "background": "Background_Images/Dorm_WIP.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "dorm_finalProj_2" : {
+    "text": "It stares back, reading <i>“Interpret a personal challenge in a creative medium and write a synopsis of that challenge, including what you learned from the experience.”</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_3"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "dorm_finalProj_3" : {
+    "speaker": "Sage",
+    "text": "“Well, I've been here before and I know that I can handle this. I just need to decide where to start.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_4"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png"
+  },
+  "dorm_finalProj_4" : {
+    "speaker": "Sage",
+    "text": "<i>I have faced challenges from so many of my experiences. I have done hard assignments. I have navigated tricky social situations. I have pushed my comfort zone and carried old responsibilities. I have even attempted to be more honest with myself. This is not straight-forward for me.</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_5"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "dorm_finalProj_5" : {
+    "text": "Sage flips through her journal and reviews her entries.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_6"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "dorm_finalProj_6" : {
+    "text": "She immediately recollects how much work it took to try and take the time to reflect and plan before she would act on her feelings. Her Imposter Syndrome is so frustrating. She starts thinking about how hard acceptance is when she feels pressure.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_7"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+  },
+  "dorm_finalProj_7" : {
+    "text": "She reads about her Imposter Syndrome challenges like talking about subjects that she does not know much about, or sitting in a math class and being the last one to get the answer.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_8"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+  },
+  "dorm_finalProj_8" : {
+    "text": "Her journal states “You got the same answer! Remember this!”  and she smiles at her own demand. It didn’t matter now — she did not have any more math classes to take. She really started thinking about herself differently when she changed to a bigger picture point of view.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_9"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+  },
+  "dorm_finalProj_9" : {
+    "text": "She looks up at the clock and realizes that she has been reading for awhile. The words blur as anxiety begins to churn inside her. She takes a deep breath and looks down at the journal in her hands.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_10"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "dorm_finalProj_10" : {
+    "speaker": "Sage",
+    "text": "“Wait, this very journal is a reminder that I do not need to be perfect, in fact I started keeping it in order to remember that I can do a good job and succeed without working to the bone out of fear.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_11"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+  },
+  "dorm_finalProj_11" : {
+    "speaker": "Sage",
+    "text": "<i>This and the time management and efficiency tools have been so helpful — I certainly feel better than I did last semester. I hope it's even better next semester.</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_12"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+  },
+  "dorm_finalProj_12" : {
+    "speaker": "Sage",
+    "text": "<i>I need to reset my thinking.</i> “I suppose I could call home and see what everyone is up to. Maybe hearing some encouragement will help me clarify the things that I have learned.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_13"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "dorm_finalProj_13" : {
+    "speaker": "Sage",
+    "text": "<i>But if my mom asks about how much I have done, I will feel like I failed her…again.</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_14"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_frown.png"
+  },
+  "dorm_finalProj_14" : {
+    "speaker": "Sage",
+    "text": "“She will check on my progress, tell me to stay on top of things, tell me she believes in me and imply judgement about my choices. Oh jeez. Maybe it's not a good idea.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_15"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar7_pleaser_talk.png"
+  },
+  "dorm_finalProj_15" : {
+    "speaker": "Sage",
+    "text": "“But if I set a boundary and am honest with her maybe it could go well. I could tell her up front that I need her to tell me all the things she thinks I learned this semester, or is proud of me for accomplishing, and warn her that I need her to curtail any judgement or criticism at the moment.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_16"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png"
+  },
+  "dorm_finalProj_16" : {
+    "text": "Sage throws the journal on the bed and grabs her phone, but the page that is opened catches her eye. It reads “ProjectHelping.org” in big letters across the page.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_17"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "dorm_finalProj_17" : {
+    "speaker": "Sage",
+    "text": "“That's it. That's what has taught me the most, had the greatest positive impact on my life, and it's what I am the most proud of too.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_18"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png"
+  },
+  "dorm_finalProj_18" : {
+    "speaker": "Sage",
+    "text": "“I think I was overwhelmed with obligations and kept feeling afraid of letting everyone down — I preferred to be alone and just avoid altogether. Volunteering was such a great decision.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_19"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar4_antisocial.png"
+  },
+  "dorm_finalProj_19" : {
+    "speaker": "Sage",
+    "text": "“I have learned so much about myself and all the different aspects of me. I liked myself before, but I kept falling into stress and anxiety traps that would steal my happiness. I wonder how I can use this project to show my insights.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_20"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png"
+  },
+  "dorm_finalProj_20" : {
+    "text": "Sage glances at the creative prompt assignment. She imagines either a chaotic abstract that channels her stress and anxiety into her art, or a happily ever after visualization piece that expresses her long term goal. ",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "dorm_finalProj_21"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "dorm_finalProj_21" : {
+    "text": "Her expression is a mix of uncertainty and a flicker of self-awareness. She decides to just start drawing and let her art decide.",
+    "choices": [
+      {
+        "text": "Artwork representing Sage's stress and anxiety",
+        "next": "stress_art_1"
+      },
+      {
+        "text": "Artwork representing Sage's contentment",
+        "next": "happy_art_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "stress_art_1" : {
+    "text": "A chaotic representation of all the aspects of stress and anxiety. This piece overuses color to symbolize an over-saturation, and the character is sick and anguished to the point of losing touch and becoming a static background. Sage looks at it and feels more motivated than ever to keep this larger-than-life wretchedness at bay.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "closing_1"
+      }
+    ],
+    "background": "Background_Images/StressArt.png"
+  },
+  "happy_art_1" : {
+    "text": "A smiling representation of a future version of Sage. The drawing exudes a sense of joyful freedom and self-expression, with dynamic movement and bold, cheerful energy. The character's pose and bright colors convey a carefree spirit, capturing a moment of pure happiness.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "closing_1"
+      }
+    ],
+    "background": "Background_Images/HappyArt.png"
+  },
+  "closing_1" : {
+    "text": "Sage reflects on her choices this semester — was she honest with herself? With others? Does she like the way she is living her life? Does she find her joy?",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "closing_2"
+      }
+    ],
+    "background": "Background_Images/Campus_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "closing_2" : {
+    "speaker": "Sage",
+    "text": "<i>Maybe… I’m more in control than I thought. It seems like all of my choices are part of the same challenge, to take care of myself and better my own well-being.</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "closing_3"
+      }
+    ],
+    "background": "Background_Images/Campus_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "closing_3" : {
+    "speaker": "Sage",
+    "text": "“Well, any ride worth taking is full of twists and turns and a good mentor can certainly smooth out the bumps, but I am okay for now.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "closing_4"
+      }
+    ],
+    "background": "Background_Images/Campus_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png"
+  },
+  "closing_4" : {
+    "text": "Sage looks across the courtyard and sees Blake and some other classmates in a group outside the library. One of them motions to her to join them and she changes course with a nod and a smile.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "closing_5"
+      }
+    ],
+    "background": "Background_Images/Campus_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "npcBlake": "NPC_Images/Blake_Smile.png",
+    "npc2": "NPC_Images/NPC2.png"
+  },
+  "closing_5" : {
+    "speaker": "Sage",
+    "text": "“Really it's not that hard to find my <i>‘Chill’</i> — it's actually much easier when I remember that we are all in this together.”",
+    "choices": [
+      {
+        "text": "The End",
+        "next": "..."
+      }
+    ],
+    "background": "Background_Images/Campus_WIP.png",
+    "sprite": "Sage_Images/SageVar1_talk.png"
   }
-
 }
 }
