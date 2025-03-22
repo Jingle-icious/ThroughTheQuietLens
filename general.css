@@ -239,6 +239,13 @@ body {
     z-index: 1;
 }
 
+#imposter-image,
+#perfectionist-image,
+#pleaser-image,
+#antiSocial-image {
+    transition: src 0.3s ease; /* Smooth transition for image source change */
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     #npc1, #npc2 {

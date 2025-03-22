@@ -292,6 +292,43 @@ function updateSceneContent(scene) {
     } else {
         antiSocialSage.style.display = 'none';
     }
+    
+ // Handle hover effect for Sages (Added here)
+    if (scene.imposterSage) {
+        imposterSage.addEventListener('mouseover', () => {
+            imposterSage.src = 'Sage_Images/SageVar6_imposter_bubble.png';
+        });
+        imposterSage.addEventListener('mouseout', () => {
+            imposterSage.src = scene.imposterSage;
+        });
+    }
+
+    if (scene.perfectionistSage) {
+        perfectionistSage.addEventListener('mouseover', () => {
+            perfectionistSage.src = 'Sage_Images/SageVar5_perfectionist_bubble.png';
+        });
+        perfectionistSage.addEventListener('mouseout', () => {
+            perfectionistSage.src = scene.perfectionistSage;
+        });
+    }
+
+    if (scene.pleaserSage) {
+        pleaserSage.addEventListener('mouseover', () => {
+            pleaserSage.src = 'Sage_Images/SageVar7_Pleaser_bubble.png';
+        });
+        pleaserSage.addEventListener('mouseout', () => {
+            pleaserSage.src = scene.pleaserSage;
+        });
+    }
+
+    if (scene.antiSocialSage) {
+        antiSocialSage.addEventListener('mouseover', () => {
+            antiSocialSage.src = 'Sage_Images/SageVar4_antisocial_bubble.png';
+        });
+        antiSocialSage.addEventListener('mouseout', () => {
+            antiSocialSage.src = scene.antiSocialSage;
+        });
+    }
 
     // Handle character name box
     const nameBox = document.getElementById('character-name-box');
