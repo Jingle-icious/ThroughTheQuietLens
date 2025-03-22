@@ -882,7 +882,7 @@
         }
     ],
         "background": "Background_Images/Dream1_banner.png",
-        "pleaserSage": "Sage_Images/SageVar7_pleaser_frown.png", 
+        "pleaserSage": "Sage_Images/SageVar7_pleaser_smile.png", 
         "perfectionistSage": "Sage_Images/SageVar5_perfectionist.png", 
         "antiSocialSage": "Sage_Images/SageVar4_antisocial.png", 
         "imposterSage": "Sage_Images/SageVar6_imposter_teeth.png" 
