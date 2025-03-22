@@ -281,7 +281,6 @@ body {
     background-color: #C0E2CB;
 }
 
-/* Restart Button */
 #choices button:last-child {
     background-color: #A8D5BA;
 }
@@ -290,19 +289,7 @@ body {
     background-color: #C0E2CB;
 }
 
-#reset-game-btn, #audio-control-btn {
-    position: fixed;
-    top: 10px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 1002;
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    display: block;
-}
-
+/* Story Nav Button */
 #story-nav-btn {
     position: fixed;
     top: 10px;
@@ -320,7 +307,7 @@ body {
     height: 100%;
 }
 
-
+/* Story Nav Button Hover Effect */
 #story-nav-btn::before {
     content: "";
     position: absolute;
@@ -344,17 +331,14 @@ body {
 /* Settings Button */
 #settings-btn {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 10px; 
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 1001;
-    width: 40px;
-    height: 40px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    width: 30px; 
+    height: 30px;
 }
 
 #settings-btn img {
@@ -367,28 +351,27 @@ body {
 #settings-btn::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
     background-color: rgba(0, 0, 0, 0.3);
-    border: 2px solid #CF7EDF;
     border-radius: 50%;
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: -1;
+    border: 2px solid #CF7EDF;
 }
 
 #settings-btn:hover::before {
     opacity: 1;
 }
 
-
 /* Audio Button */
 #audio-control-btn {
     position: fixed;
     top: 10px;
-    right: 52px; /* To the left of settings button */
+    right: 57px; /* To the left of settings button */
     background: transparent;
     border: none;
     cursor: pointer;
@@ -440,7 +423,7 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    z-index: 1003; /* Higher than settings modal */
+    z-index: 1003; 
     width: 400px;
     max-width: 80%;
     color: #ddd;

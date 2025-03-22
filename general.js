@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     disclaimerAcceptButton.addEventListener('click', function () {
         disclaimerPopup.style.display = 'none';
-        overlay.style.display = 'none'; // Hide the overlay
-        startButton.style.display = 'block'; // Show the start button
+        overlay.style.display = 'none'; 
+        startButton.style.display = 'block'; 
     });
 
 
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
         playMusic();
     }
 
-    // Navigation Modal Setup (Moved back inside setupGame)
+    // Navigation Modal Setup 
     const storyNavBtn = document.getElementById('story-nav-btn');
     const navModal = document.getElementById('nav-modal');
     const navCloseBtn = navModal.querySelector('.close-btn');
@@ -121,11 +121,11 @@ document.addEventListener('DOMContentLoaded', function () {
             gameContainer.style.display = 'block';
             titleScreen.style.display = 'none';
         } else if (section === 'Act 2 Start') {
-            makeChoice('dream_seq_transition'); // Replace with your actual Act 2 start scene key
+            makeChoice('dream_seq_transition'); 
             gameContainer.style.display = 'block';
             titleScreen.style.display = 'none';
         } else if (section === 'Act 3 Start') {
-            makeChoice('dormfinalProj_1'); // Replace with your actual Act 3 start scene key
+            makeChoice('dormfinalProj_1'); 
             gameContainer.style.display = 'block';
             titleScreen.style.display = 'none';
         }
@@ -182,6 +182,7 @@ function crossFade(newBackgroundSrc, callback) {
     }, 2100);
 }
 
+// Choice making logic
 function makeChoice(choice) {
     if (!story[choice]) {
         console.error(`Scene "${choice}" not found in story.`);
@@ -267,6 +268,7 @@ function updateSceneContent(scene) {
     } else {
         imposterSage.style.display = 'none';
     }
+
     const perfectionistSage = document.getElementById('perfectionist-image');
     if (scene.perfectionistSage) {
         perfectionistSage.src = scene.perfectionistSage;
@@ -291,8 +293,6 @@ function updateSceneContent(scene) {
         antiSocialSage.style.display = 'none';
     }
 
-
-
     // Handle character name box
     const nameBox = document.getElementById('character-name-box');
     const text = scene.text;
@@ -316,18 +316,19 @@ function updateSceneContent(scene) {
     positionNameBox();
 }
 
+// Logic to position the name box correctly 
 function positionNameBox() {
     const nameBox = document.getElementById('character-name-box');
     const gameContainer = document.getElementById('game-container');
 
-    // Get the bounding rectangles of both elements
+    // This gets bounding elements of both rectangles
     const gameContainerRect = gameContainer.getBoundingClientRect();
     const nameBoxRect = nameBox.getBoundingClientRect();
 
-    // Calculate the top position
-    const topPosition = gameContainerRect.top - nameBoxRect.height - 10; // 10px spacing
+    // This calculates the top position
+    const topPosition = gameContainerRect.top - nameBoxRect.height - 10; 
 
-    // Set the position using transform: translate()
+    // This sets the position using transform: translate()
     nameBox.style.transform = `translate(${gameContainerRect.left}px, ${topPosition}px)`;
 }
 
@@ -373,7 +374,7 @@ document.getElementById('reset-btn').addEventListener('click', function () {
     document.getElementById('bg-music-volume').style.setProperty('--range-progress', '50%'); // Add this line
 });
 
-// Close Modal
-document.querySelector('.close-btn').addEventListener('click', function () {
+// Close Modal(s)
+document.getElementById('settings-modal').querySelector('.close-btn').addEventListener('click', function () {
     document.getElementById('settings-modal').style.display = 'none';
 });
