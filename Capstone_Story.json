@@ -2272,7 +2272,7 @@
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "stress_art_1" : {
-    "text": "A chaotic representation of all the aspects of stress and anxiety. This piece overuses color to symbolize an over-saturation, and the character is sick and anguished to the point of losing touch and becoming a static background. Sage looks at it and feels more motivated than ever to keep this larger-than-life wretchedness at bay.",
+    "text": "A chaotic representation of all the aspects of stress and anxiety. This piece overuses color to symbolize an over-saturation, and the character is sick and anguished to the point of losing touch and becoming a static background. Sage looks at it and feels more motivated and competent than ever as she keeps this larger-than-life wretchedness at bay. She confidently turns in her final project with a smile of satisfaction.",
     "choices": [
       {
         "text": "Continue",
@@ -2282,7 +2282,7 @@
     "background": "Background_Images/StressArt.png"
   },
   "happy_art_1" : {
-    "text": "A smiling representation of a future version of Sage. The drawing exudes a sense of joyful freedom and self-expression, with dynamic movement and bold, cheerful energy. The character's pose and bright colors convey a carefree spirit, capturing a moment of pure happiness.",
+    "text": "A smiling visualization of a peaceful Sage. The drawing exudes a sense of joyful freedom and self-expression, with dynamic movement and bold, cheerful energy. The character's pose and bright colors convey a carefree spirit, capturing a moment of confidence. Sage looks at it and can feel herself in that moment — that is the feeling she reminds herself to keep in mind.",
     "choices": [
       {
         "text": "Continue",
@@ -2304,7 +2304,7 @@
   },
   "closing_2" : {
     "speaker": "Sage",
-    "text": "<i>Maybe… I’m more in control than I thought. It seems like all of my choices are part of the same challenge, to take care of myself and better my own well-being.</i>",
+    "text": "<i>I suppose I really do like where I am standing right now. Maybe…I’m more in control than I thought. It seems as if all of my choices are part of the same challenge, to take care of myself and better my own well-being. </i>",
     "choices": [
       {
         "text": "Continue",
@@ -2316,7 +2316,7 @@
   },
   "closing_3" : {
     "speaker": "Sage",
-    "text": "“Well, any ride worth taking is full of twists and turns and a good mentor can certainly smooth out the bumps, but I am okay for now.”",
+    "text": "“Well, any ride worth taking is full of twists and turns, and a good mentor can certainly smooth out the bumps, but today, I am in a peaceful headspace.”",
     "choices": [
       {
         "text": "Continue",
