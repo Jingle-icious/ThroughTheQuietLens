@@ -1,5 +1,6 @@
 let story;
 let isMuted = false;
+const npcs = ['npc1', 'npc2', 'blake-image', 'sharma-image'];
 
 function scaleBody(aspectRatio) {
     const windowWidth = window.innerWidth;
@@ -202,7 +203,7 @@ function crossFade(newBackgroundSrc, callback) {
     document.body.appendChild(overlay);
 
     document.getElementById('foreground-image').style.display = 'none';
-    document.getElementById('npc-container').style.display = 'none';
+    npcs.forEach(npc => document.getElementById(npc).style.display = 'none');
 
     // Fade to black
     setTimeout(() => {
@@ -299,11 +300,6 @@ function updateSceneContent(scene) {
     } else {
         npc1.style.display = 'none';
         npc2.style.display = 'none';
-    }
-
-    // TODO This would be better to look at the contents of the container rather than the individual elements for genericism
-    if (scene.npc1 || scene.npc2 || scene.npcBlake || scene.npcSharma) {
-        document.getElementById('npc-container').style.display = 'flex';
     }
 
     // Update the Sages image
