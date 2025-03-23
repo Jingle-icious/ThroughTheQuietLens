@@ -201,6 +201,9 @@ function crossFade(newBackgroundSrc, callback) {
     overlay.style.zIndex = '1000';
     document.body.appendChild(overlay);
 
+    document.getElementById('foreground-image').style.display = 'none';
+    document.getElementById('npc-container').style.display = 'none';
+
     // Fade to black
     setTimeout(() => {
         overlay.style.opacity = '1';
@@ -296,6 +299,11 @@ function updateSceneContent(scene) {
     } else {
         npc1.style.display = 'none';
         npc2.style.display = 'none';
+    }
+
+    // TODO This would be better to look at the contents of the container rather than the individual elements for genericism
+    if (scene.npc1 || scene.npc2 || scene.npcBlake || scene.npcSharma) {
+        document.getElementById('npc-container').style.display = 'flex';
     }
 
     // Update the Sages image
