@@ -263,7 +263,7 @@
           "next": "dorm_arrival_1"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png"
+      "background": "Background_Images/Lobby_Main.png"
     },
     "dorm_arrival_1": {
       "text": "Sage walks into her dorm lobby, the scent of old coffee lingers from the communal kitchen, a stale reminder of late-night study sessions.",
@@ -273,7 +273,7 @@
           "next": "dorm_arrival_2"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png",
+      "background": "Background_Images/Lobby_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_2": {
@@ -284,7 +284,7 @@
           "next": "dorm_arrival_3"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png",
+      "background": "Background_Images/Lobby_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_3": {
@@ -296,7 +296,7 @@
           "next": "dorm_arrival_4"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png",
+      "background": "Background_Images/Lobby_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_4": {
@@ -307,7 +307,7 @@
           "next": "dorm_arrival_5"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png",
+      "background": "Background_Images/Lobby_Main.png",
       "sprite": "Sage_Images/SageVar1_surprised.png"
     },
     "dorm_arrival_5": {
@@ -319,7 +319,7 @@
           "next": "dorm_arrival_6"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png",
+      "background": "Background_Images/Lobby_Main.png",
       "sprite": "Sage_Images/SageVar1_surprised.png"
     },
     "dorm_arrival_6": {
@@ -330,7 +330,7 @@
           "next": "dorm_arrival_7"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png",
+      "background": "Background_Images/Lobby_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dorm_arrival_7": {
@@ -342,7 +342,7 @@
           "next": "dorm_arrival_8"
         }
       ],
-      "background": "Background_Images/Lobby_WIP.png",
+      "background": "Background_Images/Lobby_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
 "dorm_arrival_8": {
@@ -354,7 +354,7 @@
         "next": "dorm_arrival_9"
       }
     ],
-    "background": "Background_Images/Lobby_WIP.png",
+    "background": "Background_Images/Lobby_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_arrival_9": {
@@ -365,7 +365,7 @@
         "next": "dorm_arrival_10"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_arrival_10": {
@@ -380,7 +380,7 @@
         "next": "dorm_reasonable_1"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_striveA_1": {
@@ -392,7 +392,7 @@
         "next": "dorm_striveA_2"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_striveA_2": {
@@ -403,7 +403,7 @@
         "next": "dorm_striveA_3"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_striveA_3": {
@@ -414,7 +414,7 @@
         "next": "phone_call_1"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_reasonable_1": {
@@ -426,7 +426,7 @@
         "next": "dorm_reasonable_2"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_reasonable_2": {
@@ -437,7 +437,7 @@
         "next": "dorm_reasonable_3"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_reasonable_3": {
@@ -449,7 +449,7 @@
         "next": "dorm_reasonable_4"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar2WIP3.png"
   },
   "dorm_reasonable_4": {
@@ -460,7 +460,7 @@
         "next": "phone_call_1"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
     "phone_call_1": {
@@ -471,7 +471,7 @@
           "next": "phone_call_2"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "phone_call_2": {
@@ -483,7 +483,7 @@
           "next": "phone_call_3"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar3_stressteeth.png"
     },
     "phone_call_3": {
@@ -494,7 +494,7 @@
           "next": "phone_call_4"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "phone_call_4": {
@@ -506,7 +506,7 @@
           "next": "phone_call_5"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "phone_call_5" : {
@@ -521,7 +521,7 @@
           "next": "phone_honest_1"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "phone_vague_1": {
@@ -533,7 +533,7 @@
           "next": "phone_vague_2"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "phone_vague_2": {
@@ -545,7 +545,7 @@
           "next": "phone_vague_3"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "phone_vague_3": {
@@ -557,7 +557,7 @@
           "next": "phone_vague_4"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "phone_vague_4": {
@@ -569,7 +569,7 @@
           "next": "phone_vague_5"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar3_stressteeth.png"
     },
     "phone_vague_5": {
@@ -581,7 +581,7 @@
           "next": "phone_call_6"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar3_talk.png"
     },
     "phone_honest_1": {
@@ -593,7 +593,7 @@
           "next": "phone_honest_2"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "phone_honest_2": {
@@ -605,7 +605,7 @@
           "next": "phone_honest_3"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "phone_honest_3": {
@@ -617,7 +617,7 @@
           "next": "phone_honest_4"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "phone_honest_4": {
@@ -629,7 +629,7 @@
           "next": "phone_honest_5"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar3_squigglemouth.png"
     },
     "phone_honest_5": {
@@ -641,7 +641,7 @@
           "next": "phone_honest_6"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar3_crying.png"
     },
     "phone_honest_6": {
@@ -653,7 +653,7 @@
           "next": "phone_honest_7"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar3_talk.png"
     },
     "phone_honest_7": {
@@ -665,7 +665,7 @@
           "next": "phone_honest_8"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar3_crying.png"
     },
     "phone_honest_8": {
@@ -677,7 +677,7 @@
           "next": "phone_call_6"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar3_closedmouth.png"
     },
     "phone_call_6": {
@@ -688,7 +688,7 @@
           "next": "social_invite_1"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "social_invite_1": {
@@ -699,7 +699,7 @@
           "next": "social_invite_2"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_surprised.png"
     },
     "social_invite_2": {
@@ -714,7 +714,7 @@
           "next": "social_ignore_1"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_surprised.png"
     },
     "social_accept_1": {
@@ -726,7 +726,7 @@
           "next": "social_accept_2"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_smile.png"
     },
     "social_accept_2": {
@@ -738,7 +738,7 @@
           "next": "social_accept_3"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_smile.png"
     },
     "social_accept_3": {
@@ -749,7 +749,7 @@
           "next": "social_accept_4"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_smile.png"
     },
     "social_accept_4": {
@@ -760,7 +760,7 @@
           "next": "dream_seq_transition"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "social_ignore_1": {
@@ -771,7 +771,7 @@
           "next": "social_ignore_2"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "social_ignore_2": {
@@ -783,7 +783,7 @@
           "next": "social_ignore_3"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "social_ignore_3": {
@@ -794,7 +794,7 @@
           "next": "dream_seq_transition"
         }
       ],
-      "background": "Background_Images/Dorm_WIP.png",
+      "background": "Background_Images/Dorm_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "dream_seq_transition": {
@@ -941,7 +941,7 @@
         "next": "mentor_meetingImposter_1"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
   },
   "perfect_challenge_1" : {
@@ -1012,7 +1012,7 @@
         "next": "mentor_meetingPerfect_1"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "pleaser_challenge_1" : {
@@ -1081,7 +1081,7 @@
         "next": "mentor_meetingPleaser_1"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
   },
   "antiSocial_challenge_1" : {
@@ -1139,7 +1139,7 @@
         "next": "mentor_meetingAntiSocial_1"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar4_antisocial.png"
   },
   "mentor_meetingImposter_1" : {
@@ -2038,7 +2038,7 @@
         "next": "dorm_finalProj_2"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "dorm_finalProj_2" : {
@@ -2049,7 +2049,7 @@
         "next": "dorm_finalProj_3"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "dorm_finalProj_3" : {
@@ -2061,7 +2061,7 @@
         "next": "dorm_finalProj_4"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png"
   },
   "dorm_finalProj_4" : {
@@ -2073,7 +2073,7 @@
         "next": "dorm_finalProj_5"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "dorm_finalProj_5" : {
@@ -2084,8 +2084,7 @@
         "next": "dorm_finalProj_6"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
-    "sprite": "Sage_Images/SageVar1_smile.png"
+    "background": "Background_Images/Dorm_Sage_Sitting.png"
   },
   "dorm_finalProj_6" : {
     "text": "She immediately recollects how much work it took to try and take the time to reflect and plan before she would act on her feelings. Her Imposter Syndrome is so frustrating. She starts thinking about how hard acceptance is when she feels pressure.",
@@ -2095,7 +2094,7 @@
         "next": "dorm_finalProj_7"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
     "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
   },
   "dorm_finalProj_7" : {
@@ -2106,7 +2105,7 @@
         "next": "dorm_finalProj_8"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
     "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
   },
   "dorm_finalProj_8" : {
@@ -2117,7 +2116,7 @@
         "next": "dorm_finalProj_9"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
     "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
   },
   "dorm_finalProj_9" : {
@@ -2128,8 +2127,7 @@
         "next": "dorm_finalProj_10"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
-    "sprite": "Sage_Images/SageVar1_smile.png"
+    "background": "Background_Images/Dorm_Sage_Sitting.png"
   },
   "dorm_finalProj_10" : {
     "speaker": "Sage",
@@ -2140,7 +2138,7 @@
         "next": "dorm_finalProj_11"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "dorm_finalProj_11" : {
@@ -2152,7 +2150,7 @@
         "next": "dorm_finalProj_12"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "dorm_finalProj_12" : {
@@ -2164,8 +2162,7 @@
         "next": "dorm_finalProj_13"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
-    "sprite": "Sage_Images/SageVar1_smile.png"
+    "background": "Background_Images/Dorm_Sage_Sitting.png"
   },
   "dorm_finalProj_13" : {
     "speaker": "Sage",
@@ -2176,7 +2173,7 @@
         "next": "dorm_finalProj_14"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
     "sprite": "Sage_Images/SageVar7_pleaser_frown.png"
   },
   "dorm_finalProj_14" : {
@@ -2188,8 +2185,7 @@
         "next": "dorm_finalProj_15"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_talk.png"
+    "background": "Background_Images/Dorm_Sage_Sitting.png"
   },
   "dorm_finalProj_15" : {
     "speaker": "Sage",
@@ -2200,8 +2196,7 @@
         "next": "dorm_finalProj_16"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
-    "sprite": "Sage_Images/SageVar1_talk.png"
+    "background": "Background_Images/Dorm_Sage_Sitting.png"
   },
   "dorm_finalProj_16" : {
     "text": "Sage throws the journal on the bed and grabs her phone, but the page that is opened catches her eye. It reads “ProjectHelping.org” in big letters across the page.",
@@ -2211,7 +2206,7 @@
         "next": "dorm_finalProj_17"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "dorm_finalProj_17" : {
@@ -2223,7 +2218,7 @@
         "next": "dorm_finalProj_18"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png"
   },
   "dorm_finalProj_18" : {
@@ -2235,7 +2230,7 @@
         "next": "dorm_finalProj_19"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar4_antisocial.png"
   },
   "dorm_finalProj_19" : {
@@ -2247,7 +2242,7 @@
         "next": "dorm_finalProj_20"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png"
   },
   "dorm_finalProj_20" : {
@@ -2258,7 +2253,7 @@
         "next": "dorm_finalProj_21"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "dorm_finalProj_21" : {
@@ -2273,7 +2268,7 @@
         "next": "happy_art_1"
       }
     ],
-    "background": "Background_Images/Dorm_WIP.png",
+    "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "stress_art_1" : {
