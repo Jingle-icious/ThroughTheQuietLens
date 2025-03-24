@@ -888,53 +888,94 @@
         "imposterSage": "Sage_Images/SageVar6_imposter_teeth.png" 
     },
     "imposter_challenge_1": {
-    "text": "Sage looks around and sees performers like jugglers and clowns around her. She realizes that she is one of them and high above the crowd on stilts. Everyone watching her - but one stilt is lifted and she is off-balance and about to fall - people are already pointing. She is not a stilt walker and has no business being above the crowd. They all know.",
+    "text": " Sage is filled with trepidation as she enters the big top through the heavy tent flaps. The darkness clears and Sage sees…",
         "choices": [
       {
         "text": "Continue",
         "next": "imposter_challenge_2"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "background": "Background_Images/Dream_Eatery_Main.png"
   },
-  "imposter_challenge_2" : {
-    "speaker": "Sage",
-    "text": "“What in the actual hell am I doing up here?”",
-    "choices": [
+  "imposter_challenge_2": {
+    "text": "…a row of kiosks and booths in their own exclusive food area of the carnival. She immediately feels that she has no business being here, this is for all of the authentic academic folks.",
+        "choices": [
       {
         "text": "Continue",
         "next": "imposter_challenge_3"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "background": "Background_Images/Dream_Eatery_Main.png"
   },
   "imposter_challenge_3" : {
     "speaker": "Sage",
-    "text": "“I know I can’t walk on stilts — I am not a performer and now everyone else knows that too. That’s right, point and laugh at the imposter. Come gawk at the silly girl on stilts trying to do something she has no business doing.”",
+    "text": "“What in the actual hell am I doing in this area?!?!”",
     "choices": [
       {
         "text": "Continue",
         "next": "imposter_challenge_4"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "background": "Background_Images/Dream_Eatery_Main.png"
   },
   "imposter_challenge_4" : {
-    "text": "Sage looks around at the faces beneath her and feels gravity pulling her off the stilts. She knows that she is going to fall on her face — literally — and she can only hope she doesn’t hurt anyone on the way down. ",
+    "speaker": "Sage",
+    "text": " “I know I don't deserve to have this meal ticket  — I’m not a summa cum laude, and standing here I look like I am trying to pass myself off as something I’m not.”",
     "choices": [
       {
         "text": "Continue",
         "next": "imposter_challenge_5"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "background": "Background_Images/Dream_Eatery_Main.png"
   },
   "imposter_challenge_5" : {
-    "text": "Sage opens her eyes and gasps as her body feels like it is falling. She realizes that she was dreaming and thinks about how embarrassed she is feeling. What a strange dream - she is NOT a performer and would never try to walk on stilts. But it was accurate - if she did try to do something she was so unqualified for, on her butt on the ground is exactly where she would be - and even more horrifying - everyone would laugh.",
+    "text": "Sage reads the various options. They all look prestigious and haughty.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "imposter_challenge_6"
+      }
+    ],
+    "background": "Background_Images/Dream_Eatery_Main.png"
+  },
+  "imposter_challenge_6" : {
+    "speaker": "Sage",
+    "text": "<i>Are there any that are more private — where I can't see everyone else  — and they can't see me?</i>",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "imposter_challenge_7"
+      }
+    ],
+    "background": "Background_Images/Dream_Eatery_Main.png"
+  },
+  "imposter_challenge_7" : {
+    "speaker": "Sage",
+    "text": "“Oh nevermind, I am not that hungry anyways.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "imposter_challenge_8"
+      }
+    ],
+    "background": "Background_Images/Dream_Eatery_Main.png"
+  },
+
+  "imposter_challenge_8" : {
+    "text": "Sage opens her eyes and tries to place her surroundings. She realizes that she was dreaming and thinks about how hungry she is. What a strange dream — she’s not even on a meal plan.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "imposter_challenge_9"
+      }
+    ],
+    "background": "Background_Images/Dorm_Main.png",
+    "sprite": "Sage_Images/SageVar1_frown.png"
+  },
+  "imposter_challenge_9" : {
+    "speaker": "Sage",
+    "text": "But it was somewhat accurate — if she did try to go somewhere she shouldn’t be, then she would probably get out of there before anyone saw her — hungry or not.",
     "choices": [
       {
         "text": "Continue",
@@ -942,7 +983,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Main.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "perfect_challenge_1" : {
     "text": "Sage stands in line at the booth that reads “Perfection Contest” with a line of contestants that goes farther than the eye can see. She will never get there, it’s impossible.",
