@@ -357,7 +357,7 @@ function updateSceneContent(scene) {
 
     if (scene.pleaserSage) {
         pleaserSage.addEventListener('mouseover', () => {
-            pleaserSage.src = 'Sage_Images/SageVar7_Pleaser_bubble.png';
+            pleaserSage.src = 'Sage_Images/SageVar7_pleaser_bubble.png';
         });
         pleaserSage.addEventListener('mouseout', () => {
             pleaserSage.src = scene.pleaserSage;
