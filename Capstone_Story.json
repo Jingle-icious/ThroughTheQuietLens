@@ -1016,51 +1016,47 @@
     "sprite": "Sage_Images/SageVar5_perfectionist.png"
   },
   "pleaser_challenge_1" : {
-    "text": "Sage is at a pie eating contest table with a mostly empty pie pan in front of her and a terrible stomach ache. The judges facing her are all holding up scores of 8 or 9 and smiling at her.",
+    "text": "Sage enters the carnival and sees herself  slumped at the pie-eating contest table, she looks ill like she overate. Empty pie pans and crumb-covered plates surround her. The scorecards indicate that she has gotten an 8 and a 9.",
     "choices": [
       {
         "text": "Continue",
         "next": "pleaser_challenge_2"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+    "background": "Background_Images/Dream_Pie_Main.png"
   },
   "pleaser_challenge_2" : {
     "speaker": "Sage",
-    "text": "“Okay — they are happy with me — I did it.”",
+    "text": " “Okay — those scores are okay — I did it.”",
     "choices": [
       {
         "text": "Continue",
         "next": "pleaser_challenge_3"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+    "background": "Background_Images/Dream_Pie_Main.png"
   },
   "pleaser_challenge_3" : {
     "speaker": "Sage",
-    "text": "“I sure feel awful though — my stomach is so sick — and everyone is looking at me — oh why do I keep doing things that feel bad just to make others happy?”",
+    "text": " “I sure feel awful though — my stomach is so sick — and everyone is looking at me  — oh why do I keep doing things that feel bad just to make others happy?”",
     "choices": [
       {
         "text": "Continue",
         "next": "pleaser_challenge_4"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+    "background": "Background_Images/Dream_Pie_Main.png"
   },
   "pleaser_challenge_4" : {
     "speaker": "Sage",
-    "text": "“At least no one is calling me out and I am not in a confrontation with the others. That really is the most important thing.”",
+    "text": "“At least no one is calling me out and I am not in a confrontation. That really is the most important thing.”",
     "choices": [
       {
         "text": "Continue",
         "next": "pleaser_challenge_5"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+    "background": "Background_Images/Dream_Pie_Main.png"
   },
   "pleaser_challenge_5" : {
     "text": "Sage tries to quietly exit the area — suddenly she is running and crying. She feels her legs burning and she can't seem to catch her breath. Exhausted and falls to the ground.",
@@ -1070,8 +1066,7 @@
         "next": "pleaser_challenge_6"
       }
     ],
-    "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+    "background": "Background_Images/Dream_Pie_Main.png"
   },
   "pleaser_challenge_6" : {
     "text": "Sage wakes up with her heart pounding and cold from sweat — like she just went for a run. Knowing that she won't be going back to sleep, she heads to the shower to start her day.",
