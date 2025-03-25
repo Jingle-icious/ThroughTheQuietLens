@@ -450,7 +450,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Main.png",
-    "sprite": "Sage_Images/SageVar2WIP3.png"
+    "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "dorm_reasonable_4": {
     "text": "She looks at the time — it's 7:30 and her roommates are talking about the weekend — she looks at her assignment and decides it is sufficient. She joins her friends and connects with them before getting ready for bed.",
@@ -1183,7 +1183,7 @@
         "next": "antiSocial_challenge_3"
       }
     ],
-    "background": "Background_Images/Dream_Ferris_WIP.png"
+    "background": "Background_Images/Dream_Ferris_Main.png"
   },
   "antiSocial_challenge_3" : {
     "speaker": "Sage",
@@ -1194,7 +1194,7 @@
         "next": "antiSocial_challenge_4"
       }
     ],
-    "background": "Background_Images/Dream_Ferris_WIP.png"
+    "background": "Background_Images/Dream_Ferris_Main.png"
   },
   "antiSocial_challenge_4" : {
     "speaker": "Sage",
@@ -1205,7 +1205,7 @@
         "next": "antiSocial_challenge_5"
       }
     ],
-    "background": "Background_Images/Dream_Ferris_WIP.png"
+    "background": "Background_Images/Dream_Ferris_Main.png"
   },
   "antiSocial_challenge_5" : {
     "speaker": "Sage",
@@ -1216,7 +1216,7 @@
         "next": "antiSocial_challenge_6"
       }
     ],
-    "background": "Background_Images/Dream_Ferris_WIP.png"
+    "background": "Background_Images/Dream_Ferris_Main.png"
   },
   "antiSocial_challenge_6" : {
     "text": "Her head starts to spin.",
@@ -1226,7 +1226,7 @@
         "next": "antiSocial_challenge_7"
       }
     ],
-    "background": "Background_Images/Dream_Ferris_WIP.png"
+    "background": "Background_Images/Dream_Ferris_Main.png"
   },
   "antiSocial_challenge_7" : {
     "speaker": "Sage",
@@ -1237,7 +1237,7 @@
         "next": "antiSocial_challenge_8"
       }
     ],
-    "background": "Background_Images/Dream_Ferris_WIP.png"
+    "background": "Background_Images/Dream_Ferris_Main.png"
   },
   "antiSocial_challenge_8" : {
     "text": "Sage opens her eyes and looks at the clock, but it is hard to focus — it's five a.m. She feels compelled to open her calendar and scan her upcoming commitments.",
