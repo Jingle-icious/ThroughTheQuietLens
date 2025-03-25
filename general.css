@@ -23,8 +23,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    position: absolute;
     transition: opacity 1s ease-in-out;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #title-screen {
@@ -472,22 +475,19 @@ body {
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    z-index: 1001;
+    z-index: 2001;
     width: 80%;
     max-width: 600px;
 }
 
 #disclaimer-popup-overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8); 
-    z-index: 1000; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    z-index: 1000;
 }
 
 #disclaimer-popup h2 {

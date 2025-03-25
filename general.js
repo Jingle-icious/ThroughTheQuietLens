@@ -41,6 +41,7 @@ function scaleBody(aspectRatio) {
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
+    const outerContainer = document.getElementById('outer-container');
     const titleScreen = document.getElementById('title-screen');
     const startButton = document.getElementById('start-button');
     const gameContainer = document.getElementById('game-container');
@@ -60,12 +61,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Create and append the overlay
     const overlay = document.createElement('div');
     overlay.id = 'disclaimer-popup-overlay';
-    document.body.appendChild(overlay);
+    outerContainer.appendChild(overlay);
 
     disclaimerAcceptButton.addEventListener('click', function () {
         disclaimerPopup.style.display = 'none';
         overlay.style.display = 'none'; 
-        startButton.style.display = 'block'; 
+        startButton.style.display = 'block';
+        outerContainer.removeChild(overlay);
     });
 
 
