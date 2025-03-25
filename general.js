@@ -7,13 +7,13 @@ function scaleBody(aspectRatio) {
     const windowHeight = window.innerHeight;
 
     let newWidth, newHeight;
-  
+
     if (windowWidth / windowHeight > aspectRatio) {
-      newHeight = windowHeight;
-      newWidth = windowHeight * aspectRatio;
+        newHeight = windowHeight;
+        newWidth = windowHeight * aspectRatio;
     } else {
-      newWidth = windowWidth;
-      newHeight = windowWidth / aspectRatio;
+        newWidth = windowWidth;
+        newHeight = windowWidth / aspectRatio;
     }
 
     const outerContainer = document.getElementById('outer-container');
@@ -22,21 +22,13 @@ function scaleBody(aspectRatio) {
     document.body.style.height = `${newHeight}px`;
     outerContainer.style.width = `${newWidth}px`;
     outerContainer.style.height = `${newHeight}px`;
-
-    // The following should allow scaling of all UI elements together, but does
-    // not work properly because we don't have a way to properly scale to max
-    // width or height like we do above.
-    // document.body.style.transformOrigin = 'top left';
-    // document.body.style.transform = `scale(${newWidth / 2560}, ${newHeight / 1440})`;
 }
-  
-  // Example usage with a 16:9 aspect ratio:
-  scaleBody(16 / 9);
-  
-  // Update on window resize:
-  window.addEventListener('resize', () => {
+
+scaleBody(16 / 9);
+
+window.addEventListener('resize', () => {
     scaleBody(16 / 9);
-  });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
@@ -53,58 +45,48 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeBtn = document.querySelector('.close-btn');
     const foregroundImage = document.getElementById('foreground-image');
 
-
-    // Disclaimer code added here:
     const disclaimerPopup = document.getElementById('disclaimer-popup');
     const disclaimerAcceptButton = document.getElementById('disclaimer-accept-button');
 
-    // Create and append the overlay
     const overlay = document.createElement('div');
     overlay.id = 'disclaimer-popup-overlay';
     outerContainer.appendChild(overlay);
 
     disclaimerAcceptButton.addEventListener('click', function () {
         disclaimerPopup.style.display = 'none';
-        overlay.style.display = 'none'; 
+        overlay.style.display = 'none';
         startButton.style.display = 'block';
         outerContainer.removeChild(overlay);
     });
 
-
-
-    // Fetch the story data from the JSON file
     fetch('./Capstone_Story.json')
         .then(response => response.json())
         .then(data => {
             console.log("JSON data loaded successfully");
-            story = data.story; // Assign the story data
-            // Now that the story is loaded, set up the game
+            story = data.story;
             setupGame();
         })
         .catch(error => console.error('Error loading Capstone_Story.json:', error));
 
-        function setupGame() {
-            console.log("Setting up the game");
-            bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav"; // Title screen music
-            bgMusic.loop = true; // Loop the title screen music
-    
-            document.getElementById('blake-image').style.display = 'none';
-    
-            startButton.addEventListener('click', function () {
-                console.log("Start button clicked");
-                // Play the Startfx sound effect
-                const startFx = new Audio("Audio/Startfx.mp3");
-                startFx.play();
-                settingsModal.style.display = 'none';
-                crossFade('Background_Images/Campus_WIP.png', () => {
-                    titleScreen.style.display = 'none';
-                    gameContainer.style.display = 'block';
-                    makeChoice('campus_walk_1');
-                    bgMusic.pause(); // Stop the title screen music
-                    bgMusic.currentTime = 0; // Reset the music to the beginning
-                    // add logic to play the gameplay music here later.
-                });
+    function setupGame() {
+        console.log("Setting up the game");
+        bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav";
+        bgMusic.loop = true;
+
+        document.getElementById('blake-image').style.display = 'none';
+
+        startButton.addEventListener('click', function () {
+            console.log("Start button clicked");
+            playSfx("Audio/Startfx.mp3");
+            settingsModal.style.display = 'none';
+            crossFade('Background_Images/Campus_WIP.png', () => {
+                titleScreen.style.display = 'none';
+                gameContainer.style.display = 'block';
+                makeChoice('campus_walk_1');
+                bgMusic.pause();
+                bgMusic.currentTime = 0;
             });
+        });
 
         audioControlBtn.addEventListener('click', function () {
             console.log("Audio control button clicked");
@@ -115,8 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         settingsBtn.addEventListener('click', function () {
             console.log("Settings button clicked");
-            const settingFx = new Audio("Audio/Settingsfx.mp3");
-            settingFx.play();
+            playSfx("Audio/Settingsfx.mp3");
             settingsModal.style.display = 'block';
         });
 
@@ -125,23 +106,19 @@ document.addEventListener('DOMContentLoaded', function () {
             settingsModal.style.display = 'none';
         });
 
-        // Close modal if clicking outside
         window.addEventListener('click', function (event) {
             if (event.target === settingsModal) {
                 settingsModal.style.display = 'none';
             }
         });
 
-        // Prevent closing when clicking inside the modal
         settingsModal.addEventListener('click', function (event) {
             event.stopPropagation();
         });
 
-        // Play music
         playMusic();
     }
 
-    // Navigation Modal Setup 
     const storyNavBtn = document.getElementById('story-nav-btn');
     const navModal = document.getElementById('nav-modal');
     const navCloseBtn = navModal.querySelector('.close-btn');
@@ -151,22 +128,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const navAct3Btn = document.getElementById('nav-act3');
 
     storyNavBtn.addEventListener('click', () => {
+        playSfx("Audio/Settingsfx.mp3");
         navModal.style.display = 'block';
-        const settingFx = new Audio("Audio/Settingsfx.mp3");
-        settingFx.play();
     });
 
     navCloseBtn.addEventListener('click', () => {
         navModal.style.display = 'none';
-        const clickFx2 = new Audio("Audio/clickfx2.mp3");
-        clickFx2.play();
+        playSfx("Audio/clickfx2.mp3");
     });
 
     function navigateTo(section) {
-        const navigationFx = new Audio("Audio/Navigationfx.mp3"); // Create audio object here.
-    
+        playSfx("Audio/Navigationfx.mp3");
         if (section === 'Title Screen') {
-            navigationFx.play(); // Play the sound.
             titleScreen.style.display = 'flex';
             gameContainer.style.display = 'none';
             foregroundImage.style.display = 'none';
@@ -176,9 +149,9 @@ document.addEventListener('DOMContentLoaded', function () {
             bgMusic.loop = true;
             bgMusic.play();
         } else if (section === 'Act 1 Start' || section === 'Act 2 Start' || section === 'Act 3 Start') {
-            navigationFx.play(); // Play the sound.
             makeChoice(section === 'Act 1 Start' ? 'campus_walk_1' : section === 'Act 2 Start' ? 'dream_seq_transition' : 'dorm_finalProj_1');
             titleScreen.style.display = 'none';
+            gameContainer.style.display = 'block';
             bgMusic.pause();
             bgMusic.currentTime = 0;
         }
@@ -191,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navAct3Btn.addEventListener('click', () => navigateTo('Act 3 Start'));
 
     function playMusic() {
-        bgMusic.volume = 0.5;
+        bgMusic.volume = 0.3;
         bgMusic.play().catch(error => {
             console.error("Audio play error:", error);
             console.log("Attempting to play audio on user interaction");
@@ -202,6 +175,76 @@ document.addEventListener('DOMContentLoaded', function () {
             }, { once: true });
         });
     }
+    let sfxVolume = 0.75; // Default sound effect volume
+
+    document.getElementById('sfx-volume').addEventListener('input', function () {
+        sfxVolume = parseFloat(this.value);
+        this.style.setProperty('--range-progress', `${sfxVolume * 100}%`);
+    });
+
+    function playSfx(audioFile) {
+        const sfx = new Audio(audioFile);
+        sfx.volume = sfxVolume;
+        sfx.play();
+    }
+    document.getElementById('text-size').addEventListener('change', function () {
+        playSfx("Audio/clickfx2.mp3");
+        const fontSize = this.value === 'small' ? '1em' : this.value === 'large' ? '1.6em' : '1.3em';
+        document.getElementById('story-text').style.fontSize = fontSize;
+    });
+
+    document.getElementById('text-color').addEventListener('input', function () {
+        playSfx("Audio/clickfx2.mp3");
+        document.getElementById('story-text').style.color = this.value;
+    });
+
+    document.getElementById('bg-opacity').addEventListener('input', function () {
+        const opacity = this.value;
+        document.getElementById('game-container').style.backgroundColor = `rgba(50, 50, 50, ${opacity})`;
+        this.style.setProperty('--range-progress', `${opacity * 100}%`);
+    });
+
+    // Handle background music volume change
+    document.getElementById('bg-music-volume').addEventListener('input', function () {
+        const volume = this.value;
+        document.getElementById('background-music').volume = volume;
+        this.style.setProperty('--range-progress', `${volume * 100}%`);
+        if (sfxVolume <= volume) {
+            sfxVolume = parseFloat(volume) + 0.05;
+            document.getElementById('sfx-volume').value = sfxVolume;
+            document.getElementById('sfx-volume').style.setProperty('--range-progress', `${sfxVolume * 100}%`);
+        }
+    });
+
+    // Reset Settings
+    document.getElementById('reset-btn').addEventListener('click', function () {
+        playSfx("Audio/clickfx2.mp3");
+        document.getElementById('text-size').value = 'medium';
+        document.getElementById('text-color').value = '#ffffff';
+        document.getElementById('bg-opacity').value = '0.8';
+        document.getElementById('bg-music-volume').value = '0.5';
+        document.getElementById('sfx-volume').value = '0.75';
+
+        document.getElementById('story-text').style.fontSize = '1.3em';
+        document.getElementById('story-text').style.color = '#ffffff';
+        document.getElementById('game-container').style.backgroundColor = 'rgba(50, 50, 50, 0.8)';
+        document.getElementById('background-music').volume = '0.5';
+
+        document.getElementById('bg-opacity').style.setProperty('--range-progress', '80%');
+        document.getElementById('bg-music-volume').style.setProperty('--range-progress', '50%');
+        document.getElementById('sfx-volume').style.setProperty('--range-progress', '80%');
+    });
+
+    // Close Modal(s)
+    document.getElementById('settings-modal').querySelector('.close-btn').addEventListener('click', function () {
+        playSfx("Audio/clickfx2.mp3");
+        document.getElementById('settings-modal').style.display = 'none';
+    });
+
+    document.getElementById('nav-modal').querySelector('.close-btn').addEventListener('click', function () {
+        playSfx("Audio/clickfx2.mp3");
+        document.getElementById('nav-modal').style.display = 'none';
+    });
 });
 
 function crossFade(newBackgroundSrc, callback) {
@@ -211,7 +254,6 @@ function crossFade(newBackgroundSrc, callback) {
 
     outerContainer.classList.add('hidden');
 
-    // Remove overlay and execute callback
     setTimeout(() => {
         outerContainer.classList.remove('hidden');
         outerContainer.classList.add('visible');
@@ -278,7 +320,7 @@ function updateSceneContent(scene) {
         npcBlake.style.display = 'none';
     }
 
-        // Update Sharma's image
+    // Update Sharma's image
     const npcSharma = document.getElementById('sharma-image');
     if (scene.npcSharma) {
         npcSharma.src = scene.npcSharma;
@@ -334,8 +376,8 @@ function updateSceneContent(scene) {
     } else {
         antiSocialSage.style.display = 'none';
     }
-    
- // Handle hover effect for Sages (Added here)
+
+    // Handle hover effect for Sages (Added here)
     if (scene.imposterSage) {
         imposterSage.addEventListener('mouseover', () => {
             imposterSage.src = 'Sage_Images/SageVar6_imposter_bubble.png';
@@ -364,6 +406,7 @@ function updateSceneContent(scene) {
     }
 
     if (scene.antiSocialSage) {
+        antiSocialSage.addEventListener
         antiSocialSage.addEventListener('mouseover', () => {
             antiSocialSage.src = 'Sage_Images/SageVar4_antisocial_bubble.png';
         });
@@ -395,7 +438,7 @@ function updateSceneContent(scene) {
     positionNameBox();
 }
 
-// Logic to position the name box correctly 
+// Logic to position the name box correctly
 function positionNameBox() {
     const nameBox = document.getElementById('character-name-box');
     const gameContainer = document.getElementById('game-container');
@@ -405,7 +448,7 @@ function positionNameBox() {
     const nameBoxRect = nameBox.getBoundingClientRect();
 
     // This calculates the top position
-    const topPosition = gameContainerRect.top - nameBoxRect.height - 10; 
+    const topPosition = gameContainerRect.top - nameBoxRect.height - 10;
 
     // This sets the position using transform: translate()
     nameBox.style.transform = `translate(${gameContainerRect.left}px, ${topPosition}px)`;
@@ -413,55 +456,3 @@ function positionNameBox() {
 
 // Call positionNameBox on window resize
 window.addEventListener('resize', positionNameBox);
-
-// Settings Adjustments
-document.getElementById('text-size').addEventListener('change', function () {
-    const clickFx2 = new Audio("Audio/clickfx2.mp3");
-    clickFx2.play();
-    const fontSize = this.value === 'small' ? '1em' : this.value === 'large' ? '1.6em' : '1.3em';
-    document.getElementById('story-text').style.fontSize = fontSize;
-});
-
-document.getElementById('text-color').addEventListener('input', function () {
-    const clickFx2 = new Audio("Audio/clickfx2.mp3");
-    clickFx2.play();
-    document.getElementById('story-text').style.color = this.value;
-});
-
-document.getElementById('bg-opacity').addEventListener('input', function () {
-    const opacity = this.value;
-    document.getElementById('game-container').style.backgroundColor = `rgba(50, 50, 50, ${opacity})`;
-    this.style.setProperty('--range-progress', `${opacity * 100}%`);
-});
-
-// Handle background music volume change
-document.getElementById('bg-music-volume').addEventListener('input', function () {
-    const volume = this.value;
-    document.getElementById('background-music').volume = volume;
-    this.style.setProperty('--range-progress', `${volume * 100}%`); // Add this line
-});
-
-// Reset Settings
-document.getElementById('reset-btn').addEventListener('click', function () {
-    const clickFx2 = new Audio("Audio/clickfx2.mp3");
-    clickFx2.play();
-    document.getElementById('text-size').value = 'medium';
-    document.getElementById('text-color').value = '#ffffff';
-    document.getElementById('bg-opacity').value = '0.8';
-    document.getElementById('bg-music-volume').value = '0.5';
-
-    document.getElementById('story-text').style.fontSize = '1.3em';
-    document.getElementById('story-text').style.color = '#ffffff';
-    document.getElementById('game-container').style.backgroundColor = 'rgba(50, 50, 50, 0.8)';
-    document.getElementById('background-music').volume = '0.5';
-
-    document.getElementById('bg-opacity').style.setProperty('--range-progress', '80%');
-    document.getElementById('bg-music-volume').style.setProperty('--range-progress', '50%'); // Add this line
-});
-
-// Close Modal(s)
-document.getElementById('settings-modal').querySelector('.close-btn').addEventListener('click', function () {
-    const clickFx2 = new Audio("Audio/clickfx2.mp3");
-    clickFx2.play();
-    document.getElementById('settings-modal').style.display = 'none';
-});

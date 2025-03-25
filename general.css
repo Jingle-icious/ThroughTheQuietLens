@@ -537,6 +537,11 @@ body {
     font-family: 'Joti One', sans-serif;
 }
 
+#sfx-volume {
+    --range-progress: 75%; /* Set initial progress */
+
+}
+
 /* Modal Close Button */
 .close-btn {
     position: absolute;
