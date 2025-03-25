@@ -151,7 +151,6 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (section === 'Act 1 Start' || section === 'Act 2 Start' || section === 'Act 3 Start') {
             makeChoice(section === 'Act 1 Start' ? 'campus_walk_1' : section === 'Act 2 Start' ? 'dream_seq_transition' : 'dorm_finalProj_1');
             titleScreen.style.display = 'none';
-            gameContainer.style.display = 'block';
             bgMusic.pause();
             bgMusic.currentTime = 0;
         }
