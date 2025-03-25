@@ -315,11 +315,6 @@ body {
     height: 30px; 
 }
 
-#story-nav-btn img {
-    width: 100%;
-    height: 100%;
-}
-
 /* Story Nav Button Hover Effect */
 #story-nav-btn::before {
     content: "";
@@ -340,10 +335,9 @@ body {
     opacity: 1;
 }
 
-
 /* Settings Button */
 #settings-btn {
-    position: fixed;
+    position: absolute;
     top: 12px;
     right: 10px; 
     background: transparent;
@@ -352,12 +346,6 @@ body {
     z-index: 1001;
     width: 30px; 
     height: 30px;
-}
-
-#settings-btn img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
 }
 
 /* Settings Button Hover Effect */
@@ -382,7 +370,7 @@ body {
 
 /* Audio Button */
 #audio-control-btn {
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 57px; /* To the left of settings button */
     background: transparent;
@@ -391,11 +379,6 @@ body {
     z-index: 1001;
     width: 32px; 
     height: 32px; 
-}
-
-#audio-control-btn img {
-    width: 100%;
-    height: 100%;
 }
 
 /* Audio Button Hover Effect */
@@ -417,7 +400,6 @@ body {
 #audio-control-btn:hover::before {
     opacity: 1;
 }
-
 
 #audio-control-btn img, #settings-btn img, #story-nav-btn img {
     width: 100%;
@@ -705,4 +687,14 @@ body, #title-screen {
 
 .color-choice input[type="radio"]:checked + span {
     border-color: #CF7EDF; /* Replace with your hover color */
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 2s linear;
 }

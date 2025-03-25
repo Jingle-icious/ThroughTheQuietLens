@@ -190,38 +190,31 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function crossFade(newBackgroundSrc, callback) {
-    const overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'black';
-    overlay.style.opacity = '0';
-    overlay.style.transition = 'opacity 1s ease-in-out';
-    overlay.style.zIndex = '1000';
-    document.body.appendChild(overlay);
+    // const overlay = document.createElement('div');
+    // overlay.style.position = 'absolute';
+    // overlay.style.top = '0';
+    // overlay.style.left = '0';
+    // overlay.style.width = '100%';
+    // overlay.style.height = '100%';
+    // overlay.style.backgroundColor = 'black';
+    // overlay.style.opacity = '0';
+    // overlay.style.transition = 'opacity 1s ease-in-out';
+    // overlay.style.zIndex = '10000';
+    // document.body.appendChild(overlay);
 
+    const outerContainer = document.getElementById('outer-container');
     document.getElementById('foreground-image').style.display = 'none';
     npcs.forEach(npc => document.getElementById(npc).style.display = 'none');
 
-    // Fade to black
-    setTimeout(() => {
-        overlay.style.opacity = '1';
-    }, 50);
-
-    // After fading to black, change the background and fade in
-    setTimeout(() => {
-        const outerContainer = document.getElementById('outer-container');
-        outerContainer.style.backgroundImage = `url('${newBackgroundSrc}')`;
-        overlay.style.opacity = '0';
-    }, 1100);
+    outerContainer.classList.add('hidden');
 
     // Remove overlay and execute callback
     setTimeout(() => {
-        document.body.removeChild(overlay);
+        outerContainer.classList.remove('hidden');
+        outerContainer.classList.add('visible');
+        outerContainer.style.backgroundImage = `url('${newBackgroundSrc}')`;
         if (callback) callback();
-    }, 2100);
+    }, 1000);
 }
 
 // Choice making logic
