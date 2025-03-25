@@ -156,15 +156,12 @@ document.addEventListener('DOMContentLoaded', function () {
             outerContainer.style.backgroundImage = "url('Background_Images/Title_Official.png')";
         } else if (section === 'Act 1 Start') {
             makeChoice('campus_walk_1');
-            gameContainer.style.display = 'block';
             titleScreen.style.display = 'none';
         } else if (section === 'Act 2 Start') {
             makeChoice('dream_seq_transition'); 
-            gameContainer.style.display = 'block';
             titleScreen.style.display = 'none';
         } else if (section === 'Act 3 Start') {
             makeChoice('dorm_finalProj_1'); 
-            gameContainer.style.display = 'block';
             titleScreen.style.display = 'none';
         }
         navModal.style.display = 'none';
@@ -190,18 +187,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function crossFade(newBackgroundSrc, callback) {
-    // const overlay = document.createElement('div');
-    // overlay.style.position = 'absolute';
-    // overlay.style.top = '0';
-    // overlay.style.left = '0';
-    // overlay.style.width = '100%';
-    // overlay.style.height = '100%';
-    // overlay.style.backgroundColor = 'black';
-    // overlay.style.opacity = '0';
-    // overlay.style.transition = 'opacity 1s ease-in-out';
-    // overlay.style.zIndex = '10000';
-    // document.body.appendChild(overlay);
-
     const outerContainer = document.getElementById('outer-container');
     document.getElementById('foreground-image').style.display = 'none';
     npcs.forEach(npc => document.getElementById(npc).style.display = 'none');
@@ -239,6 +224,9 @@ function makeChoice(choice) {
 }
 
 function updateSceneContent(scene) {
+    // Set text container visible
+    document.getElementById('game-container').style.display = 'block';
+
     // Update the story text
     document.getElementById('story-text').innerHTML = scene.text;
 

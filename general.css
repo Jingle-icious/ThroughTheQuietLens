@@ -134,6 +134,7 @@ body {
 
 /* Game container (text box & choices) */
 #game-container {
+    display: none;
     position: absolute;
     bottom: 5%;
     left: 50%;
@@ -200,7 +201,7 @@ body {
 }
 
 #imposter-image {
-    display: block; /* Make sure it's visible */
+    display: none;
     position: absolute;
     bottom: 0;
     left: 4%; /* Position at the left edge */
@@ -650,10 +651,6 @@ input[type="range"]::-moz-range-progress {
 
 body, #title-screen {
     transition: opacity 1s ease-in-out;
-}
-
-#game-container {
-    display: none;
 }
 
 /* Text Color Choices */
