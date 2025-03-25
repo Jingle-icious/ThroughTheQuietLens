@@ -81,21 +81,28 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error loading Capstone_Story.json:', error));
 
-    function setupGame() {
-        console.log("Setting up the game");
-        bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav";
-
-        document.getElementById('blake-image').style.display = 'none';
-
-        startButton.addEventListener('click', function () {
-            console.log("Start button clicked");
-            settingsModal.style.display = 'none';
-            crossFade('Background_Images/Campus_WIP.png', () => {
-                titleScreen.style.display = 'none';
-                gameContainer.style.display = 'block';
-                makeChoice('campus_walk_1'); // Start with the first scene
+        function setupGame() {
+            console.log("Setting up the game");
+            bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav"; // Title screen music
+            bgMusic.loop = true; // Loop the title screen music
+    
+            document.getElementById('blake-image').style.display = 'none';
+    
+            startButton.addEventListener('click', function () {
+                console.log("Start button clicked");
+                // Play the Startfx sound effect
+                const startFx = new Audio("Audio/Startfx.mp3");
+                startFx.play();
+                settingsModal.style.display = 'none';
+                crossFade('Background_Images/Campus_WIP.png', () => {
+                    titleScreen.style.display = 'none';
+                    gameContainer.style.display = 'block';
+                    makeChoice('campus_walk_1');
+                    bgMusic.pause(); // Stop the title screen music
+                    bgMusic.currentTime = 0; // Reset the music to the beginning
+                    // add logic to play the gameplay music here later.
+                });
             });
-        });
 
         audioControlBtn.addEventListener('click', function () {
             console.log("Audio control button clicked");
@@ -106,6 +113,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         settingsBtn.addEventListener('click', function () {
             console.log("Settings button clicked");
+            const settingFx = new Audio("Audio/Settingsfx.mp3");
+            settingFx.play();
             settingsModal.style.display = 'block';
         });
 
@@ -141,28 +150,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
     storyNavBtn.addEventListener('click', () => {
         navModal.style.display = 'block';
+        const settingFx = new Audio("Audio/Settingsfx.mp3");
+        settingFx.play();
     });
 
     navCloseBtn.addEventListener('click', () => {
         navModal.style.display = 'none';
+        const clickFx2 = new Audio("Audio/clickfx2.mp3");
+        clickFx2.play();
     });
 
     function navigateTo(section) {
+        const navigationFx = new Audio("Audio/Navigationfx.mp3"); // Create audio object here.
+    
         if (section === 'Title Screen') {
+            navigationFx.play(); // Play the sound.
             titleScreen.style.display = 'flex';
             gameContainer.style.display = 'none';
             foregroundImage.style.display = 'none';
             const outerContainer = document.getElementById('outer-container');
             outerContainer.style.backgroundImage = "url('Background_Images/Title_Official.png')";
-        } else if (section === 'Act 1 Start') {
-            makeChoice('campus_walk_1');
+            bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav";
+            bgMusic.loop = true;
+            bgMusic.play();
+        } else if (section === 'Act 1 Start' || section === 'Act 2 Start' || section === 'Act 3 Start') {
+            navigationFx.play(); // Play the sound.
+            makeChoice(section === 'Act 1 Start' ? 'campus_walk_1' : section === 'Act 2 Start' ? 'dream_seq_transition' : 'dorm_finalProj_1');
             titleScreen.style.display = 'none';
-        } else if (section === 'Act 2 Start') {
-            makeChoice('dream_seq_transition'); 
-            titleScreen.style.display = 'none';
-        } else if (section === 'Act 3 Start') {
-            makeChoice('dorm_finalProj_1'); 
-            titleScreen.style.display = 'none';
+            gameContainer.style.display = 'block';
+            bgMusic.pause();
+            bgMusic.currentTime = 0;
         }
         navModal.style.display = 'none';
     }
@@ -398,11 +415,15 @@ window.addEventListener('resize', positionNameBox);
 
 // Settings Adjustments
 document.getElementById('text-size').addEventListener('change', function () {
+    const clickFx2 = new Audio("Audio/clickfx2.mp3");
+    clickFx2.play();
     const fontSize = this.value === 'small' ? '1em' : this.value === 'large' ? '1.6em' : '1.3em';
     document.getElementById('story-text').style.fontSize = fontSize;
 });
 
 document.getElementById('text-color').addEventListener('input', function () {
+    const clickFx2 = new Audio("Audio/clickfx2.mp3");
+    clickFx2.play();
     document.getElementById('story-text').style.color = this.value;
 });
 
@@ -421,6 +442,8 @@ document.getElementById('bg-music-volume').addEventListener('input', function ()
 
 // Reset Settings
 document.getElementById('reset-btn').addEventListener('click', function () {
+    const clickFx2 = new Audio("Audio/clickfx2.mp3");
+    clickFx2.play();
     document.getElementById('text-size').value = 'medium';
     document.getElementById('text-color').value = '#ffffff';
     document.getElementById('bg-opacity').value = '0.8';
@@ -437,5 +460,7 @@ document.getElementById('reset-btn').addEventListener('click', function () {
 
 // Close Modal(s)
 document.getElementById('settings-modal').querySelector('.close-btn').addEventListener('click', function () {
+    const clickFx2 = new Audio("Audio/clickfx2.mp3");
+    clickFx2.play();
     document.getElementById('settings-modal').style.display = 'none';
 });
