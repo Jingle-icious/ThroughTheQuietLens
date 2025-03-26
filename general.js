@@ -503,6 +503,7 @@ function updateSceneContent(scene) {
     if (scene.pleaserSage) {
         pleaserSage.addEventListener('mouseover', () => {
             pleaserSage.src = 'Sage_Images/SageVar7_Pleaser_bubble.png';
+            playSfx("Audio/Pleaser_Sound.mp3");
         });
         pleaserSage.addEventListener('mouseout', () => {
             pleaserSage.src = scene.pleaserSage;
@@ -513,6 +514,7 @@ function updateSceneContent(scene) {
         antiSocialSage.addEventListener
         antiSocialSage.addEventListener('mouseover', () => {
             antiSocialSage.src = 'Sage_Images/SageVar4_antisocial_bubble.png';
+            playSfx("Audio/Anti-Social_Sound.mp3");
         });
         antiSocialSage.addEventListener('mouseout', () => {
             antiSocialSage.src = scene.antiSocialSage;
