@@ -1503,10 +1503,49 @@
           "next": "mentor_meetingImposter_3"
       }
     ],
+    "research_model_1": {
+      "speaker": "Professor Sharma",
+      "text": "“Starting with REFLECT: Reflecting on your semester, identify specific ways impostor syndrome thinking has impacted you.”",
+      "choices": [
+        {
+            "text": "Continue",
+            "next": "research_model_2"
+        }
+      ],
     "background": "Background_Images/Classroom_WIP.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
+  "research_model_2": {
+    "speaker": "Professor Sharma",
+    "text": " “Moving to PLAN: Choose one goal to focus on for the next 30 days that aligns with your values and allows you to work on being who you want to be.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "research_model_3"
+      }
+    ],
+  "background": "Background_Images/Classroom_WIP.png",
+  "sprite": "Sage_Images/SageVar1_surprised.png",
+  "npcSharma": "NPC_Images/Sharma_talk.png"
+},
+    "background": "Background_Images/Classroom_WIP.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "research_model_3": {
+    "speaker": "Professor Sharma",
+    "text": "“Finally ACT: Find a small repeatable action that you can insert into your day immediately. Small steps build momentum.”",
+    "choices": [
+      {
+          "text": "Continue",
+          "next": "mentor_meetingImposter_3"
+      }
+    ],
+  "background": "Background_Images/Classroom_WIP.png",
+  "sprite": "Sage_Images/SageVar1_surprised.png",
+  "npcSharma": "NPC_Images/Sharma_talk.png"
+},
   "mentor_meetingImposter_3" : {
     "speaker": "Sage",
     "text": "“Okay… I’ll try. I’ll try to be honest with myself and I will try to use your advice. Thanks, Professor.”",
