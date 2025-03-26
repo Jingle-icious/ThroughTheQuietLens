@@ -370,9 +370,16 @@ const speakerColors = {
     // Add more speakers and colors as needed
 };
 
+
 function updateSceneContent(scene) {
     // Set text container visible
     document.getElementById('game-container').style.display = 'block';
+
+    console.log("updateSceneContent called");
+    console.log("Clearing story-text");
+    document.getElementById('story-text').innerHTML = '';
+    console.log("story-text cleared");
+    animateText(scene.text, document.getElementById('story-text'));
 
     // Update the story text
     let textColor = "#ffffff"; // Default color (white) for narration
@@ -381,7 +388,7 @@ function updateSceneContent(scene) {
     }
 
     document.getElementById('story-text').style.color = textColor;
-    document.getElementById('story-text').innerHTML = scene.text;
+ 
 
     // Update choices
     const choicesContainer = document.getElementById('choices');
@@ -541,6 +548,20 @@ function updateSceneContent(scene) {
     }
 }
 
+function animateText(text, element) {
+    console.log("animateText called");
+    let index = 0;
 
-// Call positionNameBox on window resize
-window.addEventListener('resize', positionNameBox);
+    function typeWriter() {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            console.log("character added:", text.charAt(index - 1));
+            setTimeout(typeWriter, 50);
+        } else {
+            console.log("animation complete");
+        }
+    }
+
+    typeWriter();
+}
