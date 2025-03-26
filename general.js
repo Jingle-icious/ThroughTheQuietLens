@@ -212,14 +212,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
    // Set initial progress bar style for music volume
-   const initialMusicVolume = document.getElementById('bg-music-volume').value;
-   document.getElementById('bg-music-volume').style.setProperty('--range-progress', `${initialMusicVolume * 100}%`);
+    const initialMusicVolume = document.getElementById('bg-music-volume').value;
+    document.getElementById('bg-music-volume').style.setProperty('--range-progress', `${initialMusicVolume * 100}%`);
 
-   document.getElementById('bg-music-volume').addEventListener('input', function () {
-       const volume = parseFloat(this.value);
-       bgMusic.volume = volume;
-       this.style.setProperty('--range-progress', `${volume * 100}%`);
-   });
+    document.getElementById('bg-music-volume').addEventListener('input', function () {
+        const volume = parseFloat(this.value);
+        bgMusic.volume = volume;
+        this.style.setProperty('--range-progress', `${volume * 100}%`);
+    });
 
     // Reset Settings
     document.getElementById('reset-btn').addEventListener('click', function () {
