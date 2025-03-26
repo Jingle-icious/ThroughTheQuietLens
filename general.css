@@ -121,10 +121,18 @@ body {
     /* object-fit: cover; */
 }
 
-#character-name-box {
+.game-container-wrapper {
     position: absolute;
-    left: 0; /* Initial position - will be adjusted by JavaScript */
-    top: 0; /* Initial position - will be adjusted by JavaScript */
+    width: 80%;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2; /* This ensures the game container is above Sage */
+}
+
+#character-name-box {
+    display: none;
+    width: fit-content;
     background: rgba(50, 50, 50, 0.9);
     font-family: 'Joti One', sans-serif;
     color: white;
@@ -132,17 +140,12 @@ body {
     border-radius: 5px;
     font-size: 1.5em;
     z-index: 3;
-    display: none;
+    margin-bottom: 0.5em;
 }
 
 /* Game container (text box & choices) */
 #game-container {
     display: none;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
     background: rgba(50, 50, 50, 0.8);
     padding: 20px;
     border-radius: 10px;

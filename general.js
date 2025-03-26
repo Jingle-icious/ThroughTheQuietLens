@@ -537,26 +537,8 @@ function updateSceneContent(scene) {
         nameBox.style.display = "none";
         console.log("Name box display: none");
     }
-
-    // Calculate and set the position of the character name box
-    positionNameBox();
 }
 
-// Logic to position the name box correctly
-function positionNameBox() {
-    const nameBox = document.getElementById('character-name-box');
-    const gameContainer = document.getElementById('game-container');
-
-    // This gets bounding elements of both rectangles
-    const gameContainerRect = gameContainer.getBoundingClientRect();
-    const nameBoxRect = nameBox.getBoundingClientRect();
-
-    // This calculates the top position
-    const topPosition = gameContainerRect.top - nameBoxRect.height - 10;
-
-    // This sets the position using transform: translate()
-    nameBox.style.transform = `translate(${gameContainerRect.left}px, ${topPosition}px)`;
-}
 
 // Call positionNameBox on window resize
 window.addEventListener('resize', positionNameBox);
