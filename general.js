@@ -2,6 +2,7 @@ let story;
 let isMuted = false;
 const npcs = ['npc1', 'npc2', 'blake-image', 'sharma-image'];
 let sfxVolume = 0.75;
+let currentBackgroundMusic; // Variable to store the current background music
 
 function playSfx(audioFile) {
     const sfx = new Audio(audioFile);
@@ -90,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("Start button clicked");
             playSfx("Audio/Startfx.mp3");
             settingsModal.style.display = 'none';
-            crossFade('Background_Images/Campus_WIP.png', () => {
+            crossFade('Background_Images/Campus_Main.png', () => {
                 titleScreen.style.display = 'none';
                 gameContainer.style.display = 'block';
                 makeChoice('campus_walk_1');
@@ -103,6 +104,9 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("Audio control button clicked");
             isMuted = !isMuted;
             bgMusic.muted = isMuted;
+            if (currentBackgroundMusic) {
+                currentBackgroundMusic.muted = isMuted;
+            }
             audioControlBtn.querySelector('img').src = isMuted ? 'Icons/Audio_Off_Icon.svg' : 'Icons/Audio_On_Icon.svg';
         });
 
@@ -185,7 +189,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }, { once: true });
         });
     }
-    let sfxVolume = 0.75; // Default sound effect volume
 
     document.getElementById('sfx-volume').addEventListener('input', function () {
         sfxVolume = parseFloat(this.value);
@@ -197,7 +200,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const fontSize = this.value === 'small' ? '1em' : this.value === 'large' ? '1.6em' : '1.3em';
         document.getElementById('story-text').style.fontSize = fontSize;
     });
-
     document.getElementById('text-color').addEventListener('input', function () {
         playSfx("Audio/clickfx2.mp3");
         document.getElementById('story-text').style.color = this.value;
@@ -237,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.getElementById('bg-opacity').style.setProperty('--range-progress', '80%');
         document.getElementById('bg-music-volume').style.setProperty('--range-progress', '50%');
-        document.getElementById('sfx-volume').style.setProperty('--range-progress', '80%');
+        document.getElementById('sfx-volume').style.setProperty('--range-progress', '75%');
     });
 
     // Close Modal(s)
@@ -267,7 +269,7 @@ function crossFade(newBackgroundSrc, callback) {
     }, 1000);
 }
 
-// Choice making logic
+// Choice making logic and Audio for scenes
 function makeChoice(choice) {
     if (!story[choice]) {
         console.error(`Scene "${choice}" not found in story.`);
@@ -279,12 +281,91 @@ function makeChoice(choice) {
     const currentBackground = outerContainer.style.backgroundImage.replace(/^url\(['"](.+)['"]\)/, '$1');
     const newBackground = scene.background;
 
+   // Play sound effects based on the number of choices in the current scene
+    if (story[choice].choices.length > 1) {
+    playSfx("Audio/Choicefx.mp3");
+    } else {
+    playSfx("Audio/Continuefx.mp3");
+    }
+    
     if (newBackground && newBackground !== currentBackground) {
         crossFade(newBackground, () => {
             updateSceneContent(scene);
+            // Check for art images
+            if (newBackground === 'Background_Images/StressArt.png') {
+                playBackgroundMusic('Audio/Stressed_Drawing_Loop.mp3');
+            } else if (newBackground === 'Background_Images/HappyArt.png') {
+                playBackgroundMusic('Audio/Happy_Drawing_Loop.mp3');
+            } else if (newBackground === 'Background_Images/Dream1.png' ||
+                newBackground === 'Background_Images/Dream1_banner.png' ||
+                newBackground === 'Background_Images/Dream1_Tent.png' ||
+                newBackground === 'Background_Images/Dream_Eatery_Main.png' ||
+                newBackground === 'Background_Images/Dream_Ferris_Main.png' ||
+                newBackground === 'Background_Images/Dream_PerfContest_Main.png' ||
+                newBackground === 'Background_Images/Dream_Pie_Main.png') {
+                playBackgroundMusic('Audio/Dream_Carnival_Song.mp3');
+            } else if (newBackground === 'Background_Images/Classroom_WIP.png') {
+                playBackgroundMusic('Audio/Mentor_Song.mp3');
+            } else if (newBackground === 'Background_Images/Dorm_Main.png' ||
+                newBackground === 'Background_Images/Dorm_Sage_Sleeping.png' ||
+                newBackground === 'Background_Images/Dorm_Sage_Sitting.png' ||
+                newBackground === 'Background_Images/Lobby_Main.png') {
+                playBackgroundMusic('Audio/Dorm_Room_Loop.mp3');
+            } else if (newBackground === 'Background_Images/Campus_Main.png') {
+                playBackgroundMusic('Audio/Outside_Loop.mp3');
+            } else {
+                stopBackgroundMusic();
+            }
         });
     } else {
         updateSceneContent(scene);
+        // Check for art images
+        if (newBackground === 'Background_Images/StressArt.png') {
+                playBackgroundMusic('Audio/Stressed_Drawing_Loop.mp3');
+            } else if (newBackground === 'Background_Images/HappyArt.png') {
+                playBackgroundMusic('Audio/Happy_Drawing_Loop.mp3');
+            } else if (newBackground === 'Background_Images/Dream1.png' ||
+                newBackground === 'Background_Images/Dream1_banner.png' ||
+                newBackground === 'Background_Images/Dream1_Tent.png' ||
+                newBackground === 'Background_Images/Dream_Eatery_Main.png' ||
+                newBackground === 'Background_Images/Dream_Ferris_Main.png' ||
+                newBackground === 'Background_Images/Dream_PerfContest_Main.png' ||
+                newBackground === 'Background_Images/Dream_Pie_Main.png') {
+            playBackgroundMusic('Audio/Dream_Carnival_Song.mp3');
+        } else if (newBackground === 'Background_Images/Classroom_WIP.png') {
+            playBackgroundMusic('Audio/Mentor_Song.mp3');
+        } else if (newBackground === 'Background_Images/Dorm_Main.png' ||
+            newBackground === 'Background_Images/Dorm_Sage_Sleeping.png' ||
+            newBackground === 'Background_Images/Dorm_Sage_Sitting.png' ||
+            newBackground === 'Background_Images/Lobby_Main.png') {
+            playBackgroundMusic('Audio/Dorm_Room_Loop.mp3');
+        } else if (newBackground === 'Background_Images/Campus_Main.png') {
+            playBackgroundMusic('Audio/Outside_Loop.mp3');
+        } else {
+            stopBackgroundMusic();
+        }
+    }
+}
+
+function playBackgroundMusic(audioFile) {
+    if (!currentBackgroundMusic || currentBackgroundMusic.src.includes(audioFile) === false) { // Check if the music is already playing
+        if (currentBackgroundMusic) {
+            currentBackgroundMusic.pause();
+        }
+        currentBackgroundMusic = new Audio(audioFile);
+        currentBackgroundMusic.loop = true;
+        currentBackgroundMusic.volume = 0.5; // Adjust volume as needed
+        currentBackgroundMusic.muted = isMuted; // Set muted state
+        currentBackgroundMusic.play().catch(error => {
+            console.error("Error playing background music:", error);
+        });
+    }
+}
+
+function stopBackgroundMusic() {
+    if (currentBackgroundMusic) {
+        currentBackgroundMusic.pause();
+        currentBackgroundMusic = null;
     }
 }
 
@@ -306,6 +387,7 @@ function updateSceneContent(scene) {
         button.onclick = () => makeChoice(option.next);
         choicesContainer.appendChild(button);
     });
+
 
     // Handle sprite
     const foregroundImage = document.getElementById('foreground-image');
