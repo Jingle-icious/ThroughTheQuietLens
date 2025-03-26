@@ -280,13 +280,6 @@ function makeChoice(choice) {
     const outerContainer = document.getElementById('outer-container');
     const currentBackground = outerContainer.style.backgroundImage.replace(/^url\(['"](.+)['"]\)/, '$1');
     const newBackground = scene.background;
-
-   // Play sound effects based on the number of choices in the current scene
-    if (story[choice].choices.length > 1) {
-    playSfx("Audio/Choicefx.mp3");
-    } else {
-    playSfx("Audio/Continuefx.mp3");
-    }
     
     if (newBackground && newBackground !== currentBackground) {
         crossFade(newBackground, () => {
@@ -384,7 +377,15 @@ function updateSceneContent(scene) {
         const button = document.createElement('button');
         button.classList.add('choice');
         button.innerText = option.text;
-        button.onclick = () => makeChoice(option.next);
+        button.onclick = () =>  {
+          // Play sound effects based on the option text
+          if (option.text === "Continue") {
+            playSfx("Audio/Continuefx.mp3");
+          } else {
+            playSfx("Audio/Choicefx.mp3");
+          }
+          makeChoice(option.next);
+        }
         choicesContainer.appendChild(button);
     });
 
