@@ -8,7 +8,7 @@
           "next": "campus_walk_2"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     
@@ -22,7 +22,7 @@
         "next": "campus_walk_3"
       }
     ],
-    "background": "Background_Images/Campus_WIP.png",
+    "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
 
@@ -35,7 +35,7 @@
           "next": "campus_walk_4"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npc1": "NPC_Images/NPC1.png",
       "npc2": "NPC_Images/NPC2.png"
@@ -49,7 +49,7 @@
           "next": "campus_walk_5"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npc1": "NPC_Images/NPC1.png",
       "npc2": "NPC_Images/NPC2.png"
@@ -62,7 +62,7 @@
           "next": "campus_walk_6"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "campus_walk_6": {
@@ -74,7 +74,7 @@
           "next": "blake_encounter_1"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "blake_encounter_1": {
@@ -85,7 +85,7 @@
           "next": "blake_encounter_2"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
@@ -98,7 +98,7 @@
           "next": "blake_encounter_3"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Talk.png"
     },
@@ -115,7 +115,7 @@
           "next": "blake_honest_1"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
@@ -128,7 +128,7 @@
           "next": "blake_fakeit_2"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png",
       "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
@@ -141,7 +141,7 @@
           "next": "blake_fakeit_3"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_smile.png",
       "npcBlake": "NPC_Images/Blake_Frown.png"
     },
@@ -154,7 +154,7 @@
           "next": "blake_fakeit_4"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Talk.png"
     },
@@ -166,7 +166,7 @@
           "next": "transition_dorm_lobby"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_smile.png"
     },
     "blake_honest_1": {
@@ -177,7 +177,7 @@
           "next": "blake_honest_2"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_surprised.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
@@ -190,7 +190,7 @@
           "next": "blake_honest_3"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png",
       "npcBlake": "NPC_Images/Blake_Smile.png"
     },
@@ -202,7 +202,7 @@
           "next": "blake_honest_4"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Ooh.png"
     },
@@ -215,7 +215,7 @@
           "next": "blake_honest_5"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png",
       "npcBlake": "NPC_Images/Blake_Talk.png"
     },
@@ -228,7 +228,7 @@
           "next": "blake_honest_6"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_talk.png",
       "npcBlake": "NPC_Images/Blake_Frown.png"
     },
@@ -240,7 +240,7 @@
           "next": "blake_honest_7"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
     },
     "blake_honest_7": {
@@ -251,7 +251,7 @@
           "next": "transition_dorm_lobby"
         }
       ],
-      "background": "Background_Images/Campus_WIP.png",
+      "background": "Background_Images/Campus_Main.png",
       "sprite": "Sage_Images/SageVar1_frown.png"
 
     },
@@ -2416,7 +2416,7 @@
         "next": "closing_2"
       }
     ],
-    "background": "Background_Images/Campus_WIP.png",
+    "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "closing_2" : {
@@ -2428,7 +2428,7 @@
         "next": "closing_3"
       }
     ],
-    "background": "Background_Images/Campus_WIP.png",
+    "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "closing_3" : {
@@ -2440,7 +2440,7 @@
         "next": "closing_4"
       }
     ],
-    "background": "Background_Images/Campus_WIP.png",
+    "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png"
   },
   "closing_4" : {
@@ -2451,7 +2451,7 @@
         "next": "closing_5"
       }
     ],
-    "background": "Background_Images/Campus_WIP.png",
+    "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcBlake": "NPC_Images/Blake_Smile.png",
     "npc2": "NPC_Images/NPC2.png"
@@ -2465,7 +2465,7 @@
         "next": "..."
       }
     ],
-    "background": "Background_Images/Campus_WIP.png",
+    "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png"
   }
 }

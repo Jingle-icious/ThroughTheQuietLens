@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("Start button clicked");
             playSfx("Audio/Startfx.mp3");
             settingsModal.style.display = 'none';
-            crossFade('Background_Images/Campus_WIP.png', () => {
+            crossFade('Background_Images/Campus_Main.png', () => {
                 titleScreen.style.display = 'none';
                 gameContainer.style.display = 'block';
                 makeChoice('campus_walk_1');
