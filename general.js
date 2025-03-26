@@ -200,10 +200,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const fontSize = this.value === 'small' ? '1em' : this.value === 'large' ? '1.6em' : '1.3em';
         document.getElementById('story-text').style.fontSize = fontSize;
     });
-    document.getElementById('text-color').addEventListener('input', function () {
-        playSfx("Audio/clickfx2.mp3");
-        document.getElementById('story-text').style.color = this.value;
-    });
+
+    // Set initial progress bar style for Text Box Opacity
+    const initialOpacity = document.getElementById('bg-opacity').value;
+    document.getElementById('bg-opacity').style.setProperty('--range-progress', `${initialOpacity * 100}%`);
 
     document.getElementById('bg-opacity').addEventListener('input', function () {
         const opacity = this.value;
@@ -211,23 +211,20 @@ document.addEventListener('DOMContentLoaded', function () {
         this.style.setProperty('--range-progress', `${opacity * 100}%`);
     });
 
-    // Handle background music volume change
-    document.getElementById('bg-music-volume').addEventListener('input', function () {
-        const volume = this.value;
-        document.getElementById('background-music').volume = volume;
-        this.style.setProperty('--range-progress', `${volume * 100}%`);
-        if (sfxVolume <= volume) {
-            sfxVolume = parseFloat(volume) + 0.05;
-            document.getElementById('sfx-volume').value = sfxVolume;
-            document.getElementById('sfx-volume').style.setProperty('--range-progress', `${sfxVolume * 100}%`);
-        }
-    });
+   // Set initial progress bar style for music volume
+   const initialMusicVolume = document.getElementById('bg-music-volume').value;
+   document.getElementById('bg-music-volume').style.setProperty('--range-progress', `${initialMusicVolume * 100}%`);
+
+   document.getElementById('bg-music-volume').addEventListener('input', function () {
+       const volume = parseFloat(this.value);
+       bgMusic.volume = volume;
+       this.style.setProperty('--range-progress', `${volume * 100}%`);
+   });
 
     // Reset Settings
     document.getElementById('reset-btn').addEventListener('click', function () {
         playSfx("Audio/clickfx2.mp3");
         document.getElementById('text-size').value = 'medium';
-        document.getElementById('text-color').value = '#ffffff';
         document.getElementById('bg-opacity').value = '0.8';
         document.getElementById('bg-music-volume').value = '0.5';
         document.getElementById('sfx-volume').value = '0.75';
