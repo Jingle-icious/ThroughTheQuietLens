@@ -217,7 +217,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('bg-music-volume').addEventListener('input', function () {
         const volume = parseFloat(this.value);
-        bgMusic.volume = volume;
+        document.getElementById('background-music').volume = volume; // Title screen music
+        if (currentBackgroundMusic) {
+            currentBackgroundMusic.volume = volume; // In-game music
+        }
         this.style.setProperty('--range-progress', `${volume * 100}%`);
     });
 
