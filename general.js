@@ -1,6 +1,17 @@
 let story;
 let isMuted = false;
 const npcs = ['npc1', 'npc2', 'blake-image', 'sharma-image'];
+let sfxVolume = 0.75;
+
+function playSfx(audioFile) {
+    const sfx = new Audio(audioFile);
+    sfx.volume = sfxVolume;
+    sfx.play().then(() => {
+        console.log("Playing sound:", audioFile);
+    }).catch(error => {
+        console.error("Error playing sound:", audioFile, error);
+    });
+}
 
 function scaleBody(aspectRatio) {
     const windowWidth = window.innerWidth;
@@ -181,11 +192,6 @@ document.addEventListener('DOMContentLoaded', function () {
         this.style.setProperty('--range-progress', `${sfxVolume * 100}%`);
     });
 
-    function playSfx(audioFile) {
-        const sfx = new Audio(audioFile);
-        sfx.volume = sfxVolume;
-        sfx.play();
-    }
     document.getElementById('text-size').addEventListener('change', function () {
         playSfx("Audio/clickfx2.mp3");
         const fontSize = this.value === 'small' ? '1em' : this.value === 'large' ? '1.6em' : '1.3em';
@@ -380,6 +386,7 @@ function updateSceneContent(scene) {
     if (scene.imposterSage) {
         imposterSage.addEventListener('mouseover', () => {
             imposterSage.src = 'Sage_Images/SageVar6_imposter_bubble.png';
+            playSfx("Audio/Imposter_Sound.mp3");
         });
         imposterSage.addEventListener('mouseout', () => {
             imposterSage.src = scene.imposterSage;
@@ -389,6 +396,7 @@ function updateSceneContent(scene) {
     if (scene.perfectionistSage) {
         perfectionistSage.addEventListener('mouseover', () => {
             perfectionistSage.src = 'Sage_Images/SageVar5_perfectionist_bubble.png';
+            playSfx("Audio/Perfect_Sound.mp3");
         });
         perfectionistSage.addEventListener('mouseout', () => {
             perfectionistSage.src = scene.perfectionistSage;
