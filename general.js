@@ -52,10 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const audioControlBtn = document.getElementById('audio-control-btn');
     const settingsBtn = document.getElementById('settings-btn');
     const bgMusic = document.getElementById('background-music');
-    const resetGameBtn = document.getElementById('reset-game-btn');
     const settingsModal = document.getElementById('settings-modal');
     const closeBtn = document.querySelector('.close-btn');
     const foregroundImage = document.getElementById('foreground-image');
+    
 
     const disclaimerPopup = document.getElementById('disclaimer-popup');
     const disclaimerAcceptButton = document.getElementById('disclaimer-accept-button');
@@ -359,11 +359,25 @@ function stopBackgroundMusic() {
     }
 }
 
+const speakerColors = {
+    "Sage": "#b1e2c4",
+    "Blake": "#00DDC4",
+    "Parent": "#9caaea",
+    "Professor Sharma": "#DDA0DD",
+    // Add more speakers and colors as needed
+};
+
 function updateSceneContent(scene) {
     // Set text container visible
     document.getElementById('game-container').style.display = 'block';
 
     // Update the story text
+    let textColor = "#ffffff"; // Default color (white) for narration
+    if (scene.speaker && speakerColors[scene.speaker]) {
+        textColor = speakerColors[scene.speaker];
+    }
+
+    document.getElementById('story-text').style.color = textColor;
     document.getElementById('story-text').innerHTML = scene.text;
 
     // Update choices
