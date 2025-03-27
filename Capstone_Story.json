@@ -1006,8 +1006,7 @@
         "next": "imposter_challenge_9"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sleeping.png",
-    "sound": "Audio/Piano_jingle.mp3"
+    "background": "Background_Images/Dorm_Sage_Sleeping.png"
   },
   "imposter_challenge_9" : {
     "speaker": "Sage",
@@ -1128,8 +1127,7 @@
         "next": "mentor_meetingPerfect_1"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sleeping.png",
-    "sound": "Audio/Piano_jingle.mp3"
+    "background": "Background_Images/Dorm_Sage_Sleeping.png"
   },
   "pleaser_challenge_1" : {
     "text": "Sage is filled with trepidation as she enters the big top through the heavy tent flaps. The darkness clears and Sage sees...",
@@ -1196,7 +1194,8 @@
         "next": "pleaser_challenge_7"
       }
     ],
-    "background": "Background_Images/Dream_Pie_Main.png"
+    "background": "Background_Images/Dream_Pie_Main.png",
+    "sound": "Audio/Running_effect.mp3"
   },
   "pleaser_challenge_7" : {
     "text": "Sage wakes up with her heart pounding, cold from sweat — and with nausea as well. She pulls the covers up over her head, but knowing that she won't be going back to sleep, she heads to the shower to start her day.",
@@ -1274,7 +1273,8 @@
         "next": "antiSocial_challenge_7"
       }
     ],
-    "background": "Background_Images/Dream_Ferris_Main.png"
+    "background": "Background_Images/Dream_Ferris_Main.png",
+    "sound": "Audio/Coin_spin.wav"
   },
   "antiSocial_challenge_7" : {
     "speaker": "Sage",
@@ -1305,8 +1305,7 @@
         "next": "mentor_meetingAntiSocial_1"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sleeping.png",
-    "sound": "Audio/Piano_jingle.mp3"
+    "background": "Background_Images/Dorm_Sage_Sleeping.png"
   },
   "mentor_meetingImposter_1" : {
     "text": "Later, Sage meets with Professor Sharma, her mentor, who offers advice on managing stress, assignments, and life in general.",
@@ -1317,7 +1316,8 @@
       }
     ],
     "background": "Background_Images/Classroom_Main.png",
-    "sprite": "Sage_Images/SageVar1_frown.png"
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "sound": "Audio/Door_open.mp3"
   },
   "mentor_meetingImposter_2" : {
     "text": "The classroom is orderly and warm — a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
@@ -1330,7 +1330,7 @@
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png",
-    "sound": "Audio/Door_open.mp3"
+    "sound": "Audio/Tea_pour.mp3"
   },
   "Imposter_Sage_advice_1" : {
     "speaker" : "Professor Sharma",
@@ -1343,7 +1343,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Teacup_place.mp3"
   },
   "Imposter_Sage_advice_2" : {
     "speaker" : "Sage",
@@ -1542,7 +1543,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Pencil_writing.mp3"
   },
   "act_exercise_3": {
     "speaker": "Professor Sharma",
@@ -1659,7 +1661,8 @@
       }
     ],
     "background": "Background_Images/Classroom_Main.png",
-    "sprite": "Sage_Images/SageVar1_frown.png"
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "sound": "Audio/Door_open.mp3"
   },
   "mentor_meetingPerfect_2" : {
     "text": "The classroom is orderly and warm — a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
@@ -1672,7 +1675,7 @@
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png",
-    "sound": "Audio/Door_open.mp3"
+    "sound": "Audio/Tea_pour.mp3"
   },
   "Perfect_Sage_advice_1" : {
     "speaker": "Professor Sharma",
@@ -1685,7 +1688,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Teacup_place.mp3"
   },
   "Perfect_Sage_advice_2" : {
     "speaker": "Sage",
@@ -1869,7 +1873,8 @@
       }
     ],
     "background": "Background_Images/Classroom_Main.png",
-    "sprite": "Sage_Images/SageVar1_frown.png"
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "sound": "Audio/Door_open.mp3"
   },
   "mentor_meetingPleaser_2" : {
     "text": "The classroom is orderly and warm — a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
@@ -1882,7 +1887,7 @@
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png",
-        "sound": "Audio/Door_open.mp3"
+    "sound": "Audio/Tea_pour.mp3"
   },
   "Pleaser_Sage_advice_1" : {
     "speaker": "Professor Sharma",
@@ -1895,7 +1900,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Teacup_place.mp3"
   },
   "Pleaser_Sage_advice_2" : {
     "speaker": "Professor Sharma",
@@ -2105,7 +2111,8 @@
       }
     ],
     "background": "Background_Images/Classroom_Main.png",
-    "sprite": "Sage_Images/SageVar1_frown.png"
+    "sprite": "Sage_Images/SageVar1_frown.png",
+      "sound": "Audio/Door_open.mp3"
   },
   "mentor_meetingAntiSocial_2" : {
     "text": "The classroom is orderly and warm — a stark contrast to Sage’s chaotic thoughts. Professor Sharma offers Sage a cup of tea and they begin to discuss her dream.",
@@ -2118,7 +2125,7 @@
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png",
-    "sound": "Audio/Door_open.mp3"
+    "sound": "Audio/Tea_pour.mp3"
   },
   "antiSocial_Sage_advice_1" : {
     "speaker": "Professor Sharma",
@@ -2131,7 +2138,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Teacup_place.mp3"
   },
   "antiSocial_Sage_advice_2" : {
     "speaker": "Sage",
