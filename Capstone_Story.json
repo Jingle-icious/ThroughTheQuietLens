@@ -454,7 +454,8 @@
       }
     ],
     "background": "Background_Images/Dorm_Main.png",
-    "sprite": "Sage_Images/SageVar1_frown.png"
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "sound": "Audio/Alarm_silly.mp3"
   },
   "dorm_reasonable_3": {
     "speaker": "Sage",
@@ -807,7 +808,9 @@
         }
       ],
       "background": "Background_Images/Dorm_Main.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sound": "Audio/Womp_Womp.mp3",
+      "soundDelay": 1000
     },
     "social_ignore_3": {
       "text": "Her decision lingers as the silence feels heavier now. She works on homework for a while and then heads to bed.",
@@ -849,7 +852,8 @@
         }
       ],
       "background": "Background_Images/Dream1_banner.png",
-      "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+      "sprite": "Sage_Images/SageVar6_imposter_teeth.png",
+      "sound": "Audio/Imposter_Sound.mp3"
     },
     "perfectionistic_Sage_1": {
       "text": "Perfectionist Sage",
@@ -860,7 +864,8 @@
         }
       ],
       "background": "Background_Images/Dream1_banner.png",
-      "sprite": "Sage_Images/SageVar5_perfectionist.png"
+      "sprite": "Sage_Images/SageVar5_perfectionist.png",
+          "sound": "Audio/Perfect_Sound.mp3"
     },
     "pleaser_Sage_1": {
     "text": "Pleaser Sage",
@@ -871,7 +876,8 @@
       }
     ],
     "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_smile.png"
+    "sprite": "Sage_Images/SageVar7_pleaser_smile.png",
+        "sound": "Audio/Pleaser_Sound.mp3"
   },
   "anti_social_Sage_1": {
     "text": "Anti—social Sage",
@@ -882,7 +888,8 @@
       }
     ],
     "background": "Background_Images/Dream1_banner.png",
-    "sprite": "Sage_Images/SageVar4_antisocial.png"
+    "sprite": "Sage_Images/SageVar4_antisocial.png",
+        "sound": "Audio/Anti-Social_Sound.mp3"
   },
   "choose_sage": {
     "text": "Choose your Sage",
@@ -919,7 +926,9 @@
       }
     ],
     "background": "Background_Images/Dream1_Tent.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "sprite": "Sage_Images/SageVar6_imposter_teeth.png",
+    "sound": "Audio/Tent_open.mp3",
+    "soundDelay": 1000
   },
   "imposter_challenge_2": {
     "text": "...a row of kiosks and booths in their own exclusive food area of the carnival. She immediately feels that she has no business being here, this is for all of the authentic academic folks.",
@@ -1016,7 +1025,9 @@
       }
     ],
     "background": "Background_Images/Dream1_Tent.png",
-    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+    "sprite": "Sage_Images/SageVar5_perfectionist.png",
+    "sound": "Audio/Tent_open.mp3",
+    "soundDelay": 1000
   },
   "perfect_challenge_2" : {
     "text": "...herself standing in line at a booth that reads “Perfection Contest” with two full lines of contestants. There is a blank sketchbook and pencil. In a throwback to the beauty of the renaissance, each contestant is supposed to draw a perfect circle freehand.",
@@ -1122,7 +1133,9 @@
       }
     ],
     "background": "Background_Images/Dream1_Tent.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_frown.png"
+    "sprite": "Sage_Images/SageVar7_pleaser_frown.png",
+    "sound": "Audio/Tent_open.mp3",
+    "soundDelay": 1000
   },
   "pleaser_challenge_2" : {
     "text": "...herself slumped at the pie—eating contest table, she looks nauseated and ill. It is obvious she over ate. Empty pie pans and crumb—covered plates surround her. The scorecards indicate that she has gotten scores of an 8 and a 9.",
@@ -1196,7 +1209,9 @@
       }
     ],
     "background": "Background_Images/Dream1_Tent.png",
-    "sprite": "Sage_Images/SageVar4_antisocial.png"
+    "sprite": "Sage_Images/SageVar4_antisocial.png",
+    "sound": "Audio/Tent_open.mp3",
+    "soundDelay": 1000
   },
   "antiSocial_challenge_2" : {
     "text": "...a ferris wheel in the distance — a favorite of hers. She is excited to get on the ride and see the POV from the top at first glance, but as she heads to line she realizes that each rider’s bucket has something written on it. They are all invitations and participation events.",
