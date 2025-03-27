@@ -1228,7 +1228,8 @@
         "next": "antiSocial_challenge_3"
       }
     ],
-    "background": "Background_Images/Dream_Ferris_Main.png"
+    "background": "Background_Images/Dream_Ferris_Main.png",
+    "sound": "Audio/Wheel_squeak.mp3"
   },
   "antiSocial_challenge_3" : {
     "speaker": "Sage",
@@ -2572,12 +2573,42 @@
     "text": "“Really it's not that hard to find my <i>‘Chill’</i> — it's actually much easier when I remember that we are all in this together.”",
     "choices": [
       {
-        "text": "The End",
-        "next": "..."
+        "text": "End Credits",
+        "next": "end_credits_1"
       }
     ],
     "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png"
+  },
+  "end_credits_1": {
+    "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO 988LIFELINE.ORG.",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "end_credits_2"
+      }
+    ],
+    "background": "Background_Images/Title_Official.png"
+  },
+  "end_credits_2": {
+    "text": "Created by Evelyn Upchurch a.k.a. Nicky Lynn Art. Thanks and acknowledgement to my family and friends who played Through the Quiet Lens more times than I can count and gave feedback and suggestions. You are all amazing!",
+    "choices": [
+      {
+        "text": "Next",
+        "next": "end_credits_3"
+      }
+    ],
+    "background": "Background_Images/Title_Official.png"
+  },
+  "end_credits_3": {
+    "text": "Special Thanks to my mentor Matt Duncan for supporting me in my UI build from concept to completion. As well as my brother, Gabriel Upchurch, for creating the guitar music pieces to fit so perfectly!",
+    "choices": [
+      {
+        "text": "Thank You!",
+        "next": "..."
+      }
+    ],
+    "background": "Background_Images/Title_Official.png"
   }
 }
 }

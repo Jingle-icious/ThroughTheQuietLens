@@ -314,6 +314,8 @@ function makeChoice(choice) {
                 playBackgroundMusic('Audio/Dorm_Room_Loop.mp3');
             } else if (newBackground === 'Background_Images/Campus_Main.png') {
                 playBackgroundMusic('Audio/Outside_Loop.mp3');
+            } else if (newBackground === 'Background_Images/Title_Official.png') {
+                playBackgroundMusic('Audio/Quiet_Lens_Soundtrack_Option.wav');
             } else {
                 stopBackgroundMusic();
             }
@@ -343,10 +345,12 @@ function makeChoice(choice) {
             playBackgroundMusic('Audio/Dorm_Room_Loop.mp3');
         } else if (newBackground === 'Background_Images/Campus_Main.png') {
             playBackgroundMusic('Audio/Outside_Loop.mp3');
+        } else if (newBackground === 'Background_Images/Title_Official.png') {
+            playBackgroundMusic('Audio/Quiet_Lens_Soundtrack_Option.wav');
         } else {
             stopBackgroundMusic();
         }
-        applyWindGust(newBackground); // Apply wind gust based on background
+        applyWindGust(newBackground); 
     }
 }
 
@@ -354,22 +358,16 @@ function applyWindGust(background) {
     const outerContainer = document.getElementById('outer-container');
     let windGustLayer = document.querySelector('.wind-gust-layer');
 
-    console.log("applyWindGust called with background:", background); // Debugging
-
     if (background === 'Background_Images/Campus_Main.png') {
-        console.log("Campus background detected"); // Debugging
         if (!windGustLayer) {
             windGustLayer = document.createElement('div');
             windGustLayer.classList.add('wind-gust-layer');
             outerContainer.appendChild(windGustLayer);
-            console.log("wind-gust-layer created"); // Debugging
         }
         windGustLayer.style.opacity = 1; // Make it visible
-        console.log("wind-gust-layer opacity set to 1"); // Debugging
     } else {
         if (windGustLayer) {
             windGustLayer.style.opacity = 0; // Hide it
-            console.log("wind-gust-layer opacity set to 0"); // Debugging
         }
     }
 }
