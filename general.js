@@ -1,9 +1,19 @@
+// GLOBALS
 let story;
 let isMuted = false;
 const npcs = ['npc1', 'npc2', 'blake-image', 'sharma-image'];
 let sfxVolume = 0.75;
 let currentBackgroundMusic; // Variable to store the current background music
+let typeWriter;
 
+// Enable autoscaling to 16x9
+scaleBody(16 / 9);
+window.addEventListener('resize', () => {
+    scaleBody(16 / 9);
+});
+
+
+// FUNCTIONS
 function playSfx(audioFile) {
     const sfx = new Audio(audioFile);
     sfx.volume = sfxVolume;
@@ -36,12 +46,6 @@ function scaleBody(aspectRatio) {
     outerContainer.style.height = `${newHeight}px`;
 }
 
-scaleBody(16 / 9);
-
-window.addEventListener('resize', () => {
-    scaleBody(16 / 9);
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
@@ -60,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const disclaimerPopup = document.getElementById('disclaimer-popup');
     const disclaimerAcceptButton = document.getElementById('disclaimer-accept-button');
 
+    typeWriter = new Typewriter(document.getElementById('story-text'));
+
     const overlay = document.createElement('div');
     overlay.id = 'disclaimer-popup-overlay';
     outerContainer.appendChild(overlay);
@@ -70,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
         startButton.style.display = 'block';
         outerContainer.removeChild(overlay);
     });
+
+    gameContainer.addEventListener('click', () => typeWriter.typeAll())
 
     fetch('./Capstone_Story.json')
         .then(response => response.json())
@@ -379,7 +387,8 @@ function updateSceneContent(scene) {
     console.log("Clearing story-text");
     document.getElementById('story-text').innerHTML = '';
     console.log("story-text cleared");
-    animateText(scene.text, document.getElementById('story-text'));
+    typeWriter.stop();
+    typeWriter.type(scene.text)
 
     // Update the story text
     let textColor = "#ffffff"; // Default color (white) for narration
@@ -398,7 +407,8 @@ function updateSceneContent(scene) {
         const button = document.createElement('button');
         button.classList.add('choice');
         button.innerText = option.text;
-        button.onclick = () =>  {
+        button.onclick = (event) =>  {
+            event.stopPropagation();
           // Play sound effects based on the option text
           if (option.text === "Continue") {
             playSfx("Audio/Continuefx.mp3");
@@ -548,20 +558,57 @@ function updateSceneContent(scene) {
     }
 }
 
-function animateText(text, element) {
-    console.log("animateText called");
-    let index = 0;
 
-    function typeWriter() {
-        if (index < text.length) {
-            element.innerHTML += text.charAt(index);
-            index++;
-            console.log("character added:", text.charAt(index - 1));
-            setTimeout(typeWriter, 50);
-        } else {
-            console.log("animation complete");
-        }
+class Typewriter {
+    constructor(element, speed = 50) {
+      this.element = element;
+      this.text = "";
+      this.speed = speed;
+      this.isTyping = false;
+      this.timeoutId = null;
+      this.index = 0;
     }
+  
+    type(text) {
+      this.text = text;
+      this.index = 0;
+      this.isTyping = true;
+      this.element.innerHTML = "";
+      this.startTyping();
+    }
+    
+    typeAll() {
+        this.stop();
+        this.index = 0;
+        this.element.innerHTML = this.text;
+    }
+  
+    startTyping() {
+      if (!this.isTyping) return;
+  
+      if (this.index <= this.text.length) {
+        let char = this.text[this.index];
 
-    typeWriter();
-}
+        // Check if we have an HTML tag.  If so, skip to the end of it
+        if (char === '<') {
+            this.index = this.text.indexOf('>', this.index);
+        }
+        this.element.innerHTML = this.text.slice(0, this.index);
+        this.index++;
+        this.timeoutId = setTimeout(() => this.startTyping(), this.speed);
+      } else {
+        this.stop();
+      }
+    }
+  
+    stop() {
+      this.isTyping = false;
+      clearTimeout(this.timeoutId);
+    }
+  
+    resume() {
+     this.isTyping = true;
+     this.startTyping();
+    }
+  }
+  
