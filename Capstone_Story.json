@@ -1585,7 +1585,8 @@
       ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Remember_harp.mp3"
   },
   "research_model_2": {
     "speaker": "Professor Sharma",
@@ -1598,7 +1599,8 @@
     ],
   "background": "Background_Images/Classroom_Main.png",
   "sprite": "Sage_Images/SageVar1_surprised.png",
-  "npcSharma": "NPC_Images/Sharma_talk.png"
+  "npcSharma": "NPC_Images/Sharma_talk.png",
+  "sound": "Audio/Plan_ting.mp3"
 },
   "research_model_3": {
     "speaker": "Professor Sharma",
@@ -1611,7 +1613,8 @@
     ],
   "background": "Background_Images/Classroom_Main.png",
   "sprite": "Sage_Images/SageVar1_surprised.png",
-  "npcSharma": "NPC_Images/Sharma_talk.png"
+  "npcSharma": "NPC_Images/Sharma_talk.png",
+  "sound": "Audio/Act_action.mp3"
 },
 "research_model_4": {
   "speaker": "Professor Sharma",
