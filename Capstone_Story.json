@@ -699,7 +699,9 @@
         }
       ],
       "background": "Background_Images/Dorm_Main.png",
-      "sprite": "Sage_Images/SageVar3_closedmouth.png"
+      "sprite": "Sage_Images/SageVar3_closedmouth.png",
+      "sound": "Audio/Encourage_sound.mp3",
+      "soundDelay": 1500
     },
     "phone_call_6": {
       "text": "Regardless of the choice, the call ends with a feeling of subtle but familiar pressure. Sage stares at the phone after hanging up.",
@@ -992,7 +994,9 @@
         "next": "imposter_challenge_8"
       }
     ],
-    "background": "Background_Images/Dream_Eatery_Main.png"
+    "background": "Background_Images/Dream_Eatery_Main.png",
+    "sound": "Audio/Footsteps_1.mp3",
+    "soundDelay": 1000
   },
   "imposter_challenge_8" : {
     "text": "Sage opens her eyes and tries to place her surroundings. She realizes that she was dreaming and thinks about how hungry she is. What a strange dream — she’s not even on a meal plan. She pulls the covers up over her head to shut out the world for a little longer.",
@@ -1002,7 +1006,8 @@
         "next": "imposter_challenge_9"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sleeping.png"
+    "background": "Background_Images/Dorm_Sage_Sleeping.png",
+    "sound": "Audio/Piano_jingle.mp3"
   },
   "imposter_challenge_9" : {
     "speaker": "Sage",
@@ -1122,7 +1127,8 @@
         "next": "mentor_meetingPerfect_1"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sleeping.png"
+    "background": "Background_Images/Dorm_Sage_Sleeping.png",
+    "sound": "Audio/Piano_jingle.mp3"
   },
   "pleaser_challenge_1" : {
     "text": "Sage is filled with trepidation as she enters the big top through the heavy tent flaps. The darkness clears and Sage sees...",
@@ -1198,7 +1204,8 @@
         "next": "mentor_meetingPleaser_1"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sleeping.png"
+    "background": "Background_Images/Dorm_Sage_Sleeping.png",
+    "sound": "Audio/Anti-Social_Sound.mp3"
   },
   "antiSocial_challenge_1" : {
     "text": "Sage is filled with trepidation as she enters the big top through the heavy tent flaps. The darkness clears and Sage sees...",
@@ -1295,7 +1302,8 @@
         "next": "mentor_meetingAntiSocial_1"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sleeping.png"
+    "background": "Background_Images/Dorm_Sage_Sleeping.png",
+    "sound": "Audio/Piano_jingle.mp3"
   },
   "mentor_meetingImposter_1" : {
     "text": "Later, Sage meets with Professor Sharma, her mentor, who offers advice on managing stress, assignments, and life in general.",
