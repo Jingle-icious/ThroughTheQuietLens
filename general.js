@@ -149,6 +149,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const navAct1Btn = document.getElementById('nav-act1');
     const navAct2Btn = document.getElementById('nav-act2');
     const navAct3Btn = document.getElementById('nav-act3');
+    const navEndCreditsBtn = document.createElement('button');
+    
+    navEndCreditsBtn.textContent = 'End Credits';
+    navEndCreditsBtn.addEventListener('click', () => navigateTo('End Credits'));
+    navModal.appendChild(navEndCreditsBtn);
 
     storyNavBtn.addEventListener('click', () => {
         playSfx("Audio/Settingsfx.mp3");
@@ -176,14 +181,20 @@ document.addEventListener('DOMContentLoaded', function () {
             titleScreen.style.display = 'none';
             bgMusic.pause();
             bgMusic.currentTime = 0;
+        } else if (section === 'End Credits'){
+            makeChoice('end_credits_1');
+            titleScreen.style.display = 'none';
+            bgMusic.pause();
+            bgMusic.currentTime = 0;
         }
         navModal.style.display = 'none';
     }
-
+    
     navTitleScreenBtn.addEventListener('click', () => navigateTo('Title Screen'));
     navAct1Btn.addEventListener('click', () => navigateTo('Act 1 Start'));
     navAct2Btn.addEventListener('click', () => navigateTo('Act 2 Start'));
     navAct3Btn.addEventListener('click', () => navigateTo('Act 3 Start'));
+    navEndCreditsBtn.addEventListener('click', () => navigateTo('End Credits')); //moved to creation
 
     function playMusic() {
         bgMusic.volume = 0.3;
