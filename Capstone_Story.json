@@ -308,7 +308,9 @@
         }
       ],
       "background": "Background_Images/Lobby_Main.png",
-      "sprite": "Sage_Images/SageVar1_surprised.png"
+      "sprite": "Sage_Images/SageVar1_surprised.png",
+      "sound":"Audio/One_Piece!.mp3",
+      "soundDelay": 2000
     },
     "dorm_arrival_5": {
       "speaker": "Sage",
@@ -464,7 +466,7 @@
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
     "phone_call_1": {
-      "text": "The next morning, Sage wakes as her phone buzzes again — this time, a text from home. She hesitates before answering, staring at the screen as if it might bite.",
+      "text": "The next morning, Sage wakes to her phone ringing—she hesitates before answering, staring at the screen as if it might bite.",
       "choices": [
         {
           "text": "Continue",
@@ -472,7 +474,9 @@
         }
       ],
       "background": "Background_Images/Dorm_Main.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sound": "Audio/Phone_Ring_Effect.mp3",
+      "soundDelay": 1000
     },
     "phone_call_2": {
       "speaker": "Sage",
@@ -487,7 +491,7 @@
       "sprite": "Sage_Images/SageVar3_stressteeth.png"
     },
     "phone_call_3": {
-      "text": "The phone rings as Sage hesitates. Finally, she answers, her voice laced with a forced lightness.",
+      "text": "The phone rings again as Sage hesitates. Finally, she answers, her voice laced with a forced lightness.",
       "choices": [
         {
           "text": "Continue",
@@ -495,7 +499,9 @@
         }
       ],
       "background": "Background_Images/Dorm_Main.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sound": "Audio/Phone_Ring_Effect.mp3",
+      "soundDelay": 1000
     },
     "phone_call_4": {
       "speaker": "Parent",

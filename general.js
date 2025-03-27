@@ -364,7 +364,7 @@ function applyWindGust(background) {
             outerContainer.appendChild(windGustLayer);
             console.log("wind-gust-layer created"); // Debugging
         }
-        windGustLayer.style.opacity = 10; // Make it visible
+        windGustLayer.style.opacity = 1; // Make it visible
         console.log("wind-gust-layer opacity set to 1"); // Debugging
     } else {
         if (windGustLayer) {
@@ -581,6 +581,15 @@ function updateSceneContent(scene) {
     } else {
         nameBox.style.display = "none";
         console.log("Name box display: none");
+    }
+
+    if (scene.sound) {
+        console.log("SCENE SOUND FX: ", scene.sound)
+        if (scene.soundDelay) {
+            setTimeout(() => playSfx(scene.sound), scene.soundDelay);
+        } else {
+            playSfx(scene.sound);
+        }
     }
 }
 
