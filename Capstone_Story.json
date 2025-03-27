@@ -63,7 +63,8 @@
         }
       ],
       "background": "Background_Images/Campus_Main.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sound":"Audio/Phone_notif.mp3"
     },
     "campus_walk_6": {
       "speaker": "Sage",
@@ -167,7 +168,8 @@
         }
       ],
       "background": "Background_Images/Campus_Main.png",
-      "sprite": "Sage_Images/SageVar1_smile.png"
+      "sprite": "Sage_Images/SageVar1_smile.png",
+      "sound":"Audio/Footsteps_1.mp3"
     },
     "blake_honest_1": {
       "text": "Sage stops and faces Blake, meeting her gaze with a newfound resolve.",
@@ -252,7 +254,8 @@
         }
       ],
       "background": "Background_Images/Campus_Main.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sound":"Audio/Footsteps_1.mp3"
 
     },
     "transition_dorm_lobby": {
@@ -274,7 +277,8 @@
         }
       ],
       "background": "Background_Images/Lobby_Main.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sound":"Audio/Door_open.mp3"
     },
     "dorm_arrival_2": {
       "text": "She looks around — everyone seems busy with the first round of exams and project deadlines soon approaching. She eyes the calendar on the wall–",
@@ -310,7 +314,7 @@
       "background": "Background_Images/Lobby_Main.png",
       "sprite": "Sage_Images/SageVar1_surprised.png",
       "sound":"Audio/One_Piece!.mp3",
-      "soundDelay": 2000
+      "soundDelay": 1500
     },
     "dorm_arrival_5": {
       "speaker": "Sage",
@@ -333,7 +337,8 @@
         }
       ],
       "background": "Background_Images/Lobby_Main.png",
-      "sprite": "Sage_Images/SageVar1_frown.png"
+      "sprite": "Sage_Images/SageVar1_frown.png",
+      "sound":"Audio/Phone_notif.mp3"
     },
     "dorm_arrival_7": {
       "speaker": "Sage",
@@ -357,7 +362,8 @@
       }
     ],
     "background": "Background_Images/Lobby_Main.png",
-    "sprite": "Sage_Images/SageVar1_frown.png"
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "sound":"Audio/Walking_stairs.mp3"
   },
   "dorm_arrival_9": {
     "text": "She heads upstairs, swiping her keycard and pushing open the door to her dorm room. It’s quiet — almost too quiet.",
@@ -368,7 +374,9 @@
       }
     ],
     "background": "Background_Images/Dorm_Main.png",
-    "sprite": "Sage_Images/SageVar1_frown.png"
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "sound":"Audio/Door_open.mp3",
+    "soundDelay": 1000
   },
   "dorm_arrival_10": {
     "text": "Sage sighs as she sits at her desk, the assignment staring back at her. The instructions seem to blur together as Sage forces her attention back into place.",
