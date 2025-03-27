@@ -288,11 +288,11 @@ function makeChoice(choice) {
     const outerContainer = document.getElementById('outer-container');
     const currentBackground = outerContainer.style.backgroundImage.replace(/^url\(['"](.+)['"]\)/, '$1');
     const newBackground = scene.background;
-    
+
     if (newBackground && newBackground !== currentBackground) {
         crossFade(newBackground, () => {
             updateSceneContent(scene);
-            // Check for art images
+            // Check for art images and play background music
             if (newBackground === 'Background_Images/StressArt.png') {
                 playBackgroundMusic('Audio/Stressed_Drawing_Loop.mp3');
             } else if (newBackground === 'Background_Images/HappyArt.png') {
@@ -317,21 +317,22 @@ function makeChoice(choice) {
             } else {
                 stopBackgroundMusic();
             }
+            applyWindGust(newBackground); // Apply wind gust based on background
         });
     } else {
         updateSceneContent(scene);
-        // Check for art images
+        // Check for art images and play background music
         if (newBackground === 'Background_Images/StressArt.png') {
-                playBackgroundMusic('Audio/Stressed_Drawing_Loop.mp3');
-            } else if (newBackground === 'Background_Images/HappyArt.png') {
-                playBackgroundMusic('Audio/Happy_Drawing_Loop.mp3');
-            } else if (newBackground === 'Background_Images/Dream1.png' ||
-                newBackground === 'Background_Images/Dream1_banner.png' ||
-                newBackground === 'Background_Images/Dream1_Tent.png' ||
-                newBackground === 'Background_Images/Dream_Eatery_Main.png' ||
-                newBackground === 'Background_Images/Dream_Ferris_Main.png' ||
-                newBackground === 'Background_Images/Dream_PerfContest_Main.png' ||
-                newBackground === 'Background_Images/Dream_Pie_Main.png') {
+            playBackgroundMusic('Audio/Stressed_Drawing_Loop.mp3');
+        } else if (newBackground === 'Background_Images/HappyArt.png') {
+            playBackgroundMusic('Audio/Happy_Drawing_Loop.mp3');
+        } else if (newBackground === 'Background_Images/Dream1.png' ||
+            newBackground === 'Background_Images/Dream1_banner.png' ||
+            newBackground === 'Background_Images/Dream1_Tent.png' ||
+            newBackground === 'Background_Images/Dream_Eatery_Main.png' ||
+            newBackground === 'Background_Images/Dream_Ferris_Main.png' ||
+            newBackground === 'Background_Images/Dream_PerfContest_Main.png' ||
+            newBackground === 'Background_Images/Dream_Pie_Main.png') {
             playBackgroundMusic('Audio/Dream_Carnival_Song.mp3');
         } else if (newBackground === 'Background_Images/Classroom_Main.png') {
             playBackgroundMusic('Audio/Mentor_Song.mp3');
@@ -344,6 +345,31 @@ function makeChoice(choice) {
             playBackgroundMusic('Audio/Outside_Loop.mp3');
         } else {
             stopBackgroundMusic();
+        }
+        applyWindGust(newBackground); // Apply wind gust based on background
+    }
+}
+
+function applyWindGust(background) {
+    const outerContainer = document.getElementById('outer-container');
+    let windGustLayer = document.querySelector('.wind-gust-layer');
+
+    console.log("applyWindGust called with background:", background); // Debugging
+
+    if (background === 'Background_Images/Campus_Main.png') {
+        console.log("Campus background detected"); // Debugging
+        if (!windGustLayer) {
+            windGustLayer = document.createElement('div');
+            windGustLayer.classList.add('wind-gust-layer');
+            outerContainer.appendChild(windGustLayer);
+            console.log("wind-gust-layer created"); // Debugging
+        }
+        windGustLayer.style.opacity = 10; // Make it visible
+        console.log("wind-gust-layer opacity set to 1"); // Debugging
+    } else {
+        if (windGustLayer) {
+            windGustLayer.style.opacity = 0; // Hide it
+            console.log("wind-gust-layer opacity set to 0"); // Debugging
         }
     }
 }
