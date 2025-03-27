@@ -1267,7 +1267,7 @@
         "next": "mentor_meetingImposter_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "mentor_meetingImposter_2" : {
@@ -1278,7 +1278,7 @@
         "next": "Imposter_Sage_advice_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1291,7 +1291,7 @@
         "next": "Imposter_Sage_advice_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1304,7 +1304,7 @@
         "next": "Imposter_Sage_advice_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1317,7 +1317,7 @@
         "next": "Imposter_Sage_advice_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1330,7 +1330,7 @@
         "next": "Imposter_Sage_advice_5"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_frown.png"
   },
@@ -1343,7 +1343,7 @@
         "next": "Imposter_Sage_advice_6"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1356,7 +1356,7 @@
         "next": "Imposter_Sage_advice_7"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1369,7 +1369,7 @@
         "next": "Imposter_Sage_advice_8"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1382,7 +1382,7 @@
         "next": "Imposter_Sage_advice_9"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1395,7 +1395,7 @@
         "next": "Imposter_Sage_advice_10"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_ooh.png"
   },
@@ -1408,7 +1408,7 @@
         "next": "Imposter_Sage_advice_11"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1421,7 +1421,7 @@
         "next": "Imposter_Sage_advice_12"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_slightfrown.png"
   },
@@ -1434,7 +1434,7 @@
         "next": "Imposter_Sage_advice_13"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1447,7 +1447,7 @@
         "next": "Imposter_Sage_advice_14"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1464,7 +1464,7 @@
       "next": "research_model_1"
     }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1477,7 +1477,7 @@
           "next": "act_exercise_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1490,7 +1490,7 @@
           "next": "act_exercise_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1512,7 +1512,7 @@
             "next": "research_model_2"
         }
       ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1525,11 +1525,11 @@
           "next": "research_model_3"
       }
     ],
-  "background": "Background_Images/Classroom_WIP.png",
+  "background": "Background_Images/Classroom_Main.png",
   "sprite": "Sage_Images/SageVar1_surprised.png",
   "npcSharma": "NPC_Images/Sharma_talk.png"
 },
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1542,7 +1542,7 @@
           "next": "mentor_meetingImposter_3"
       }
     ],
-  "background": "Background_Images/Classroom_WIP.png",
+  "background": "Background_Images/Classroom_Main.png",
   "sprite": "Sage_Images/SageVar1_surprised.png",
   "npcSharma": "NPC_Images/Sharma_talk.png"
 },
@@ -1555,7 +1555,7 @@
           "next": "mentor_meetingImposter_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1568,7 +1568,7 @@
           "next": "dorm_finalProj_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1580,7 +1580,7 @@
         "next": "mentor_meetingPerfect_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "mentor_meetingPerfect_2" : {
@@ -1591,7 +1591,7 @@
         "next": "Perfect_Sage_advice_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1604,7 +1604,7 @@
         "next": "Perfect_Sage_advice_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1617,7 +1617,7 @@
         "next": "Perfect_Sage_advice_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_slightfrown.png"
   },
@@ -1630,7 +1630,7 @@
         "next": "Perfect_Sage_advice_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1643,7 +1643,7 @@
         "next": "Perfect_Sage_advice_5"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1656,7 +1656,7 @@
         "next": "Perfect_Sage_advice_6"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1669,7 +1669,7 @@
         "next": "Perfect_Sage_advice_7"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_frown.png"
   },  
@@ -1682,7 +1682,7 @@
         "next": "Perfect_Sage_advice_8"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   }, 
@@ -1699,7 +1699,7 @@
         "next": "pareto_principle_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   }, 
@@ -1712,7 +1712,7 @@
         "next": "thought_diary_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   }, 
@@ -1725,7 +1725,7 @@
         "next": "mentor_meetingPerfect_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_ooh.png"
   },
@@ -1738,7 +1738,7 @@
         "next": "pareto_principle_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1751,7 +1751,7 @@
         "next": "mentor_meetingPerfect_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1764,7 +1764,7 @@
           "next": "mentor_meetingPerfect_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1777,7 +1777,7 @@
           "next": "dorm_finalProj_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1789,7 +1789,7 @@
         "next": "mentor_meetingPleaser_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "mentor_meetingPleaser_2" : {
@@ -1800,7 +1800,7 @@
         "next": "Pleaser_Sage_advice_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1813,7 +1813,7 @@
         "next": "Pleaser_Sage_advice_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1826,7 +1826,7 @@
         "next": "Pleaser_Sage_advice_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1839,7 +1839,7 @@
         "next": "Pleaser_Sage_advice_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_slightfrown.png"
   },
@@ -1852,7 +1852,7 @@
         "next": "Pleaser_Sage_advice_5"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1865,7 +1865,7 @@
         "next": "Pleaser_Sage_advice_6"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1878,7 +1878,7 @@
         "next": "Pleaser_Sage_advice_7"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -1895,7 +1895,7 @@
         "next": "boundaries_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1908,7 +1908,7 @@
         "next": "time_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1921,7 +1921,7 @@
         "next": "time_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_ooh.png"
   },
@@ -1934,7 +1934,7 @@
         "next": "mentor_meetingPleaser_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1947,7 +1947,7 @@
         "next": "boundaries_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1960,7 +1960,7 @@
         "next": "boundaries_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_ooh.png"
   },
@@ -1973,7 +1973,7 @@
         "next": "boundaries_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1986,7 +1986,7 @@
         "next": "mentor_meetingPleaser_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -1999,7 +1999,7 @@
           "next": "mentor_meetingPleaser_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -2012,7 +2012,7 @@
           "next": "dorm_finalProj_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -2024,7 +2024,7 @@
         "next": "mentor_meetingAntiSocial_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png"
   },
   "mentor_meetingAntiSocial_2" : {
@@ -2035,7 +2035,7 @@
         "next": "antiSocial_Sage_advice_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -2048,7 +2048,7 @@
         "next": "antiSocial_Sage_advice_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -2061,7 +2061,7 @@
         "next": "antiSocial_Sage_advice_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_slightfrown.png"
   },
@@ -2074,7 +2074,7 @@
         "next": "antiSocial_Sage_advice_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_ooh.png"
   },
@@ -2087,7 +2087,7 @@
         "next": "antiSocial_Sage_advice_5"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_slightfrown.png"
   },  
@@ -2104,7 +2104,7 @@
         "next": "projectHelping_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -2117,7 +2117,7 @@
         "next": "charisma_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   }, 
@@ -2130,7 +2130,7 @@
         "next": "mentor_meetingAntiSocial_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_ooh.png"
   }, 
@@ -2143,7 +2143,7 @@
         "next": "projectHelping_2"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },
@@ -2156,7 +2156,7 @@
         "next": "mentor_meetingAntiSocial_3"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   }, 
@@ -2169,7 +2169,7 @@
           "next": "mentor_meetingAntiSocial_4"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
     "npcSharma": "NPC_Images/Sharma_smile.png"
   },
@@ -2182,7 +2182,7 @@
           "next": "dorm_finalProj_1"
       }
     ],
-    "background": "Background_Images/Classroom_WIP.png",
+    "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcSharma": "NPC_Images/Sharma_talk.png"
   },

@@ -305,7 +305,7 @@ function makeChoice(choice) {
                 newBackground === 'Background_Images/Dream_PerfContest_Main.png' ||
                 newBackground === 'Background_Images/Dream_Pie_Main.png') {
                 playBackgroundMusic('Audio/Dream_Carnival_Song.mp3');
-            } else if (newBackground === 'Background_Images/Classroom_WIP.png') {
+            } else if (newBackground === 'Background_Images/Classroom_Main.png') {
                 playBackgroundMusic('Audio/Mentor_Song.mp3');
             } else if (newBackground === 'Background_Images/Dorm_Main.png' ||
                 newBackground === 'Background_Images/Dorm_Sage_Sleeping.png' ||
@@ -333,7 +333,7 @@ function makeChoice(choice) {
                 newBackground === 'Background_Images/Dream_PerfContest_Main.png' ||
                 newBackground === 'Background_Images/Dream_Pie_Main.png') {
             playBackgroundMusic('Audio/Dream_Carnival_Song.mp3');
-        } else if (newBackground === 'Background_Images/Classroom_WIP.png') {
+        } else if (newBackground === 'Background_Images/Classroom_Main.png') {
             playBackgroundMusic('Audio/Mentor_Song.mp3');
         } else if (newBackground === 'Background_Images/Dorm_Main.png' ||
             newBackground === 'Background_Images/Dorm_Sage_Sleeping.png' ||
