@@ -1496,14 +1496,31 @@
   },
   "act_exercise_3": {
     "speaker": "Professor Sharma",
-    "text": "“So it can be as easy to change them as crumpling up a piece of paper, if you practice.”",
+    "text": "“So it can be as easy to recognize them by writing them down and as easy to stop them in the moment as crumpling up a piece of paper.”",
     "choices": [
       {
           "text": "Continue",
-          "next": "mentor_meetingImposter_3"
+          "next": "act_exercise_4"
       }
     ],
-    "research_model_1": {
+    "background": "Background_Images/Classroom_Main.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },
+  "act_exercise_4": {
+    "speaker": "Professor Sharma",
+    "text": "“But that is oversimplified. If you want the exercise to work consistently, and to be able to dismiss those thoughts more naturally, you have to practice.”",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "mentor_meetingImposter_3"
+    }
+    ],
+    "background": "Background_Images/Classroom_Main.png",
+    "sprite": "Sage_Images/SageVar1_surprised.png",
+    "npcSharma": "NPC_Images/Sharma_talk.png"
+  },    
+  "research_model_1": {
       "speaker": "Professor Sharma",
       "text": "“Starting with REFLECT: Reflecting on your semester, identify specific ways impostor syndrome thinking has impacted you.”",
       "choices": [
@@ -1529,22 +1546,31 @@
   "sprite": "Sage_Images/SageVar1_surprised.png",
   "npcSharma": "NPC_Images/Sharma_talk.png"
 },
-    "background": "Background_Images/Classroom_Main.png",
-    "sprite": "Sage_Images/SageVar1_smile.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
-  },
   "research_model_3": {
     "speaker": "Professor Sharma",
     "text": "“Finally ACT: Find a small repeatable action that you can insert into your day immediately. Small steps build momentum.”",
     "choices": [
       {
           "text": "Continue",
-          "next": "mentor_meetingImposter_3"
+          "next": "research_model_4"
       }
     ],
   "background": "Background_Images/Classroom_Main.png",
   "sprite": "Sage_Images/SageVar1_surprised.png",
   "npcSharma": "NPC_Images/Sharma_talk.png"
+},
+"research_model_4": {
+  "speaker": "Professor Sharma",
+  "text": "“This is just an outline of steps you can take to get started. If your goal is to change your thinking and dismiss hurtful thoughts, you will have to practice.”",
+  "choices": [
+    {
+        "text": "Continue",
+        "next": "mentor_meetingImposter_3"
+    }
+  ],
+"background": "Background_Images/Classroom_Main.png",
+"sprite": "Sage_Images/SageVar1_surprised.png",
+"npcSharma": "NPC_Images/Sharma_talk.png"
 },
   "mentor_meetingImposter_3" : {
     "speaker": "Sage",
