@@ -46,7 +46,7 @@ body {
 #title-text {
     position: absolute;
     top: 7%;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker', cursive, fantasy;
     font-size: clamp(5em, 11vmin, 8em);
     color: #EFFAC5;
     text-align: center;
@@ -145,7 +145,7 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', sans-serif;
     font-size: 1.3em;
     z-index: 2; /* This ensures the game container is above Sage */
 }
@@ -502,7 +502,7 @@ body {
     margin-bottom: 20px;
     font-size: clamp(1em, 2vmin, 3em);
     line-height: 1.5;
-    font-family: 'Indie Flower', cursive; 
+    font-family: 'Indie Flower', sans-serif; 
 }
 
 #disclaimer-accept-button {
