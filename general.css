@@ -108,17 +108,12 @@ body {
 }
 
 #foreground-image {
+    display: none;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 45%;
-    max-height: 90vh; /* Adjust this value as needed */
-    height: auto;
+    left: 33.5%;
+    height: 90%;
     z-index: 1;
-    display: none;
-    /* optional: */
-    /* object-fit: cover; */
 }
 
 .game-container-wrapper {
@@ -168,29 +163,31 @@ body {
     justify-content: space-around; /* Distribute images evenly */
 }
 
-#npc1, #npc2, #npc3 {
-    max-height: 60vh; /* Increased max-height again */
+#npc1 {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    height: 60%;
+    z-index: 1;
 }
 
 #npc2 {
-    margin-right: -2vw;
-}
-
-#npc3 {
-    left: 50%; /* Adjust position as needed */
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 63%;
+    height: 60%;
+    z-index: 1;
 }
 
 #blake-image {
     display: none;
     position: absolute;
     bottom: 0;
-    right: 10%;
-    max-width: 700px;
-    max-height: 90vh; /* Adjust this value as needed */
-    height: auto;
+    left: 59%;
+    height: 90%;
     z-index: 1;
-    /* Optional: */
-    /* object-fit: cover; */
 }
 
 #sharma-image {
@@ -199,11 +196,8 @@ body {
     bottom: 0;
     right: 10%;
     max-width: 700px;
-    max-height: 90vh; /* Adjust this value as needed */
-    height: auto;
+    height: 90%;
     z-index: 1;
-    /* Optional: */
-    /* object-fit: cover; */
 }
 
 #imposter-image {
@@ -212,8 +206,7 @@ body {
     bottom: 0;
     left: 4%; /* Position at the left edge */
     max-width: 700px;
-    max-height: 88vh;
-    height: auto;
+    height: 88%;
     z-index: 1;
 }
 
@@ -224,8 +217,7 @@ body {
     left: 28%; /* Space evenly */
     transform: translateX(0%); /* Center based on image width */
     max-width: 700px;
-    max-height: 85vh;
-    height: auto;
+    height: 85%;
     z-index: 1;
 }
 
@@ -236,8 +228,7 @@ body {
     left: 51%; /* Space evenly */
     transform: translateX(0%); /* Center based on image width */
     max-width: 700px;
-    max-height: 92vh;
-    height: auto;
+    height: 92%;
     z-index: 1;
 }
 
@@ -247,8 +238,7 @@ body {
     bottom: 0;
     left: 80%; /* Space evenly */
     transform: translateX(0%); /* Center based on image width */
-    max-height: 80vh;
-    height: auto;
+    height: 80%;
     z-index: 1;
 }
 
@@ -311,25 +301,26 @@ body {
 
 /* Story Nav Button */
 #story-nav-btn {
-    position: fixed;
-    top: 10px;
-    left: 10px;
+    position: absolute;
+    top: 1%;
+    left: 0.5%;
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 1001;
-    width: 30px; 
-    height: 30px; 
+    width: 5%; 
+    height: 5%; 
 }
 
 /* Story Nav Button Hover Effect */
 #story-nav-btn::before {
     content: "";
     position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 130%;
+    transform: translate(-50%, -50%);  
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     opacity: 0;
@@ -345,24 +336,25 @@ body {
 /* Settings Button */
 #settings-btn {
     position: absolute;
-    top: 12px;
-    right: 10px; 
+    top: 1%;
+    right: 1%; 
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 1001;
-    width: 30px; 
-    height: 30px;
+    width: 5%; 
+    height: 5%;
 }
 
 /* Settings Button Hover Effect */
 #settings-btn::before {
     content: "";
     position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 130%;
+    transform: translate(-50%, -50%);  
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     opacity: 0;
@@ -378,24 +370,25 @@ body {
 /* Audio Button */
 #audio-control-btn {
     position: absolute;
-    top: 10px;
-    right: 57px; /* To the left of settings button */
+    top: 1%;
+    right: 6%; /* To the left of settings button */
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 1001;
-    width: 32px; 
-    height: 32px; 
+    width: 5%; 
+    height: 5%; 
 }
 
 /* Audio Button Hover Effect */
 #audio-control-btn::before {
     content: "";
     position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 130%;
+    transform: translate(-50%, -50%);  
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     opacity: 0;
