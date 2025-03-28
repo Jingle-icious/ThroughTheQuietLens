@@ -1800,7 +1800,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_surprised.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Pencil_writing.mp3"
   }, 
   "thought_diary_2" : {
     "speaker": "Professor Sharma",
@@ -1826,7 +1827,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Tick_Tock.mp3"
   },
   "pareto_principle_2" : {
     "speaker": "Professor Sharma",
@@ -1999,7 +2001,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Stopwatch_effect.mp3"
   },
   "time_2" : {
     "speaker": "Professor Sharma",
@@ -2038,7 +2041,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Stopwatch_effect.mp3"
   },
   "boundaries_2" : {
     "speaker": "Professor Sharma",
@@ -2224,7 +2228,9 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_ooh.png"
+    "npcSharma": "NPC_Images/Sharma_ooh.png",
+    "sound": "Audio/FF_victory.mp3",
+    "soundDelay": 2000
   }, 
   "projectHelping_1" : {
     "speaker": "Professor Sharma",
@@ -2332,7 +2338,8 @@
         "next": "dorm_finalProj_6"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sitting.png"
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
+    "sound": "Audio/Book_page_turn.mp3"
   },
   "dorm_finalProj_6" : {
     "text": "She immediately recollects how much work it took to try and take the time to reflect and plan before she would act on her feelings. Her Imposter Syndrome is so frustrating. She starts thinking about how hard acceptance is when she feels pressure.",
@@ -2357,7 +2364,7 @@
     "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
   },
   "dorm_finalProj_8" : {
-    "text": "Her journal states “You got the same answer! Remember this!”  and she smiles at her own demand. It didn’t matter now — she did not have any more math classes to take. She really started thinking about herself differently when she changed to a bigger picture point of view.",
+    "text": "Her journal states <i>“You got the same answer! Remember this!”</i>  and she smiles at her own demand. It didn’t matter now — she did not have any more math classes to take. She really started thinking about herself differently when she changed to a bigger picture point of view.",
     "choices": [
       {
         "text": "Continue",
@@ -2375,7 +2382,8 @@
         "next": "dorm_finalProj_10"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sitting.png"
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
+    "sound": "Audio/Tick_Tock.mp3"
   },
   "dorm_finalProj_10" : {
     "speaker": "Sage",
@@ -2455,7 +2463,8 @@
       }
     ],
     "background": "Background_Images/Dorm_Main.png",
-    "sprite": "Sage_Images/SageVar1_frown.png"
+    "sprite": "Sage_Images/SageVar1_frown.png",
+    "sound": "Audio/Throw_bed.mp3"
   },
   "dorm_finalProj_17" : {
     "speaker": "Sage",
@@ -2505,19 +2514,33 @@
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "dorm_finalProj_21" : {
-    "text": "Her expression is a mix of uncertainty and a flicker of self—awareness. She decides to just start drawing and let her art decide.",
+    "speaker": "Sage",
+    "text": "<i>I feel like my journal motivates me for this assignment - I wrote a lot of my challenges and introspections in there.</i>",
     "choices": [
       {
-        "text": "Artwork representing Sage's stress and anxiety",
-        "next": "stress_art_1"
-      },
-      {
-        "text": "Artwork representing Sage's contentment",
-        "next": "happy_art_1"
+        "text": "Continue",
+        "next": "dorm_finalProj_22"
       }
     ],
     "background": "Background_Images/Dorm_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png"
+  },
+  "dorm_finalProj_22" : {
+    "text": "Her expression is a mix of uncertainty and a flicker of self-awareness. She decides to just start drawing and let her art decide if she will vent her stress or visualize her success.",
+    "choices": [
+      {
+        "text": "Stress Artwork",
+        "next": "stress_art_1"
+      },
+      {
+        "text": "Content Artwork",
+        "next": "happy_art_1"
+      }
+    ],
+    "background": "Background_Images/Dorm_Main.png",
+    "sprite": "Sage_Images/SageVar1_smile.png",
+    "sound": "Audio/Pencil_writing.mp3",
+    "soundDelay": 1000
   },
   "stress_art_1" : {
     "text": "A chaotic representation of all the aspects of stress and anxiety. This piece overuses color to symbolize an over—saturation, and the character is sick and anguished to the point of losing touch and becoming a static background. Sage looks at it and feels more motivated and competent than ever as she keeps this larger—than—life wretchedness at bay. She confidently turns in her final project with a smile of satisfaction.",
@@ -2585,7 +2608,9 @@
     "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_smile.png",
     "npcBlake": "NPC_Images/Blake_Smile.png",
-    "npc2": "NPC_Images/NPC2.png"
+    "npc2": "NPC_Images/NPC2.png",
+    "sound": "Audio/Footsteps_1.mp3",
+    "soundDelay": 1000
   },
   "closing_5" : {
     "speaker": "Sage",
