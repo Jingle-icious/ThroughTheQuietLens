@@ -481,7 +481,7 @@
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
     "phone_call_1": {
-      "text": "The next morning, Sage wakes to her phone ringing—she hesitates before answering, staring at the screen as if it might bite.",
+      "text": "The next morning, Sage wakes to her phone ringing — she hesitates before answering, staring at the screen as if it might bite.",
       "choices": [
         {
           "text": "Continue",
@@ -506,7 +506,7 @@
       "sprite": "Sage_Images/SageVar3_stressteeth.png"
     },
     "phone_call_3": {
-      "text": "The phone rings again as Sage hesitates. Finally, she answers, her voice laced with a forced lightness.",
+      "text": "The phone rings again as Sage continues to stall. Finally, she answers, her voice laced with a forced lightness.",
       "choices": [
         {
           "text": "Continue",
@@ -591,7 +591,8 @@
         }
       ],
       "background": "Background_Images/Dorm_Main.png",
-      "sprite": "Sage_Images/SageVar3_stressteeth.png"
+      "sprite": "Sage_Images/SageVar3_stressteeth.png",
+      "sound": "Audio/Negative_beep.wav"
     },
     "phone_vague_5": {
       "speaker": "Sage",
@@ -651,7 +652,8 @@
         }
       ],
       "background": "Background_Images/Dorm_Main.png",
-      "sprite": "Sage_Images/SageVar3_squigglemouth.png"
+      "sprite": "Sage_Images/SageVar3_squigglemouth.png",
+      "sound": "Audio/Negative_beep.wav"
     },
     "phone_honest_5": {
       "speaker": "Parent",
@@ -1424,7 +1426,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png",
-    "npcSharma": "NPC_Images/Sharma_smile.png"
+    "npcSharma": "NPC_Images/Sharma_smile.png",
+    "sound": "Audio/Hmm_quick.mp3"
   },
   "Imposter_Sage_advice_8" : {
     "speaker" : "Professor Sharma",
@@ -2083,7 +2086,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Negative_beep.wav"
   },
   "mentor_meetingPleaser_3" : {
     "speaker": "Sage",
@@ -2245,7 +2249,8 @@
     ],
     "background": "Background_Images/Classroom_Main.png",
     "sprite": "Sage_Images/SageVar1_frown.png",
-    "npcSharma": "NPC_Images/Sharma_talk.png"
+    "npcSharma": "NPC_Images/Sharma_talk.png",
+    "sound": "Audio/Helpful_sound.mp3"
   },
   "projectHelping_2" : {
     "speaker": "Professor Sharma",
@@ -2352,7 +2357,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Sage_Sitting.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "sprite": "Sage_Images/Imposter_in_bubble.png"
   },
   "dorm_finalProj_7" : {
     "text": "She reads about her Imposter Syndrome challenges like talking about subjects that she does not know much about, or sitting in a math class and being the last one to get the answer.",
@@ -2363,7 +2368,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Sage_Sitting.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "sprite": "Sage_Images/Imposter_in_bubble.png"
   },
   "dorm_finalProj_8" : {
     "text": "Her journal states <i>“You got the same answer! Remember this!”</i>  and she smiles at her own demand. It didn’t matter now — she did not have any more math classes to take. She really started thinking about herself differently when she changed to a bigger picture point of view.",
@@ -2374,7 +2379,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Sage_Sitting.png",
-    "sprite": "Sage_Images/SageVar6_imposter_teeth.png"
+    "sprite": "Sage_Images/Imposter_in_bubble.png"
   },
   "dorm_finalProj_9" : {
     "text": "She looks up at the clock and realizes that she has been reading for awhile. The words blur as anxiety begins to churn inside her. She takes a deep breath and looks down at the journal in her hands.",
@@ -2397,7 +2402,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Sage_Sitting.png",
-    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+    "sprite": "Sage_Images/Perfect_in_bubble.png"
   },
   "dorm_finalProj_11" : {
     "speaker": "Sage",
@@ -2409,7 +2414,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Sage_Sitting.png",
-    "sprite": "Sage_Images/SageVar5_perfectionist.png"
+    "sprite": "Sage_Images/Perfect_in_bubble.png"
   },
   "dorm_finalProj_12" : {
     "speaker": "Sage",
@@ -2432,7 +2437,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Sage_Sitting.png",
-    "sprite": "Sage_Images/SageVar7_pleaser_frown.png"
+    "sprite": "Sage_Images/Pleaser_in_bubble.png"
   },
   "dorm_finalProj_14" : {
     "speaker": "Sage",
@@ -2443,7 +2448,9 @@
         "next": "dorm_finalProj_15"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sitting.png"
+    "background": "Background_Images/Dorm_Sage_Sitting.png",
+    "sound": "Audio/Negative_beep.wav",
+    "soundDelay": 1000
   },
   "dorm_finalProj_15" : {
     "speaker": "Sage",
@@ -2490,7 +2497,7 @@
       }
     ],
     "background": "Background_Images/Dorm_Main.png",
-    "sprite": "Sage_Images/SageVar4_antisocial.png"
+    "sprite": "Sage_Images/AntiSocial_in_bubble.png"
   },
   "dorm_finalProj_19" : {
     "speaker": "Sage",
@@ -2627,7 +2634,7 @@
     "sprite": "Sage_Images/SageVar1_talk.png"
   },
   "end_credits_1": {
-    "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO 988LIFELINE.ORG.",
+    "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO <a href='https://988lifeline.org/' target='_blank'>988LIFELINE.ORG</a>.",
     "choices": [
       {
         "text": "Next",
