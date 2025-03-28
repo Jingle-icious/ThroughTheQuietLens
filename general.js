@@ -5,6 +5,7 @@ const npcs = ['npc1', 'npc2', 'blake-image', 'sharma-image'];
 let sfxVolume = 0.75;
 let currentBackgroundMusic; // Variable to store the current background music
 let typeWriter;
+let soundFx;
 
 // Enable autoscaling to 16x9
 scaleBody(16 / 9);
@@ -15,13 +16,23 @@ window.addEventListener('resize', () => {
 
 // FUNCTIONS
 function playSfx(audioFile) {
-    const sfx = new Audio(audioFile);
-    sfx.volume = sfxVolume;
-    sfx.play().then(() => {
-        console.log("Playing sound:", audioFile);
-    }).catch(error => {
-        console.error("Error playing sound:", audioFile, error);
-    });
+    // If there is sound FX currently playing, then stop/pause it
+    if (soundFx) {
+        soundFx.pause();
+    }
+    soundFx = new Audio(audioFile);
+    soundFx.volume = sfxVolume;
+
+    soundFx
+        .play()
+        .then(() => {
+            console.log("Playing sound:", audioFile);
+        })
+        .catch((error) => {
+            console.error("Error playing sound:", audioFile, error);
+        });
+
+    return soundFx;
 }
 
 function scaleBody(aspectRatio) {
@@ -59,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const settingsModal = document.getElementById('settings-modal');
     const closeBtn = document.querySelector('.close-btn');
     const foregroundImage = document.getElementById('foreground-image');
-    
+
 
     const disclaimerPopup = document.getElementById('disclaimer-popup');
     const disclaimerAcceptButton = document.getElementById('disclaimer-accept-button');
@@ -150,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navAct2Btn = document.getElementById('nav-act2');
     const navAct3Btn = document.getElementById('nav-act3');
     const navEndCreditsBtn = document.createElement('button');
-    
+
     navEndCreditsBtn.textContent = 'End Credits';
     navEndCreditsBtn.addEventListener('click', () => navigateTo('End Credits'));
     navModal.appendChild(navEndCreditsBtn);
@@ -181,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
             titleScreen.style.display = 'none';
             bgMusic.pause();
             bgMusic.currentTime = 0;
-        } else if (section === 'End Credits'){
+        } else if (section === 'End Credits') {
             makeChoice('end_credits_1');
             titleScreen.style.display = 'none';
             bgMusic.pause();
@@ -189,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         navModal.style.display = 'none';
     }
-    
+
     navTitleScreenBtn.addEventListener('click', () => navigateTo('Title Screen'));
     navAct1Btn.addEventListener('click', () => navigateTo('Act 1 Start'));
     navAct2Btn.addEventListener('click', () => navigateTo('Act 2 Start'));
@@ -230,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
         this.style.setProperty('--range-progress', `${opacity * 100}%`);
     });
 
-   // Set initial progress bar style for music volume
+    // Set initial progress bar style for music volume
     const initialMusicVolume = document.getElementById('bg-music-volume').value;
     document.getElementById('bg-music-volume').style.setProperty('--range-progress', `${initialMusicVolume * 100}%`);
 
@@ -361,7 +372,7 @@ function makeChoice(choice) {
         } else {
             stopBackgroundMusic();
         }
-        applyWindGust(newBackground); 
+        applyWindGust(newBackground);
     }
 }
 
@@ -432,7 +443,7 @@ function updateSceneContent(scene) {
     }
 
     document.getElementById('story-text').style.color = textColor;
- 
+
 
     // Update choices
     const choicesContainer = document.getElementById('choices');
@@ -442,15 +453,15 @@ function updateSceneContent(scene) {
         const button = document.createElement('button');
         button.classList.add('choice');
         button.innerText = option.text;
-        button.onclick = (event) =>  {
+        button.onclick = (event) => {
             event.stopPropagation();
-          // Play sound effects based on the option text
-          if (option.text === "Continue") {
-            playSfx("Audio/Continuefx.mp3");
-          } else {
-            playSfx("Audio/Choicefx.mp3");
-          }
-          makeChoice(option.next);
+            // Play sound effects based on the option text
+            if (option.text === "Continue") {
+                playSfx("Audio/Continuefx.mp3");
+            } else {
+                playSfx("Audio/Choicefx.mp3");
+            }
+            makeChoice(option.next);
         }
         choicesContainer.appendChild(button);
     });
@@ -563,7 +574,6 @@ function updateSceneContent(scene) {
     }
 
     if (scene.antiSocialSage) {
-        antiSocialSage.addEventListener
         antiSocialSage.addEventListener('mouseover', () => {
             antiSocialSage.src = 'Sage_Images/SageVar4_antisocial_bubble.png';
             playSfx("Audio/Anti-Social_Sound.mp3");
@@ -605,54 +615,53 @@ function updateSceneContent(scene) {
 
 class Typewriter {
     constructor(element, speed = 50) {
-      this.element = element;
-      this.text = "";
-      this.speed = speed;
-      this.isTyping = false;
-      this.timeoutId = null;
-      this.index = 0;
+        this.element = element;
+        this.text = "";
+        this.speed = speed;
+        this.isTyping = false;
+        this.timeoutId = null;
+        this.index = 0;
     }
-  
+
     type(text) {
-      this.text = text;
-      this.index = 0;
-      this.isTyping = true;
-      this.element.innerHTML = "";
-      this.startTyping();
+        this.text = text;
+        this.index = 0;
+        this.isTyping = true;
+        this.element.innerHTML = "";
+        this.startTyping();
     }
-    
+
     typeAll() {
         this.stop();
         this.index = 0;
         this.element.innerHTML = this.text;
     }
-  
-    startTyping() {
-      if (!this.isTyping) return;
-  
-      if (this.index <= this.text.length) {
-        let char = this.text[this.index];
 
-        // Check if we have an HTML tag.  If so, skip to the end of it
-        if (char === '<') {
-            this.index = this.text.indexOf('>', this.index);
+    startTyping() {
+        if (!this.isTyping) return;
+
+        if (this.index <= this.text.length) {
+            let char = this.text[this.index];
+
+            // Check if we have an HTML tag.  If so, skip to the end of it
+            if (char === '<') {
+                this.index = this.text.indexOf('>', this.index);
+            }
+            this.element.innerHTML = this.text.slice(0, this.index);
+            this.index++;
+            this.timeoutId = setTimeout(() => this.startTyping(), this.speed);
+        } else {
+            this.stop();
         }
-        this.element.innerHTML = this.text.slice(0, this.index);
-        this.index++;
-        this.timeoutId = setTimeout(() => this.startTyping(), this.speed);
-      } else {
-        this.stop();
-      }
     }
-  
+
     stop() {
-      this.isTyping = false;
-      clearTimeout(this.timeoutId);
+        this.isTyping = false;
+        clearTimeout(this.timeoutId);
     }
-  
+
     resume() {
-     this.isTyping = true;
-     this.startTyping();
+        this.isTyping = true;
+        this.startTyping();
     }
-  }
-  
+}
