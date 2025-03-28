@@ -57,6 +57,22 @@ function scaleBody(aspectRatio) {
     outerContainer.style.height = `${newHeight}px`;
 }
 
+function setFontSize(fontSizeString) {
+    let fontSize;
+    if (fontSizeString === 'small') {
+        fontSize = 'clamp(0.4em, 1.5vmin, 2em)';
+    } else if (fontSizeString === 'large') {
+        fontSize = 'clamp(1.5em, 2.8vmin, 5em)';
+    } else {
+        fontSize = 'clamp(0.7em, 2.2vmin, 3em)';
+    }
+    document.getElementById('story-text').style.fontSize = fontSize;
+    const choiceButtons = document.getElementsByClassName('choice');
+    for (const button of choiceButtons) {
+        button.style.fontSize = fontSize;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
@@ -227,8 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('text-size').addEventListener('change', function () {
         playSfx("Audio/clickfx2.mp3");
-        const fontSize = this.value === 'small' ? '1em' : this.value === 'large' ? '1.6em' : '1.3em';
-        document.getElementById('story-text').style.fontSize = fontSize;
+        setFontSize(this.value);
     });
 
     // Set initial progress bar style for Text Box Opacity
@@ -262,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('bg-music-volume').value = '0.5';
         document.getElementById('sfx-volume').value = '0.75';
 
-        document.getElementById('story-text').style.fontSize = '1.3em';
+        setFontSize('medium');
         document.getElementById('story-text').style.color = '#ffffff';
         document.getElementById('game-container').style.backgroundColor = 'rgba(50, 50, 50, 0.8)';
         document.getElementById('background-music').volume = '0.5';
