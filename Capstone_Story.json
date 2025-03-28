@@ -940,7 +940,8 @@
         "next": "imposter_challenge_3"
       }
     ],
-    "background": "Background_Images/Dream_Eatery_Main.png"
+    "background": "Background_Images/Dream_Eatery_Main.png",
+    "sound": "Audio/Food_cook.mp3"
   },
   "imposter_challenge_3" : {
     "speaker": "Sage",
@@ -1305,7 +1306,8 @@
         "next": "mentor_meetingAntiSocial_1"
       }
     ],
-    "background": "Background_Images/Dorm_Sage_Sleeping.png"
+    "background": "Background_Images/Dorm_Sage_Sleeping.png",
+    "sound": "Audio/Multiple_notifications.mp3"
   },
   "mentor_meetingImposter_1" : {
     "text": "Later, Sage meets with Professor Sharma, her mentor, who offers advice on managing stress, assignments, and life in general.",
@@ -1735,7 +1737,7 @@
   },
   "Perfect_Sage_advice_5" : {
     "speaker": "Professor Sharma",
-    "text": "“Is it possible to be perfect? In your dream, do you expect that you would ever reach the front of the line — or do you think you know that it is impossible and that your expectation was always unrealistic?”",
+    "text": "“Is it possible to be perfect? In your dream, do you expect that you would be able to draw a circle — or do you think you know that it is impossible and that your expectation was always unrealistic?”",
     "choices": [
       {
         "text": "Continue",
