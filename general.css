@@ -55,9 +55,9 @@ body {
         2px -2px 0 black,
         -2px 2px 0 black,
         2px 2px 0 black;
-    overflow: hidden; /* Ensure the text stays within the container */
-    border-right: .15em solid #EFFAC5; /* Add a blinking cursor */
-    white-space: nowrap; /* Keep the title on one line */
+    overflow: hidden; 
+    border-right: .15em solid #EFFAC5; 
+    white-space: nowrap; 
     animation: 
         typing 3.5s steps(22) forwards,
         blink-caret .75s step-end 3.5s,
@@ -121,7 +121,7 @@ body {
     bottom: 5%;
     display: flex;
     flex-direction: column;
-    z-index: 2; /* This ensures the game container is above Sage */
+    z-index: 2; 
 }
 
 #character-name-box {
@@ -147,7 +147,7 @@ body {
     color: white;
     font-family: 'Itim', 'Comic Sans', sans-serif; 
     font-size: 1.3em;
-    z-index: 2; /* This ensures the game container is above Sage */
+    z-index: 2; 
 }
 
 #story-text {
@@ -156,28 +156,26 @@ body {
 }
 
 #game-container a {
-    color: #a8d5ba; /* A lighter, more readable color */
-    text-decoration: underline; /* Underline to indicate it's a link */
-    font-weight: bold; /* Make it stand out with bold text */
-    /* Add any other desired styling (font-size, etc.) */
+    color: #a8d5ba;
+    text-decoration: underline; 
+    font-weight: bold; /
 }
 
 #game-container a:hover {
-    color: #c0e2cb; /* A slightly lighter color on hover */
-    text-decoration: underline; /* Keep the underline on hover */
-    /* Add any other hover effects */
+    color: #c0e2cb; 
+    text-decoration: underline; 
 }
 
 #npc-container {
     position: absolute;
     bottom: 0;
-    left: 0; /* Align to the left edge */
-    width: 100%; /* Make it full width */
+    left: 0;
+    width: 100%; 
     display: flex;
     align-items: flex-end;
     z-index: 1;
-    flex-direction: row; /* Change to row to align left to right */
-    justify-content: space-around; /* Distribute images evenly */
+    flex-direction: row; 
+    justify-content: space-around; 
 }
 
 #npc1 {
@@ -221,7 +219,7 @@ body {
     display: none;
     position: absolute;
     bottom: 0;
-    left: 4%; /* Position at the left edge */
+    left: 4%; 
     max-width: 700px;
     height: 88%;
     z-index: 1;
@@ -231,19 +229,19 @@ body {
     display: none;
     position: absolute;
     bottom: 0;
-    left: 28%; /* Space evenly */
-    transform: translateX(0%); /* Center based on image width */
+    left: 28%; 
+    transform: translateX(0%); 
     max-width: 700px;
     height: 85%;
     z-index: 1;
 }
 
-#pleaser-image { /* Added pleaser-image */
+#pleaser-image { 
     display: none;
     position: absolute;
     bottom: 0;
-    left: 51%; /* Space evenly */
-    transform: translateX(0%); /* Center based on image width */
+    left: 51%; 
+    transform: translateX(0%); 
     max-width: 700px;
     height: 92%;
     z-index: 1;
@@ -253,8 +251,8 @@ body {
     display: none;
     position: absolute;
     bottom: 0;
-    left: 80%; /* Space evenly */
-    transform: translateX(0%); /* Center based on image width */
+    left: 80%; 
+    transform: translateX(0%); 
     height: 80%;
     z-index: 1;
 }
@@ -263,7 +261,7 @@ body {
 #perfectionist-image,
 #pleaser-image,
 #antiSocial-image {
-    transition: src 0.3s ease; /* Smooth transition for image source change */
+    transition: src 0.3s ease; 
 }
 
 /* Media Queries */
@@ -391,7 +389,7 @@ body {
 #audio-control-btn {
     position: absolute;
     top: 1%;
-    right: 6%; /* To the left of settings button */
+    right: 6%; 
     background: transparent;
     border: none;
     cursor: pointer;
@@ -516,7 +514,7 @@ body {
     margin-bottom: 20px;
     font-size: clamp(1em, 2vmin, 3em);
     line-height: 1.5;
-    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif; 
+    font-family: 'Itim', 'Comic Sans', sans-serif; 
 }
 
 #disclaimer-accept-button {
@@ -554,7 +552,7 @@ body {
 }
 
 #sfx-volume {
-    --range-progress: 75%; /* Set initial progress */
+    --range-progress: 75%; 
 
 }
 
@@ -677,7 +675,7 @@ body, #title-screen {
 /* Text Color Choices */
 #text-color-choices {
     display: flex;
-    justify-content: center; /* Horizontally center the buttons */
+    justify-content: center; 
     gap: 10px;
     margin-top: 5px;
 }
@@ -699,12 +697,12 @@ body, #title-screen {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 2px solid transparent; /* Initially transparent border */
-    cursor: pointer; /* Add cursor: pointer to the color circles */
+    border: 2px solid transparent; 
+    cursor: pointer; 
 }
 
 .color-choice input[type="radio"]:checked + span {
-    border-color: #CF7EDF; /* Replace with your hover color */
+    border-color: #CF7EDF; 
 }
 
 .visible {
@@ -725,10 +723,10 @@ body, #title-screen {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    opacity: 0.1; /* Adjust as needed */
+    opacity: 0.1; 
     z-index: 0;
-    background-image: url('Background_Images/Wind_Blow.gif'); /* Replace with your GIF path */
+    background-image: url('Background_Images/Wind_Blow.gif'); 
     background-repeat: repeat;
-    background-size: cover; /* Adjust as needed */
-    mix-blend-mode: screen; /* Make dark pixels transparent */
+    background-size: cover; 
+    mix-blend-mode: screen; 
 }
