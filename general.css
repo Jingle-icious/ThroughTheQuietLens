@@ -145,7 +145,7 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
-    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif; 
+    font-family: 'Jua', 'Comic Sans', sans-serif; 
     font-size: 1.3em;
     z-index: 2; /* This ensures the game container is above Sage */
 }

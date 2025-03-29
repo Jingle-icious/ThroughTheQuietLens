@@ -28,7 +28,7 @@
 
 
   "campus_walk_3": {
-      "text": "Students pass by, laughing, chatting easily. Sage's footsteps slow as a group of peers from her first semester cross her path—already deep in conversation.",
+      "text": "Students pass by, laughing, chatting easily. Sage's footsteps slow as a group of peers from her first semester cross her path — already deep in conversation.",
       "choices": [
         {
           "text": "Continue",
@@ -884,7 +884,7 @@
         "sound": "Audio/Pleaser_Sound.mp3"
   },
   "anti_social_Sage_1": {
-    "text": "Anti—social Sage",
+    "text": "Anti-social Sage",
     "choices": [
       {
         "text": "Continue",
@@ -911,7 +911,7 @@
             "next": "pleaser_challenge_1"
         },
         {
-            "text": "Anti—social Sage",
+            "text": "Anti-social Sage",
             "next": "antiSocial_challenge_1"
         }
     ],
