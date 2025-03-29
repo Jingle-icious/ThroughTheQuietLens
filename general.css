@@ -145,7 +145,7 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
-    font-family: 'Indie Flower', sans-serif;
+    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif; 
     font-size: 1.3em;
     z-index: 2; /* This ensures the game container is above Sage */
 }
@@ -502,7 +502,7 @@ body {
     margin-bottom: 20px;
     font-size: clamp(1em, 2vmin, 3em);
     line-height: 1.5;
-    font-family: 'Indie Flower', sans-serif; 
+    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif; 
 }
 
 #disclaimer-accept-button {
