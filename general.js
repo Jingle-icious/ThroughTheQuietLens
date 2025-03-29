@@ -200,6 +200,9 @@ document.addEventListener('DOMContentLoaded', function () {
             foregroundImage.style.display = 'none';
             const outerContainer = document.getElementById('outer-container');
             outerContainer.style.backgroundImage = "url('Background_Images/Title_Official.png')";
+
+            stopBackgroundMusic(); 
+    
             bgMusic.src = "Audio/Quiet_Lens_Soundtrack_Option.wav";
             bgMusic.loop = true;
             bgMusic.play();

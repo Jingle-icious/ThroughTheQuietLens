@@ -154,6 +154,19 @@ body {
     font-size: clamp(0.7em, 2.2vmin, 3em);
 }
 
+#game-container a {
+    color: #a8d5ba; /* A lighter, more readable color */
+    text-decoration: underline; /* Underline to indicate it's a link */
+    font-weight: bold; /* Make it stand out with bold text */
+    /* Add any other desired styling (font-size, etc.) */
+}
+
+#game-container a:hover {
+    color: #c0e2cb; /* A slightly lighter color on hover */
+    text-decoration: underline; /* Keep the underline on hover */
+    /* Add any other hover effects */
+}
+
 #npc-container {
     position: absolute;
     bottom: 0;
