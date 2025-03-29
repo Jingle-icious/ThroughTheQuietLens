@@ -28,7 +28,7 @@
 
 
   "campus_walk_3": {
-      "text": "Students pass by, laughing, chatting easily. Sage's footsteps slow as a group of peers from her first semester cross her path — already deep in conversation.",
+      "text": "Students pass by, laughing, chatting easily. Sage’s footsteps slow as a group of peers from her first semester cross her path — already deep in conversation.",
       "choices": [
         {
           "text": "Continue",
@@ -69,7 +69,7 @@
     },
     "campus_walk_6": {
       "speaker": "Sage",
-      "text": "“I should feel better about this. But I don't.”",
+      "text": "“I should feel better about this. But I don’t.”",
       "choices": [
         {
           "text": "Continue",
@@ -423,7 +423,7 @@
     "sound":"Audio/Tick_Tock.mp3"
   },
   "dorm_striveA_3": {
-    "text": "Sage stands up and stretches, she is finally satisfied that she will get an A on the assignment. She looks at the time — it's late — after midnight — did she even eat dinner?",
+    "text": "Sage stands up and stretches, she is finally satisfied that she will get an A on the assignment. She looks at the time — it’s late — after midnight — did she even eat dinner?",
     "choices": [
       {
         "text": "Continue",
@@ -470,7 +470,7 @@
     "sprite": "Sage_Images/SageVar1_smile.png"
   },
   "dorm_reasonable_4": {
-    "text": "She looks at the time — it's 7:30 and her roommates are talking about the weekend — she looks at her assignment and decides it is sufficient. She joins her friends and connects with them before getting ready for bed.",
+    "text": "She looks at the time — it’s 7:30 and her roommates are talking about the weekend — she looks at her assignment and decides it is sufficient. She joins her friends and connects with them before getting ready for bed.",
     "choices": [
       {
         "text": "Continue",
@@ -669,7 +669,7 @@
     },
     "phone_honest_6": {
       "speaker": "Sage",
-      "text": "“I know you are, and I know you believe in me, but I really feel like I'm gonna burn out. Sometimes I feel so scared to let you down — I really want to make you proud of me.”",
+      "text": "“I know you are, and I know you believe in me, but I really feel like I’m gonna burn out. Sometimes I feel so scared to let you down — I really want to make you proud of me.”",
       "choices": [
         {
           "text": "Continue",
@@ -693,7 +693,7 @@
     },
     "phone_honest_8": {
       "speaker": "Sage",
-      "text": "<i>Why does everything feel so heavy? Like I’m carrying the weight of the world on my shoulders. It’s not that I don’t feel loved, I just — well — I hope I don't let anyone down.</i>",
+      "text": "<i>Why does everything feel so heavy? Like I’m carrying the weight of the world on my shoulders. It’s not that I don’t feel loved, I just — well — I hope I don’t let anyone down.</i>",
       "choices": [
         {
           "text": "Continue",
@@ -958,7 +958,7 @@
   },
   "imposter_challenge_4" : {
     "speaker": "Sage",
-    "text": "“I know I don't deserve to have this meal ticket  — I’m not a summa cum laude, and standing here I look like I am trying to pass myself off as something I’m not.”",
+    "text": "“I know I don’t deserve to have this meal ticket  — I’m not a summa cum laude, and standing here I look like I am trying to pass myself off as something I’m not.”",
     "choices": [
       {
         "text": "Continue",
@@ -979,7 +979,7 @@
   },
   "imposter_challenge_6" : {
     "speaker": "Sage",
-    "text": "<i>Are there any that are more private — where I can't see everyone else  — and they can't see me?</i>",
+    "text": "<i>Are there any that are more private — where I can’t see everyone else  — and they can’t see me?</i>",
     "choices": [
       {
         "text": "Continue",
@@ -1190,7 +1190,7 @@
     "background": "Background_Images/Dream_Pie_Main.png"
   },
   "pleaser_challenge_6" : {
-    "text": "Sage tries to quietly exit the area — suddenly she is running and crying. She feels her legs burning and she can't seem to catch her breath. Exhausted and falls to the ground.",
+    "text": "Sage tries to quietly exit the area — suddenly she is running and crying. She feels her legs burning and she can’t seem to catch her breath. Exhausted and falls to the ground.",
     "choices": [
       {
         "text": "Continue",
@@ -1201,7 +1201,7 @@
     "sound": "Audio/Running_effect.mp3"
   },
   "pleaser_challenge_7" : {
-    "text": "Sage wakes up with her heart pounding, cold from sweat — and with nausea as well. She pulls the covers up over her head, but knowing that she won't be going back to sleep, she heads to the shower to start her day.",
+    "text": "Sage wakes up with her heart pounding, cold from sweat — and with nausea as well. She pulls the covers up over her head, but knowing that she won’t be going back to sleep, she heads to the shower to start her day.",
     "choices": [
       {
         "text": "Continue",
@@ -1291,7 +1291,7 @@
     "background": "Background_Images/Dream_Ferris_Main.png"
   },
   "antiSocial_challenge_8" : {
-    "text": "Sage opens her eyes and looks at the clock, but it is hard to focus — it's five a.m. She feels compelled to open her calendar and scan her upcoming commitments.",
+    "text": "Sage opens her eyes and looks at the clock, but it is hard to focus — it’s five a.m. She feels compelled to open her calendar and scan her upcoming commitments.",
     "choices": [
       {
         "text": "Continue",
@@ -1509,7 +1509,7 @@
   },
   "Imposter_Sage_advice_14" : {
     "speaker" : "Professor Sharma",
-    "text":"“I sure have, I told you it's surprising how many of us there are! Lets see, I remember using a research model called “Reflect, Plan, Change” and I remember doing an acceptance  and commitment therapy (ACT) exercise with a counselor I knew. Which one interests you?”",
+    "text":"“I sure have, I told you it’s surprising how many of us there are! Lets see, I remember using a research model called “Reflect, Plan, Change” and I remember doing an acceptance  and commitment therapy (ACT) exercise with a counselor I knew. Which one interests you?”",
     "choices": [
     {
         "text": "Ask about ACT",
@@ -1649,7 +1649,7 @@
   },
   "mentor_meetingImposter_4" : {
     "speaker": "Professor Sharma",
-    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it's just the nature of the journey.”",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it’s just the nature of the journey.”",
     "choices": [
       {
           "text": "Continue",
@@ -1701,7 +1701,7 @@
   },
   "Perfect_Sage_advice_2" : {
     "speaker": "Sage",
-    "text": "“Honest... right. Because that's easy. Everyone expects me to be perfect.”",
+    "text": "“Honest... right. Because that’s easy. Everyone expects me to be perfect.”",
     "choices": [
       {
         "text": "Continue",
@@ -1753,7 +1753,7 @@
   },
   "Perfect_Sage_advice_6" : {
     "speaker": "Sage",
-    "text": "“I do know that it's impossible. I think it's ridiculous to even consider being perfect. I think that's why I am so angry with myself — I feel stupid and like I should know better.”",
+    "text": "“I do know that it’s impossible. I think it’s ridiculous to even consider being perfect. I think that’s why I am so angry with myself — I feel stupid and like I should know better.”",
     "choices": [
       {
         "text": "Continue",
@@ -1863,7 +1863,7 @@
   },
   "mentor_meetingPerfect_4" : {
     "speaker": "Professor Sharma",
-    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it's just the nature of the journey.”",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it’s just the nature of the journey.”",
     "choices": [
       {
           "text": "Continue",
@@ -1915,7 +1915,7 @@
   },
   "Pleaser_Sage_advice_2" : {
     "speaker": "Professor Sharma",
-    "text": "“I wonder if you realize how much you do for others at your own expense. It’s like you are eating pie until you are literally sick. When you feel unhappy about something, I believe it’s because your actions aren't aligned with your values.”",
+    "text": "“I wonder if you realize how much you do for others at your own expense. It’s like you are eating pie until you are literally sick. When you feel unhappy about something, I believe it’s because your actions aren’t aligned with your values.”",
     "choices": [
       {
         "text": "Continue",
@@ -1941,7 +1941,7 @@
   },
   "Pleaser_Sage_advice_4" : {
     "speaker": "Professor Sharma",
-    "text": "“Pleasing others is an extension of being nice. It's not inherently bad behavior. However, if you do things for others to the point of being unhappy, it can be harmful to your well—being.”",
+    "text": "“Pleasing others is an extension of being nice. It’s not inherently bad behavior. However, if you do things for others to the point of being unhappy, it can be harmful to your well—being.”",
     "choices": [
       {
         "text": "Continue",
@@ -2104,7 +2104,7 @@
   },
   "mentor_meetingPleaser_4" : {
     "speaker": "Professor Sharma",
-    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it's just the nature of the journey.”",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it’s just the nature of the journey.”",
     "choices": [
       {
           "text": "Continue",
@@ -2280,7 +2280,7 @@
   },
   "mentor_meetingAntiSocial_4" : {
     "speaker": "Professor Sharma",
-    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it's just the nature of the journey.”",
+    "text": "“That’s all anyone can ask. Your vulnerability is your strength Sage, you will grow through this. And remember, every college student I know is facing something — it’s just the nature of the journey.”",
     "choices": [
       {
           "text": "Continue",
@@ -2315,7 +2315,7 @@
   },
   "dorm_finalProj_3" : {
     "speaker": "Sage",
-    "text": "“Well, I've been here before and I know that I can handle this. I just need to decide where to start.”",
+    "text": "“Well, I’ve been here before and I know that I can handle this. I just need to decide where to start.”",
     "choices": [
       {
         "text": "Continue",
@@ -2406,7 +2406,7 @@
   },
   "dorm_finalProj_11" : {
     "speaker": "Sage",
-    "text": "<i>This and the time management and efficiency tools have been so helpful — I certainly feel better than I did last semester. I hope it's even better next semester.</i>",
+    "text": "<i>This and the time management and efficiency tools have been so helpful — I certainly feel better than I did last semester. I hope it’s even better next semester.</i>",
     "choices": [
       {
         "text": "Continue",
@@ -2441,7 +2441,7 @@
   },
   "dorm_finalProj_14" : {
     "speaker": "Sage",
-    "text": "“She will check on my progress, tell me to stay on top of things, tell me she believes in me and imply judgement about my choices. Oh jeez. Maybe it's not a good idea.”",
+    "text": "“She will check on my progress, tell me to stay on top of things, tell me she believes in me and imply judgement about my choices. Oh jeez. Maybe it’s not a good idea.”",
     "choices": [
       {
         "text": "Continue",
@@ -2477,7 +2477,7 @@
   },
   "dorm_finalProj_17" : {
     "speaker": "Sage",
-    "text": "“That's it. That's what has taught me the most, had the greatest positive impact on my life, and it's what I am the most proud of too.”",
+    "text": "“That’s it. That’s what has taught me the most, had the greatest positive impact on my life, and it’s what I am the most proud of too.”",
     "choices": [
       {
         "text": "Continue",
@@ -2562,7 +2562,7 @@
     "background": "Background_Images/StressArt.png"
   },
   "happy_art_1" : {
-    "text": "A smiling visualization of a peaceful Sage. The drawing exudes a sense of joyful freedom and self—expression, with dynamic movement and bold, cheerful energy. The character's pose and bright colors convey a carefree spirit, capturing a moment of confidence. Sage looks at it and can feel herself in that moment — that is the feeling she reminds herself to keep in mind.",
+    "text": "A smiling visualization of a peaceful Sage. The drawing exudes a sense of joyful freedom and self—expression, with dynamic movement and bold, cheerful energy. The character’s pose and bright colors convey a carefree spirit, capturing a moment of confidence. Sage looks at it and can feel herself in that moment — that is the feeling she reminds herself to keep in mind.",
     "choices": [
       {
         "text": "Continue",
@@ -2623,7 +2623,7 @@
   },
   "closing_5" : {
     "speaker": "Sage",
-    "text": "“Really it's not that hard to find my <i>‘Chill’</i> — it's actually much easier when I remember that we are all in this together.”",
+    "text": "“Really it’s not that hard to find my <i>‘Chill’</i> — it’s actually much easier when I remember that we are all in this together.”",
     "choices": [
       {
         "text": "End Credits",
@@ -2634,7 +2634,7 @@
     "sprite": "Sage_Images/SageVar1_talk.png"
   },
   "end_credits_1": {
-    "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO <a href='https://988lifeline.org/' target='_blank'>988LIFELINE.ORG</a>.",
+    "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO <a href=’https://988lifeline.org/’ target=’_blank’>988LIFELINE.ORG</a>.",
     "choices": [
       {
         "text": "Next",

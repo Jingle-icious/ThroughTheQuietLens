@@ -145,12 +145,13 @@ body {
     border-radius: 10px;
     text-align: center;
     color: white;
-    font-family: 'Jua', 'Comic Sans', sans-serif; 
+    font-family: 'Itim', 'Comic Sans', sans-serif; 
     font-size: 1.3em;
     z-index: 2; /* This ensures the game container is above Sage */
 }
 
 #story-text {
+    font-variant-ligatures: common-ligatures contextual;
     font-size: clamp(0.7em, 2.2vmin, 3em);
 }
 
