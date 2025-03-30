@@ -2631,16 +2631,16 @@
     "background": "Background_Images/Campus_Main.png",
     "sprite": "Sage_Images/SageVar1_talk.png"
   },
-  "end_credits_1": {
-    "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO <a href='https://988lifeline.org/' target='_blank'>988LIFELINE.ORG</a>.",
-    "choices": [
-      {
-        "text": "Next",
-        "next": "end_credits_2"
-      }
-    ],
-    "background": "Background_Images/Title_Official.png"
-  },
+"end_credits_1": {
+  "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO <a href='https://988lifeline.org/' target='_blank'>988LIFELINE.ORG</a>.",
+  "choices": [
+    {
+      "text": "Next",
+      "next": "end_credits_2"
+    }
+  ],
+  "background": "Background_Images/Title_Official.png"
+},
   "end_credits_2": {
     "text": "Created by Evelyn Upchurch a.k.a. Nicky Lynn Art. Thanks and acknowledgement to my family and friends who played Through the Quiet Lens more times than I can count and gave feedback and suggestions. You are all amazing!",
     "choices": [
