@@ -2632,7 +2632,7 @@
     "sprite": "Sage_Images/SageVar1_talk.png"
   },
   "end_credits_1": {
-    "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO <a href=’https://988lifeline.org/’ target=’_blank’>988LIFELINE.ORG</a>.",
+    "text": "IF YOU, OR SOMEONE YOU KNOW, IS STRUGGLING WITH MENTAL HEALTH AND WELL-BEING, MANY RESOURCES ARE AVAILABLE AT CDC.GOV. YOU CAN ALSO DIAL 988 OR GO TO <a href='https://988lifeline.org/' target='_blank'>988LIFELINE.ORG</a>.",
     "choices": [
       {
         "text": "Next",
