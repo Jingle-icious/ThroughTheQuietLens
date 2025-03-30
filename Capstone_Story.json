@@ -80,7 +80,7 @@
       "sprite": "Sage_Images/SageVar1_talk.png"
     },
     "blake_encounter_1": {
-      "text": "As she approaches the dorms, Sage crosses paths with Blake who shares the same major as Sage — a sharp—eyed, confident student who is always at the top of the class. Blake spots her and approaches her wanting to talk about the great first semester.",
+      "text": "As she approaches the dorms, Sage crosses paths with Blake who shares the same major as Sage — a sharp-eyed, confident student who is always at the top of the class. Blake spots her and approaches her wanting to talk about the great first semester.",
       "choices": [
         {
           "text": "Continue",
@@ -2462,7 +2462,7 @@
     "background": "Background_Images/Dorm_Sage_Sitting.png"
   },
   "dorm_finalProj_16" : {
-    "text": "Sage throws the journal on the bed and grabs her phone, but the page that is opened catches her eye. It reads “ProjectHelping.org” in big letters across the page.",
+    "text": "Sage throws the journal on the bed and grabs her phone, but the page that is opened catches her eye. It reads either “Charisma University” or “ProjectHelping.org” in big letters across the page.",
     "choices": [
       {
         "text": "Continue",
@@ -2487,7 +2487,7 @@
   },
   "dorm_finalProj_18" : {
     "speaker": "Sage",
-    "text": "“I think I was overwhelmed with obligations and kept feeling afraid of letting everyone down — I preferred to be alone and just avoid altogether. Volunteering was such a great decision.”",
+    "text": "“I think I was overwhelmed with obligations and kept feeling afraid of letting everyone down — I preferred to be alone and just avoid altogether. Practicing my soft skills and volunteering was such a great decision.”",
     "choices": [
       {
         "text": "Continue",
@@ -2550,7 +2550,17 @@
     "soundDelay": 1000
   },
   "stress_art_1" : {
-    "text": "A chaotic representation of all the aspects of stress and anxiety. This piece overuses color to symbolize an over-saturation, and the character is sick and anguished to the point of losing touch and becoming a static background. Sage looks at it and feels more motivated and competent than ever as she keeps this larger-than-life wretchedness at bay. She confidently turns in her final project with a smile of satisfaction.",
+    "text": "A chaotic representation of all the aspects of stress and anxiety. This piece overuses color to symbolize an over-saturation, and the character is sick and anguished to the point of losing touch and becoming a static background.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "stress_art_2"
+      }
+    ],
+    "background": "Background_Images/StressArt.png"
+  },
+  "stress_art_2" : {
+    "text": "Sage looks at it and feels more motivated and competent than ever as she keeps this larger-than-life wretchedness at bay. She confidently turns in her final project with a smile of satisfaction.",
     "choices": [
       {
         "text": "Continue",
@@ -2560,7 +2570,17 @@
     "background": "Background_Images/StressArt.png"
   },
   "happy_art_1" : {
-    "text": "A smiling visualization of a peaceful Sage. The drawing exudes a sense of joyful freedom and self—expression, with dynamic movement and bold, cheerful energy. The character’s pose and bright colors convey a carefree spirit, capturing a moment of confidence. Sage looks at it and can feel herself in that moment — that is the feeling she reminds herself to keep in mind.",
+    "text": "A smiling visualization of a peaceful Sage. The drawing exudes a sense of joyful freedom and self—expression, with dynamic movement and bold, cheerful energy.",
+    "choices": [
+      {
+        "text": "Continue",
+        "next": "happy_art_2"
+      }
+    ],
+    "background": "Background_Images/HappyArt.png"
+  },
+  "happy_art_2" : {
+    "text": "The character’s pose and bright colors convey a carefree spirit, capturing a moment of confidence. Sage looks at it and can feel herself in that moment — that is the feeling she reminds herself to keep in mind.",
     "choices": [
       {
         "text": "Continue",
