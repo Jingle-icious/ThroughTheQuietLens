@@ -319,6 +319,11 @@ function crossFade(newBackgroundSrc, callback) {
 
 // Choice making logic and Audio for scenes
 function makeChoice(choice) {
+    if (!story) {
+        console.error("Story data not loaded.");
+        return;
+    }
+
     if (!story[choice]) {
         console.error(`Scene "${choice}" not found in story.`);
         return;
@@ -332,6 +337,8 @@ function makeChoice(choice) {
     if (newBackground && newBackground !== currentBackground) {
         crossFade(newBackground, () => {
             updateSceneContent(scene);
+            applyWindGust(newBackground); // Apply wind gust based on background
+            applySmokeEffect(newBackground); // Apply smoke effect based on background
             // Check for art images and play background music
             if (newBackground === 'Background_Images/StressArt.png') {
                 playBackgroundMusic('Audio/Stressed_Drawing_Loop.mp3');
@@ -359,10 +366,11 @@ function makeChoice(choice) {
             } else {
                 stopBackgroundMusic();
             }
-            applyWindGust(newBackground); // Apply wind gust based on background
         });
     } else {
         updateSceneContent(scene);
+        applyWindGust(newBackground); 
+        applySmokeEffect(newBackground); 
         // Check for art images and play background music
         if (newBackground === 'Background_Images/StressArt.png') {
             playBackgroundMusic('Audio/Stressed_Drawing_Loop.mp3');
@@ -390,7 +398,6 @@ function makeChoice(choice) {
         } else {
             stopBackgroundMusic();
         }
-        applyWindGust(newBackground);
     }
 }
 
@@ -404,10 +411,28 @@ function applyWindGust(background) {
             windGustLayer.classList.add('wind-gust-layer');
             outerContainer.appendChild(windGustLayer);
         }
-        windGustLayer.style.opacity = 1; // Make it visible
+        windGustLayer.style.opacity = 1; 
     } else {
         if (windGustLayer) {
-            windGustLayer.style.opacity = 0; // Hide it
+            windGustLayer.style.opacity = 0; 
+        }
+    }
+}
+
+function applySmokeEffect(background) {
+    const outerContainer = document.getElementById('outer-container');
+    let smokeLayer = document.querySelector('.smoke-effect');
+
+    if (background === 'Background_Images/Smoke_Backround.png') {
+        if (!smokeLayer) {
+            smokeLayer = document.createElement('div');
+            smokeLayer.classList.add('smoke-effect');
+            outerContainer.appendChild(smokeLayer);
+        }
+        smokeLayer.style.opacity = 1;
+    } else {
+        if (smokeLayer) {
+            smokeLayer.style.opacity = 0;
         }
     }
 }

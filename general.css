@@ -730,3 +730,18 @@ body, #title-screen {
     background-size: cover; 
     mix-blend-mode: screen; 
 }
+
+/* Add this to your existing CSS file */
+
+.smoke-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Background_Images/Smoke_Swirl.gif');
+    background-size: cover;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    opacity: 0.2; /* Adjust opacity here */
+}
